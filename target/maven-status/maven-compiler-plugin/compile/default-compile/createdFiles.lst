@@ -1,0 +1,8 @@
+com\hcmunre\organization\service\OrganizationService$ValidationException.class
+com\hcmunre\organization\repository\OrganizationRepository.class
+com\hcmunre\organization\service\OrganizationService.class
+com\hcmunre\organization\util\DatabaseConnection.class
+com\hcmunre\organization\util\TestDatabaseConnection.class
+com\hcmunre\organization\model\Organization.class
+com\hcmunre\organization\ui\OrganizationApp.class
+com\hcmunre\organization\ui\OrganizationForm.class
