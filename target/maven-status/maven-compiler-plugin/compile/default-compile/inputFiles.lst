@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 C:\Code\test_case\src\main\java\ArgumentException.java
 C:\Code\test_case\src\main\java\Bai1PowerUtil.java
 C:\Code\test_case\src\main\java\Bai2PolynomialEvaluator.java
@@ -6,3 +7,12 @@ C:\Code\test_case\src\main\java\Diem.java
 C:\Code\test_case\src\main\java\HinhChuNhat.java
 C:\Code\test_case\src\main\java\HocVien.java
 C:\Code\test_case\src\main\java\TrungTamGiaSu.java
+=======
+C:\HCMUNRE_KiemThu\BTTL_Lab4\src\main\java\com\hcmunre\organization\service\OrganizationService.java
+C:\HCMUNRE_KiemThu\BTTL_Lab4\src\main\java\com\hcmunre\organization\util\DatabaseConnection.java
+C:\HCMUNRE_KiemThu\BTTL_Lab4\src\main\java\com\hcmunre\organization\ui\OrganizationForm.java
+C:\HCMUNRE_KiemThu\BTTL_Lab4\src\main\java\com\hcmunre\organization\util\TestDatabaseConnection.java
+C:\HCMUNRE_KiemThu\BTTL_Lab4\src\main\java\com\hcmunre\organization\ui\OrganizationApp.java
+C:\HCMUNRE_KiemThu\BTTL_Lab4\src\main\java\com\hcmunre\organization\model\Organization.java
+C:\HCMUNRE_KiemThu\BTTL_Lab4\src\main\java\com\hcmunre\organization\repository\OrganizationRepository.java
+>>>>>>> a4c0e66b41fefd89dcdc5a4c1021305437dcb484
