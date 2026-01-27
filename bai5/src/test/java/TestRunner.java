@@ -31,7 +31,7 @@ public class TestRunner {
         if (result.getFailureCount() > 0) {
             System.out.println("\n========== FAILED TESTS ==========");
             for (Failure failure : result.getFailures()) {
-                System.out.println("\n❌ " + failure.getTestHeader());
+                System.out.println("\nFAILED: " + failure.getTestHeader());
                 System.out.println("   " + failure.getMessage());
                 System.out.println("   at " + failure.getException().getStackTrace()[0]);
             }
@@ -41,9 +41,9 @@ public class TestRunner {
         // Final result
         System.out.println();
         if (result.wasSuccessful()) {
-            System.out.println("✅ ALL TESTS PASSED SUCCESSFULLY!");
+            System.out.println("ALL TESTS PASSED SUCCESSFULLY!");
         } else {
-            System.out.println("❌ SOME TESTS FAILED!");
+            System.out.println("SOME TESTS FAILED!");
         }
         System.out.println();
         System.out.println("========================================================");

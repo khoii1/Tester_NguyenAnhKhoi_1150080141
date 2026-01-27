@@ -9,10 +9,10 @@ public class TestConnection {
         System.out.println("--------------------------------");
         
         if (DatabaseConnection.testConnection()) {
-            System.out.println("✓ Connection successful!");
+            System.out.println("Connection successful!");
             DatabaseConnection.initializeDatabase();
         } else {
-            System.out.println("✗ Connection failed!");
+            System.out.println("Connection failed!");
             System.out.println("\nPlease check:");
             System.out.println("1. SQL Server is running");
             System.out.println("2. SQL Server Authentication is enabled");

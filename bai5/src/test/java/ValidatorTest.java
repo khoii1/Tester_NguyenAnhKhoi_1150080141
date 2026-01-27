@@ -313,4 +313,72 @@ public class ValidatorTest {
     public void testTermsAcceptance_NotAccepted() {
         assertNotNull(Validator.validateTermsAcceptance(false));
     }
+    
+    // ========== FAILING TESTS (Bugs to be Fixed) ==========
+    
+    /**
+     * BUG #1: Validator không kiểm tra email domain hợp lệ
+     * Theo yêu cầu mới: chỉ chấp nhận email có domain trong whitelist
+     * Expected: Email với domain không hợp lệ như @hacker.com nên bị reject
+     * CURRENTLY FAILING - Domain validation not implemented
+     */
+    @Test
+    public void testEmail_InvalidDomain() {
+        // Bug: Should reject suspicious domains
+        assertNotNull(Validator.validateEmail("test@suspicious-site.xyz"));
+        assertNotNull(Validator.validateEmail("user@tempmail.com"));
+    }
+    
+    /**
+     * BUG #2: Validator cho phép số điện thoại có ký tự đặc biệt
+     * Theo yêu cầu: chỉ chấp nhận số 0-9
+     * Expected: Reject phone numbers with special chars
+     * CURRENTLY FAILING - Character validation incomplete
+     */
+    @Test
+    public void testPhoneNumber_SpecialCharacters() {
+        // Bug: Should reject phone with special characters
+        assertNotNull(Validator.validatePhoneNumber("0123-456-789"));
+        assertNotNull(Validator.validatePhoneNumber("0123.456.789"));
+        assertNotNull(Validator.validatePhoneNumber("(012)3456789"));
+    }
+    
+    /**
+     * BUG #3: Password validator không kiểm tra độ mạnh của mật khẩu
+     * Theo yêu cầu mới: mật khẩu phải có ít nhất 1 chữ hoa, 1 chữ thường, 1 số
+     * Expected: Reject weak passwords like "12345678" or "abcdefgh"
+     * CURRENTLY FAILING - Password strength validation not implemented
+     */
+    @Test
+    public void testPassword_WeakPassword() {
+        // Bug: Should reject passwords without uppercase, lowercase, and numbers
+        assertNotNull(Validator.validatePassword("12345678")); // Only numbers
+        assertNotNull(Validator.validatePassword("abcdefgh")); // Only lowercase
+        assertNotNull(Validator.validatePassword("ABCDEFGH")); // Only uppercase
+    }
+    
+    /**
+     * BUG #4: Customer ID cho phép ký tự đặc biệt trong một số trường hợp
+     * Expected: Strict alphanumeric validation
+     * CURRENTLY FAILING - Regex validation has edge cases
+     */
+    @Test
+    public void testCustomerId_EdgeCaseCharacters() {
+        // Bug: Should reject special characters in all positions
+        assertNotNull(Validator.validateCustomerId("KH_001"));
+        assertNotNull(Validator.validateCustomerId("KH.001"));
+    }
+    
+    /**
+     * BUG #5: Full name validator không kiểm tra định dạng tên hợp lệ
+     * Theo yêu cầu: tên phải có ít nhất 2 từ (họ và tên)
+     * Expected: Reject single word names
+     * CURRENTLY FAILING - Word count validation not implemented
+     */
+    @Test
+    public void testFullName_SingleWord() {
+        // Bug: Should require at least first name and last name
+        assertNotNull(Validator.validateFullName("SingleName"));
+        assertNotNull(Validator.validateFullName("Khôi"));
+    }
 }

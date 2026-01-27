@@ -26,6 +26,6 @@ public class TestRunner {
             }
         }
         
-        System.out.println("\nTest Result: " + (result.wasSuccessful() ? "SUCCESS ✓" : "FAILED ✗"));
+        System.out.println("\nTest Result: " + (result.wasSuccessful() ? "SUCCESS" : "FAILED"));
     }
 }
