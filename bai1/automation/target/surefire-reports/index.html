@@ -1,0 +1,1463 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-ShopVN_RegisterSuite" class="navigator-link">
+              <span class="suite-name border-failed">ShopVN_RegisterSuite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-ShopVN_RegisterSuite" class="navigator-link ">
+                    <span>C:\HCMUNRE_KiemThu\LAB7\bai1\automation\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-ShopVN_RegisterSuite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-ShopVN_RegisterSuite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-ShopVN_RegisterSuite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-ShopVN_RegisterSuite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-ShopVN_RegisterSuite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-ShopVN_RegisterSuite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">35 methods, 3 failed,   32 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-ShopVN_RegisterSuite" class="hide-methods failed suite-ShopVN_RegisterSuite"> (hide)</a> <!-- hide-methods failed suite-ShopVN_RegisterSuite -->
+                      <a href="#" panel-name="suite-ShopVN_RegisterSuite" class="show-methods failed suite-ShopVN_RegisterSuite"> (show)</a> <!-- show-methods failed suite-ShopVN_RegisterSuite -->
+                    </span>
+                    <div class="method-list-content failed suite-ShopVN_RegisterSuite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-ShopVN_RegisterSuite" title="tests.RegisterTest" class="method navigator-link" hash-for-method="TC01_registerWithValidData(Nguyễn Văn An, vanan2024, vanan2024@gmail.com, 0912345678, Shopvn@2024, Shopvn@2024, 2000-05-15, mal...)">TC01_registerWithValidData(Nguyễn Văn An, vanan2024, vanan2024@gmail.com, 0912345678, Shopvn@2024, Shopvn@2024, 2000-05-15, mal...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-ShopVN_RegisterSuite" title="tests.RegisterTest" class="method navigator-link" hash-for-method="TC04_usernameInvalidFormat">TC04_usernameInvalidFormat</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-ShopVN_RegisterSuite" title="tests.RegisterTest" class="method navigator-link" hash-for-method="TC18_invalidCases(TC05 – Username không đúng format (chứa chữ hoa), Trần Thị Bình, UserABC, binhtest1@gmail.com, 09876...)">TC18_invalidCases(TC05 – Username không đúng format (chứa chữ hoa), Trần Thị Bình, UserABC, binhtest1@gmail.com, 09876...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-ShopVN_RegisterSuite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-ShopVN_RegisterSuite" class="hide-methods passed suite-ShopVN_RegisterSuite"> (hide)</a> <!-- hide-methods passed suite-ShopVN_RegisterSuite -->
+                      <a href="#" panel-name="suite-ShopVN_RegisterSuite" class="show-methods passed suite-ShopVN_RegisterSuite"> (show)</a> <!-- show-methods passed suite-ShopVN_RegisterSuite -->
+                    </span>
+                    <div class="method-list-content passed suite-ShopVN_RegisterSuite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-ShopVN_RegisterSuite" title="tests.RegisterTest" class="method navigator-link" hash-for-method="TC02_fullNameEmpty">TC02_fullNameEmpty</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-ShopVN_RegisterSuite" title="tests.RegisterTest" class="method navigator-link" hash-for-method="TC03_fullNameTooShort">TC03_fullNameTooShort</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-ShopVN_RegisterSuite" title="tests.RegisterTest" class="method navigator-link" hash-for-method="TC05_usernameDuplicate">TC05_usernameDuplicate</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-ShopVN_RegisterSuite" title="tests.RegisterTest" class="method navigator-link" hash-for-method="TC06_emailInvalidFormat">TC06_emailInvalidFormat</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-ShopVN_RegisterSuite" title="tests.RegisterTest" class="method navigator-link" hash-for-method="TC07_emailDuplicate">TC07_emailDuplicate</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-ShopVN_RegisterSuite" title="tests.RegisterTest" class="method navigator-link" hash-for-method="TC08_phoneTooShort">TC08_phoneTooShort</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-ShopVN_RegisterSuite" title="tests.RegisterTest" class="method navigator-link" hash-for-method="TC09_passwordNoUppercase">TC09_passwordNoUppercase</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-ShopVN_RegisterSuite" title="tests.RegisterTest" class="method navigator-link" hash-for-method="TC10_passwordTooShort">TC10_passwordTooShort</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-ShopVN_RegisterSuite" title="tests.RegisterTest" class="method navigator-link" hash-for-method="TC11_confirmPasswordMismatch">TC11_confirmPasswordMismatch</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-ShopVN_RegisterSuite" title="tests.RegisterTest" class="method navigator-link" hash-for-method="TC12_dobUnder16">TC12_dobUnder16</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-ShopVN_RegisterSuite" title="tests.RegisterTest" class="method navigator-link" hash-for-method="TC13_dobOver100">TC13_dobOver100</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-ShopVN_RegisterSuite" title="tests.RegisterTest" class="method navigator-link" hash-for-method="TC14_referralCodeInvalidFormat">TC14_referralCodeInvalidFormat</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-ShopVN_RegisterSuite" title="tests.RegisterTest" class="method navigator-link" hash-for-method="TC15_referralCodeNotExist">TC15_referralCodeNotExist</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-ShopVN_RegisterSuite" title="tests.RegisterTest" class="method navigator-link" hash-for-method="TC16_agreeTermsNotChecked">TC16_agreeTermsNotChecked</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-ShopVN_RegisterSuite" title="tests.RegisterTest" class="method navigator-link" hash-for-method="TC17_viewTermsModalOpens">TC17_viewTermsModalOpens</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-ShopVN_RegisterSuite" title="tests.RegisterTest" class="method navigator-link" hash-for-method="TC18_invalidCases(TC18 – Mã giới thiệu đúng format nhưng không tồn tại, Trần Thị Bình, binhtest1, binhtest1@gmail.com,...)">TC18_invalidCases(TC18 – Mã giới thiệu đúng format nhưng không tồn tại, Trần Thị Bình, binhtest1, binhtest1@gmail.com,...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-ShopVN_RegisterSuite" title="tests.RegisterTest" class="method navigator-link" hash-for-method="TC18_invalidCases(TC09 – Email đã tồn tại, Trần Thị Bình, binhtest1, admin@shopvn.vn, 0987654321, Test@1234, Test@1234...)">TC18_invalidCases(TC09 – Email đã tồn tại, Trần Thị Bình, binhtest1, admin@shopvn.vn, 0987654321, Test@1234, Test@1234...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-ShopVN_RegisterSuite" title="tests.RegisterTest" class="method navigator-link" hash-for-method="TC18_invalidCases(TC14 – Confirm password không khớp, Trần Thị Bình, binhtest1, binhtest1@gmail.com, 0987654321, Test@...)">TC18_invalidCases(TC14 – Confirm password không khớp, Trần Thị Bình, binhtest1, binhtest1@gmail.com, 0987654321, Test@...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-ShopVN_RegisterSuite" title="tests.RegisterTest" class="method navigator-link" hash-for-method="TC18_invalidCases(TC15 – Ngày sinh dưới 16 tuổi, Trần Thị Bình, binhtest1, binhtest1@gmail.com, 0987654321, Test@1234,...)">TC18_invalidCases(TC15 – Ngày sinh dưới 16 tuổi, Trần Thị Bình, binhtest1, binhtest1@gmail.com, 0987654321, Test@1234,...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-ShopVN_RegisterSuite" title="tests.RegisterTest" class="method navigator-link" hash-for-method="TC18_invalidCases(TC03 – Họ và tên dưới min length (1 ký tự), A, binhtest1, binhtest1@gmail.com, 0987654321, Test@1234...)">TC18_invalidCases(TC03 – Họ và tên dưới min length (1 ký tự), A, binhtest1, binhtest1@gmail.com, 0987654321, Test@1234...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-ShopVN_RegisterSuite" title="tests.RegisterTest" class="method navigator-link" hash-for-method="TC18_invalidCases(TC16 – Ngày sinh từ 100 tuổi trở lên, Trần Thị Bình, binhtest1, binhtest1@gmail.com, 0987654321, Tes...)">TC18_invalidCases(TC16 – Ngày sinh từ 100 tuổi trở lên, Trần Thị Bình, binhtest1, binhtest1@gmail.com, 0987654321, Tes...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-ShopVN_RegisterSuite" title="tests.RegisterTest" class="method navigator-link" hash-for-method="TC18_invalidCases(TC17 – Mã giới thiệu sai format (ít hơn 8 ký tự), Trần Thị Bình, binhtest1, binhtest1@gmail.com, 098...)">TC18_invalidCases(TC17 – Mã giới thiệu sai format (ít hơn 8 ký tự), Trần Thị Bình, binhtest1, binhtest1@gmail.com, 098...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-ShopVN_RegisterSuite" title="tests.RegisterTest" class="method navigator-link" hash-for-method="TC18_invalidCases(TC06 – Username đã tồn tại, Trần Thị Bình, admin, binhtest1@gmail.com, 0987654321, Test@1234, Test@1...)">TC18_invalidCases(TC06 – Username đã tồn tại, Trần Thị Bình, admin, binhtest1@gmail.com, 0987654321, Test@1234, Test@1...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-ShopVN_RegisterSuite" title="tests.RegisterTest" class="method navigator-link" hash-for-method="TC18_invalidCases(TC19 – Chưa tick đồng ý điều khoản, Trần Thị Bình, binhtest1, binhtest1@gmail.com, 0987654321, Test@...)">TC18_invalidCases(TC19 – Chưa tick đồng ý điều khoản, Trần Thị Bình, binhtest1, binhtest1@gmail.com, 0987654321, Test@...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-ShopVN_RegisterSuite" title="tests.RegisterTest" class="method navigator-link" hash-for-method="TC18_invalidCases(TC07 – Username dưới min length (4 ký tự), Trần Thị Bình, abc1, binhtest1@gmail.com, 0987654321, Tes...)">TC18_invalidCases(TC07 – Username dưới min length (4 ký tự), Trần Thị Bình, abc1, binhtest1@gmail.com, 0987654321, Tes...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-ShopVN_RegisterSuite" title="tests.RegisterTest" class="method navigator-link" hash-for-method="TC18_invalidCases(TC04 – Họ và tên chứa ký tự đặc biệt, Nguyen@123, binhtest1, binhtest1@gmail.com, 0987654321, Test@1...)">TC18_invalidCases(TC04 – Họ và tên chứa ký tự đặc biệt, Nguyen@123, binhtest1, binhtest1@gmail.com, 0987654321, Test@1...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-ShopVN_RegisterSuite" title="tests.RegisterTest" class="method navigator-link" hash-for-method="TC18_invalidCases(TC08 – Email sai format, Trần Thị Bình, binhtest1, emailkhonghople, 0987654321, Test@1234, Test@1234...)">TC18_invalidCases(TC08 – Email sai format, Trần Thị Bình, binhtest1, emailkhonghople, 0987654321, Test@1234, Test@1234...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-ShopVN_RegisterSuite" title="tests.RegisterTest" class="method navigator-link" hash-for-method="TC18_invalidCases(TC10 – Số điện thoại không đủ 10 số, Trần Thị Bình, binhtest1, binhtest1@gmail.com, 091234, Test@123...)">TC18_invalidCases(TC10 – Số điện thoại không đủ 10 số, Trần Thị Bình, binhtest1, binhtest1@gmail.com, 091234, Test@123...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-ShopVN_RegisterSuite" title="tests.RegisterTest" class="method navigator-link" hash-for-method="TC18_invalidCases(TC11 – Số điện thoại không bắt đầu bằng 0, Trần Thị Bình, binhtest1, binhtest1@gmail.com, 1912345678...)">TC18_invalidCases(TC11 – Số điện thoại không bắt đầu bằng 0, Trần Thị Bình, binhtest1, binhtest1@gmail.com, 1912345678...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-ShopVN_RegisterSuite" title="tests.RegisterTest" class="method navigator-link" hash-for-method="TC18_invalidCases(TC12 – Mật khẩu không đủ mạnh (thiếu chữ hoa), Trần Thị Bình, binhtest1, binhtest1@gmail.com, 098765...)">TC18_invalidCases(TC12 – Mật khẩu không đủ mạnh (thiếu chữ hoa), Trần Thị Bình, binhtest1, binhtest1@gmail.com, 098765...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-ShopVN_RegisterSuite" title="tests.RegisterTest" class="method navigator-link" hash-for-method="TC18_invalidCases(TC13 – Mật khẩu quá ngắn (&lt; 8 ký tự), Trần Thị Bình, binhtest1, binhtest1@gmail.com, 0987654321, Ab@...)">TC18_invalidCases(TC13 – Mật khẩu quá ngắn (< 8 ký tự), Trần Thị Bình, binhtest1, binhtest1@gmail.com, 0987654321, Ab@...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-ShopVN_RegisterSuite" title="tests.RegisterTest" class="method navigator-link" hash-for-method="TC18_invalidCases(TC02 – Họ và tên để trống, , binhtest1, binhtest1@gmail.com, 0987654321, Test@1234, Test@1234, 1998-...)">TC18_invalidCases(TC02 – Họ và tên để trống, , binhtest1, binhtest1@gmail.com, 0987654321, Test@1234, Test@1234, 1998-...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-ShopVN_RegisterSuite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-ShopVN_RegisterSuite" class="panel ShopVN_RegisterSuite">
+          <div class="suite-ShopVN_RegisterSuite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">tests.RegisterTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC01_registerWithValidData(Nguyễn Văn An, vanan2024, vanan2024@gmail.com, 0912345678, Shopvn@2024, Shopvn@2024, 2000-05-15, mal...)">
+                  </a> <!-- TC01_registerWithValidData(Nguyễn Văn An, vanan2024, vanan2024@gmail.com, 0912345678, Shopvn@2024, Shopvn@2024, 2000-05-15, mal...) -->
+                  <span class="method-name">TC01_registerWithValidData</span>
+                  <span class="parameters">(Nguyễn Văn An,vanan2024,vanan2024@gmail.com,0912345678,Shopvn@2024,Shopvn@2024,2000-05-15,male,SHOP2024,true)</span>
+                  <div class="stack-trace">java.lang.AssertionError: TC01 FAIL: Banner đăng ký thành công không hiện ra. expected [true] but found [false]
+	at tests.RegisterTest.TC01_registerWithValidData(RegisterTest.java:49)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(TC01 – Đăng ký thành công với dữ liệu hợp lệ)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC04_usernameInvalidFormat">
+                  </a> <!-- TC04_usernameInvalidFormat -->
+                  <span class="method-name">TC04_usernameInvalidFormat</span>
+                  <div class="stack-trace">java.lang.AssertionError: TC04 FAIL: Thông báo lỗi không đúng: Tên đăng nhập phải bắt đầu bằng chữ cái thường. expected [true] but found [false]
+	at tests.RegisterTest.TC04_usernameInvalidFormat(RegisterTest.java:111)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(TC04 – Username chứa chữ hoa → lỗi format)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC18_invalidCases(TC05 – Username không đúng format (chứa chữ hoa), Trần Thị Bình, UserABC, binhtest1@gmail.com, 09876...)">
+                  </a> <!-- TC18_invalidCases(TC05 – Username không đúng format (chứa chữ hoa), Trần Thị Bình, UserABC, binhtest1@gmail.com, 09876...) -->
+                  <span class="method-name">TC18_invalidCases</span>
+                  <span class="parameters">(TC05 – Username không đúng format (chứa chữ hoa),Trần Thị Bình,UserABC,binhtest1@gmail.com,0987654321,Test@1234,Test@1234,1998-06-20,female,,true,username,chữ thường, số và dấu gạch dưới)</span>
+                  <div class="stack-trace">java.lang.AssertionError: TC05 – Username không đúng format (chứa chữ hoa) – FAIL: Lỗi expected chứa &apos;chữ thường, số và dấu gạch dưới&apos; nhưng actual là: &apos;Tên đăng nhập phải bắt đầu bằng chữ cái thường.&apos; expected [true] but found [false]
+	at tests.RegisterTest.TC18_invalidCases(RegisterTest.java:409)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(TC18 – Kiểm tra nhiều trường hợp không hợp lệ qua DataProvider)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-ShopVN_RegisterSuite-class-failed -->
+          <div class="suite-ShopVN_RegisterSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.RegisterTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC02_fullNameEmpty">
+                  </a> <!-- TC02_fullNameEmpty -->
+                  <span class="method-name">TC02_fullNameEmpty</span>
+                  <em>
+(TC02 – Họ và tên để trống → lỗi bắt buộc)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC03_fullNameTooShort">
+                  </a> <!-- TC03_fullNameTooShort -->
+                  <span class="method-name">TC03_fullNameTooShort</span>
+                  <em>
+(TC03 – Họ và tên chỉ 1 ký tự → lỗi min length)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC05_usernameDuplicate">
+                  </a> <!-- TC05_usernameDuplicate -->
+                  <span class="method-name">TC05_usernameDuplicate</span>
+                  <em>
+(TC05 – Username đã tồn tại → lỗi trùng)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC06_emailInvalidFormat">
+                  </a> <!-- TC06_emailInvalidFormat -->
+                  <span class="method-name">TC06_emailInvalidFormat</span>
+                  <em>
+(TC06 – Email thiếu @ → lỗi định dạng)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC07_emailDuplicate">
+                  </a> <!-- TC07_emailDuplicate -->
+                  <span class="method-name">TC07_emailDuplicate</span>
+                  <em>
+(TC07 – Email đã được đăng ký → lỗi trùng email)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC08_phoneTooShort">
+                  </a> <!-- TC08_phoneTooShort -->
+                  <span class="method-name">TC08_phoneTooShort</span>
+                  <em>
+(TC08 – Số điện thoại chỉ 6 chữ số → lỗi định dạng)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC09_passwordNoUppercase">
+                  </a> <!-- TC09_passwordNoUppercase -->
+                  <span class="method-name">TC09_passwordNoUppercase</span>
+                  <em>
+(TC09 – Mật khẩu không có chữ hoa → lỗi độ mạnh)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC10_passwordTooShort">
+                  </a> <!-- TC10_passwordTooShort -->
+                  <span class="method-name">TC10_passwordTooShort</span>
+                  <em>
+(TC10 – Mật khẩu < 8 ký tự → lỗi min length)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC11_confirmPasswordMismatch">
+                  </a> <!-- TC11_confirmPasswordMismatch -->
+                  <span class="method-name">TC11_confirmPasswordMismatch</span>
+                  <em>
+(TC11 – Confirm password khác password → lỗi không khớp)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC12_dobUnder16">
+                  </a> <!-- TC12_dobUnder16 -->
+                  <span class="method-name">TC12_dobUnder16</span>
+                  <em>
+(TC12 – Ngày sinh dưới 16 tuổi → lỗi tuổi)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC13_dobOver100">
+                  </a> <!-- TC13_dobOver100 -->
+                  <span class="method-name">TC13_dobOver100</span>
+                  <em>
+(TC13 – Ngày sinh >= 100 tuổi → lỗi tuổi không hợp lệ)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC14_referralCodeInvalidFormat">
+                  </a> <!-- TC14_referralCodeInvalidFormat -->
+                  <span class="method-name">TC14_referralCodeInvalidFormat</span>
+                  <em>
+(TC14 – Mã giới thiệu chỉ 3 ký tự → lỗi format)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC15_referralCodeNotExist">
+                  </a> <!-- TC15_referralCodeNotExist -->
+                  <span class="method-name">TC15_referralCodeNotExist</span>
+                  <em>
+(TC15 – Mã giới thiệu 8 ký tự nhưng không có trong hệ thống)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC16_agreeTermsNotChecked">
+                  </a> <!-- TC16_agreeTermsNotChecked -->
+                  <span class="method-name">TC16_agreeTermsNotChecked</span>
+                  <em>
+(TC16 – Không tick điều khoản → lỗi bắt buộc)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC17_viewTermsModalOpens">
+                  </a> <!-- TC17_viewTermsModalOpens -->
+                  <span class="method-name">TC17_viewTermsModalOpens</span>
+                  <em>
+(TC17 – Click 'Xem Điều khoản' → modal mở thành công)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC18_invalidCases(TC18 – Mã giới thiệu đúng format nhưng không tồn tại, Trần Thị Bình, binhtest1, binhtest1@gmail.com,...)">
+                  </a> <!-- TC18_invalidCases(TC18 – Mã giới thiệu đúng format nhưng không tồn tại, Trần Thị Bình, binhtest1, binhtest1@gmail.com,...) -->
+                  <span class="method-name">TC18_invalidCases</span>
+                  <span class="parameters">(TC18 – Mã giới thiệu đúng format nhưng không tồn tại,Trần Thị Bình,binhtest1,binhtest1@gmail.com,0987654321,Test@1234,Test@1234,1998-06-20,female,XXXX9999,true,referralCode,không tồn tại)</span>
+                  <em>
+(TC18 – Kiểm tra nhiều trường hợp không hợp lệ qua DataProvider)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC18_invalidCases(TC09 – Email đã tồn tại, Trần Thị Bình, binhtest1, admin@shopvn.vn, 0987654321, Test@1234, Test@1234...)">
+                  </a> <!-- TC18_invalidCases(TC09 – Email đã tồn tại, Trần Thị Bình, binhtest1, admin@shopvn.vn, 0987654321, Test@1234, Test@1234...) -->
+                  <span class="method-name">TC18_invalidCases</span>
+                  <span class="parameters">(TC09 – Email đã tồn tại,Trần Thị Bình,binhtest1,admin@shopvn.vn,0987654321,Test@1234,Test@1234,1998-06-20,female,,true,email,đã được đăng ký)</span>
+                  <em>
+(TC18 – Kiểm tra nhiều trường hợp không hợp lệ qua DataProvider)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC18_invalidCases(TC14 – Confirm password không khớp, Trần Thị Bình, binhtest1, binhtest1@gmail.com, 0987654321, Test@...)">
+                  </a> <!-- TC18_invalidCases(TC14 – Confirm password không khớp, Trần Thị Bình, binhtest1, binhtest1@gmail.com, 0987654321, Test@...) -->
+                  <span class="method-name">TC18_invalidCases</span>
+                  <span class="parameters">(TC14 – Confirm password không khớp,Trần Thị Bình,binhtest1,binhtest1@gmail.com,0987654321,Test@1234,DifferentPwd@99,1998-06-20,female,,true,confirmPassword,không khớp)</span>
+                  <em>
+(TC18 – Kiểm tra nhiều trường hợp không hợp lệ qua DataProvider)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC18_invalidCases(TC15 – Ngày sinh dưới 16 tuổi, Trần Thị Bình, binhtest1, binhtest1@gmail.com, 0987654321, Test@1234,...)">
+                  </a> <!-- TC18_invalidCases(TC15 – Ngày sinh dưới 16 tuổi, Trần Thị Bình, binhtest1, binhtest1@gmail.com, 0987654321, Test@1234,...) -->
+                  <span class="method-name">TC18_invalidCases</span>
+                  <span class="parameters">(TC15 – Ngày sinh dưới 16 tuổi,Trần Thị Bình,binhtest1,binhtest1@gmail.com,0987654321,Test@1234,Test@1234,2015-01-01,female,,true,dob,đủ 16 tuổi)</span>
+                  <em>
+(TC18 – Kiểm tra nhiều trường hợp không hợp lệ qua DataProvider)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC18_invalidCases(TC03 – Họ và tên dưới min length (1 ký tự), A, binhtest1, binhtest1@gmail.com, 0987654321, Test@1234...)">
+                  </a> <!-- TC18_invalidCases(TC03 – Họ và tên dưới min length (1 ký tự), A, binhtest1, binhtest1@gmail.com, 0987654321, Test@1234...) -->
+                  <span class="method-name">TC18_invalidCases</span>
+                  <span class="parameters">(TC03 – Họ và tên dưới min length (1 ký tự),A,binhtest1,binhtest1@gmail.com,0987654321,Test@1234,Test@1234,1998-06-20,female,,true,fullName,ít nhất 2 ký tự)</span>
+                  <em>
+(TC18 – Kiểm tra nhiều trường hợp không hợp lệ qua DataProvider)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC18_invalidCases(TC16 – Ngày sinh từ 100 tuổi trở lên, Trần Thị Bình, binhtest1, binhtest1@gmail.com, 0987654321, Tes...)">
+                  </a> <!-- TC18_invalidCases(TC16 – Ngày sinh từ 100 tuổi trở lên, Trần Thị Bình, binhtest1, binhtest1@gmail.com, 0987654321, Tes...) -->
+                  <span class="method-name">TC18_invalidCases</span>
+                  <span class="parameters">(TC16 – Ngày sinh từ 100 tuổi trở lên,Trần Thị Bình,binhtest1,binhtest1@gmail.com,0987654321,Test@1234,Test@1234,1920-12-31,female,,true,dob,dưới 100)</span>
+                  <em>
+(TC18 – Kiểm tra nhiều trường hợp không hợp lệ qua DataProvider)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC18_invalidCases(TC17 – Mã giới thiệu sai format (ít hơn 8 ký tự), Trần Thị Bình, binhtest1, binhtest1@gmail.com, 098...)">
+                  </a> <!-- TC18_invalidCases(TC17 – Mã giới thiệu sai format (ít hơn 8 ký tự), Trần Thị Bình, binhtest1, binhtest1@gmail.com, 098...) -->
+                  <span class="method-name">TC18_invalidCases</span>
+                  <span class="parameters">(TC17 – Mã giới thiệu sai format (ít hơn 8 ký tự),Trần Thị Bình,binhtest1,binhtest1@gmail.com,0987654321,Test@1234,Test@1234,1998-06-20,female,ABC,true,referralCode,đúng 8 ký tự)</span>
+                  <em>
+(TC18 – Kiểm tra nhiều trường hợp không hợp lệ qua DataProvider)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC18_invalidCases(TC06 – Username đã tồn tại, Trần Thị Bình, admin, binhtest1@gmail.com, 0987654321, Test@1234, Test@1...)">
+                  </a> <!-- TC18_invalidCases(TC06 – Username đã tồn tại, Trần Thị Bình, admin, binhtest1@gmail.com, 0987654321, Test@1234, Test@1...) -->
+                  <span class="method-name">TC18_invalidCases</span>
+                  <span class="parameters">(TC06 – Username đã tồn tại,Trần Thị Bình,admin,binhtest1@gmail.com,0987654321,Test@1234,Test@1234,1998-06-20,female,,true,username,đã tồn tại)</span>
+                  <em>
+(TC18 – Kiểm tra nhiều trường hợp không hợp lệ qua DataProvider)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC18_invalidCases(TC19 – Chưa tick đồng ý điều khoản, Trần Thị Bình, binhtest1, binhtest1@gmail.com, 0987654321, Test@...)">
+                  </a> <!-- TC18_invalidCases(TC19 – Chưa tick đồng ý điều khoản, Trần Thị Bình, binhtest1, binhtest1@gmail.com, 0987654321, Test@...) -->
+                  <span class="method-name">TC18_invalidCases</span>
+                  <span class="parameters">(TC19 – Chưa tick đồng ý điều khoản,Trần Thị Bình,binhtest1,binhtest1@gmail.com,0987654321,Test@1234,Test@1234,1998-06-20,female,,false,agreeTerms,phải đồng ý)</span>
+                  <em>
+(TC18 – Kiểm tra nhiều trường hợp không hợp lệ qua DataProvider)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC18_invalidCases(TC07 – Username dưới min length (4 ký tự), Trần Thị Bình, abc1, binhtest1@gmail.com, 0987654321, Tes...)">
+                  </a> <!-- TC18_invalidCases(TC07 – Username dưới min length (4 ký tự), Trần Thị Bình, abc1, binhtest1@gmail.com, 0987654321, Tes...) -->
+                  <span class="method-name">TC18_invalidCases</span>
+                  <span class="parameters">(TC07 – Username dưới min length (4 ký tự),Trần Thị Bình,abc1,binhtest1@gmail.com,0987654321,Test@1234,Test@1234,1998-06-20,female,,true,username,ít nhất 5 ký tự)</span>
+                  <em>
+(TC18 – Kiểm tra nhiều trường hợp không hợp lệ qua DataProvider)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC18_invalidCases(TC04 – Họ và tên chứa ký tự đặc biệt, Nguyen@123, binhtest1, binhtest1@gmail.com, 0987654321, Test@1...)">
+                  </a> <!-- TC18_invalidCases(TC04 – Họ và tên chứa ký tự đặc biệt, Nguyen@123, binhtest1, binhtest1@gmail.com, 0987654321, Test@1...) -->
+                  <span class="method-name">TC18_invalidCases</span>
+                  <span class="parameters">(TC04 – Họ và tên chứa ký tự đặc biệt,Nguyen@123,binhtest1,binhtest1@gmail.com,0987654321,Test@1234,Test@1234,1998-06-20,female,,true,fullName,chỉ được chứa chữ cái)</span>
+                  <em>
+(TC18 – Kiểm tra nhiều trường hợp không hợp lệ qua DataProvider)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC18_invalidCases(TC08 – Email sai format, Trần Thị Bình, binhtest1, emailkhonghople, 0987654321, Test@1234, Test@1234...)">
+                  </a> <!-- TC18_invalidCases(TC08 – Email sai format, Trần Thị Bình, binhtest1, emailkhonghople, 0987654321, Test@1234, Test@1234...) -->
+                  <span class="method-name">TC18_invalidCases</span>
+                  <span class="parameters">(TC08 – Email sai format,Trần Thị Bình,binhtest1,emailkhonghople,0987654321,Test@1234,Test@1234,1998-06-20,female,,true,email,không đúng định dạng)</span>
+                  <em>
+(TC18 – Kiểm tra nhiều trường hợp không hợp lệ qua DataProvider)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC18_invalidCases(TC10 – Số điện thoại không đủ 10 số, Trần Thị Bình, binhtest1, binhtest1@gmail.com, 091234, Test@123...)">
+                  </a> <!-- TC18_invalidCases(TC10 – Số điện thoại không đủ 10 số, Trần Thị Bình, binhtest1, binhtest1@gmail.com, 091234, Test@123...) -->
+                  <span class="method-name">TC18_invalidCases</span>
+                  <span class="parameters">(TC10 – Số điện thoại không đủ 10 số,Trần Thị Bình,binhtest1,binhtest1@gmail.com,091234,Test@1234,Test@1234,1998-06-20,female,,true,phone,đúng 10 chữ số)</span>
+                  <em>
+(TC18 – Kiểm tra nhiều trường hợp không hợp lệ qua DataProvider)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC18_invalidCases(TC11 – Số điện thoại không bắt đầu bằng 0, Trần Thị Bình, binhtest1, binhtest1@gmail.com, 1912345678...)">
+                  </a> <!-- TC18_invalidCases(TC11 – Số điện thoại không bắt đầu bằng 0, Trần Thị Bình, binhtest1, binhtest1@gmail.com, 1912345678...) -->
+                  <span class="method-name">TC18_invalidCases</span>
+                  <span class="parameters">(TC11 – Số điện thoại không bắt đầu bằng 0,Trần Thị Bình,binhtest1,binhtest1@gmail.com,1912345678,Test@1234,Test@1234,1998-06-20,female,,true,phone,bắt đầu bằng 0)</span>
+                  <em>
+(TC18 – Kiểm tra nhiều trường hợp không hợp lệ qua DataProvider)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC18_invalidCases(TC12 – Mật khẩu không đủ mạnh (thiếu chữ hoa), Trần Thị Bình, binhtest1, binhtest1@gmail.com, 098765...)">
+                  </a> <!-- TC18_invalidCases(TC12 – Mật khẩu không đủ mạnh (thiếu chữ hoa), Trần Thị Bình, binhtest1, binhtest1@gmail.com, 098765...) -->
+                  <span class="method-name">TC18_invalidCases</span>
+                  <span class="parameters">(TC12 – Mật khẩu không đủ mạnh (thiếu chữ hoa),Trần Thị Bình,binhtest1,binhtest1@gmail.com,0987654321,test@1234,test@1234,1998-06-20,female,,true,password,ít nhất 1 chữ hoa)</span>
+                  <em>
+(TC18 – Kiểm tra nhiều trường hợp không hợp lệ qua DataProvider)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC18_invalidCases(TC13 – Mật khẩu quá ngắn (&lt; 8 ký tự), Trần Thị Bình, binhtest1, binhtest1@gmail.com, 0987654321, Ab@...)">
+                  </a> <!-- TC18_invalidCases(TC13 – Mật khẩu quá ngắn (< 8 ký tự), Trần Thị Bình, binhtest1, binhtest1@gmail.com, 0987654321, Ab@...) -->
+                  <span class="method-name">TC18_invalidCases</span>
+                  <span class="parameters">(TC13 – Mật khẩu quá ngắn (< 8 ký tự),Trần Thị Bình,binhtest1,binhtest1@gmail.com,0987654321,Ab@1,Ab@1,1998-06-20,female,,true,password,ít nhất 8 ký tự)</span>
+                  <em>
+(TC18 – Kiểm tra nhiều trường hợp không hợp lệ qua DataProvider)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC18_invalidCases(TC02 – Họ và tên để trống, , binhtest1, binhtest1@gmail.com, 0987654321, Test@1234, Test@1234, 1998-...)">
+                  </a> <!-- TC18_invalidCases(TC02 – Họ và tên để trống, , binhtest1, binhtest1@gmail.com, 0987654321, Test@1234, Test@1234, 1998-...) -->
+                  <span class="method-name">TC18_invalidCases</span>
+                  <span class="parameters">(TC02 – Họ và tên để trống,,binhtest1,binhtest1@gmail.com,0987654321,Test@1234,Test@1234,1998-06-20,female,,true,fullName,không được để trống)</span>
+                  <em>
+(TC18 – Kiểm tra nhiều trường hợp không hợp lệ qua DataProvider)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-ShopVN_RegisterSuite-class-passed -->
+        </div> <!-- panel ShopVN_RegisterSuite -->
+        <div panel-name="test-xml-ShopVN_RegisterSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\HCMUNRE_KiemThu\LAB7\bai1\automation\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite thread-count=&quot;1&quot; name=&quot;ShopVN_RegisterSuite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
+  &lt;parameter name=&quot;headless&quot; value=&quot;false&quot;/&gt;
+  &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+  &lt;test thread-count=&quot;1&quot; name=&quot;RegisterFormTests&quot; verbose=&quot;0&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;tests.RegisterTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- RegisterFormTests --&gt;
+&lt;/suite&gt; &lt;!-- ShopVN_RegisterSuite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-ShopVN_RegisterSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for ShopVN_RegisterSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">RegisterFormTests (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-ShopVN_RegisterSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for ShopVN_RegisterSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-ShopVN_RegisterSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for ShopVN_RegisterSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_ShopVN_RegisterSuite');
+function tableData_ShopVN_RegisterSuite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(35);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'TC01_registerWithValidData')
+data.setCell(0, 2, 'tests.RegisterTest')
+data.setCell(0, 3, 11624);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'TC16_agreeTermsNotChecked')
+data.setCell(1, 2, 'tests.RegisterTest')
+data.setCell(1, 3, 11368);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'TC18_invalidCases')
+data.setCell(2, 2, 'tests.RegisterTest')
+data.setCell(2, 3, 1317);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'TC18_invalidCases')
+data.setCell(3, 2, 'tests.RegisterTest')
+data.setCell(3, 3, 1301);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'TC18_invalidCases')
+data.setCell(4, 2, 'tests.RegisterTest')
+data.setCell(4, 3, 1228);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'TC04_usernameInvalidFormat')
+data.setCell(5, 2, 'tests.RegisterTest')
+data.setCell(5, 3, 1198);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'TC08_phoneTooShort')
+data.setCell(6, 2, 'tests.RegisterTest')
+data.setCell(6, 3, 1180);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'TC15_referralCodeNotExist')
+data.setCell(7, 2, 'tests.RegisterTest')
+data.setCell(7, 3, 1178);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'TC06_emailInvalidFormat')
+data.setCell(8, 2, 'tests.RegisterTest')
+data.setCell(8, 3, 1108);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'TC03_fullNameTooShort')
+data.setCell(9, 2, 'tests.RegisterTest')
+data.setCell(9, 3, 1102);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'TC02_fullNameEmpty')
+data.setCell(10, 2, 'tests.RegisterTest')
+data.setCell(10, 3, 1070);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'TC11_confirmPasswordMismatch')
+data.setCell(11, 2, 'tests.RegisterTest')
+data.setCell(11, 3, 1062);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'TC18_invalidCases')
+data.setCell(12, 2, 'tests.RegisterTest')
+data.setCell(12, 3, 1047);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'TC14_referralCodeInvalidFormat')
+data.setCell(13, 2, 'tests.RegisterTest')
+data.setCell(13, 3, 1024);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'TC10_passwordTooShort')
+data.setCell(14, 2, 'tests.RegisterTest')
+data.setCell(14, 3, 997);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'TC12_dobUnder16')
+data.setCell(15, 2, 'tests.RegisterTest')
+data.setCell(15, 3, 983);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'TC05_usernameDuplicate')
+data.setCell(16, 2, 'tests.RegisterTest')
+data.setCell(16, 3, 963);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'TC18_invalidCases')
+data.setCell(17, 2, 'tests.RegisterTest')
+data.setCell(17, 3, 956);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'TC09_passwordNoUppercase')
+data.setCell(18, 2, 'tests.RegisterTest')
+data.setCell(18, 3, 943);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'TC18_invalidCases')
+data.setCell(19, 2, 'tests.RegisterTest')
+data.setCell(19, 3, 936);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'TC18_invalidCases')
+data.setCell(20, 2, 'tests.RegisterTest')
+data.setCell(20, 3, 930);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'TC18_invalidCases')
+data.setCell(21, 2, 'tests.RegisterTest')
+data.setCell(21, 3, 917);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'TC18_invalidCases')
+data.setCell(22, 2, 'tests.RegisterTest')
+data.setCell(22, 3, 916);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'TC13_dobOver100')
+data.setCell(23, 2, 'tests.RegisterTest')
+data.setCell(23, 3, 901);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'TC07_emailDuplicate')
+data.setCell(24, 2, 'tests.RegisterTest')
+data.setCell(24, 3, 897);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'TC18_invalidCases')
+data.setCell(25, 2, 'tests.RegisterTest')
+data.setCell(25, 3, 887);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'TC18_invalidCases')
+data.setCell(26, 2, 'tests.RegisterTest')
+data.setCell(26, 3, 876);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'TC18_invalidCases')
+data.setCell(27, 2, 'tests.RegisterTest')
+data.setCell(27, 3, 870);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'TC18_invalidCases')
+data.setCell(28, 2, 'tests.RegisterTest')
+data.setCell(28, 3, 869);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'TC18_invalidCases')
+data.setCell(29, 2, 'tests.RegisterTest')
+data.setCell(29, 3, 860);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'TC18_invalidCases')
+data.setCell(30, 2, 'tests.RegisterTest')
+data.setCell(30, 3, 845);
+data.setCell(31, 0, 31)
+data.setCell(31, 1, 'TC18_invalidCases')
+data.setCell(31, 2, 'tests.RegisterTest')
+data.setCell(31, 3, 794);
+data.setCell(32, 0, 32)
+data.setCell(32, 1, 'TC18_invalidCases')
+data.setCell(32, 2, 'tests.RegisterTest')
+data.setCell(32, 3, 773);
+data.setCell(33, 0, 33)
+data.setCell(33, 1, 'TC18_invalidCases')
+data.setCell(33, 2, 'tests.RegisterTest')
+data.setCell(33, 3, 770);
+data.setCell(34, 0, 34)
+data.setCell(34, 1, 'TC17_viewTermsModalOpens')
+data.setCell(34, 2, 'tests.RegisterTest')
+data.setCell(34, 3, 184);
+window.suiteTableData['ShopVN_RegisterSuite']= { tableData: data, tableDiv: 'times-div-ShopVN_RegisterSuite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 54 seconds</span>
+              <div id="times-div-ShopVN_RegisterSuite">
+              </div> <!-- times-div-ShopVN_RegisterSuite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-ShopVN_RegisterSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for ShopVN_RegisterSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-ShopVN_RegisterSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-ShopVN_RegisterSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.RegisterTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">initPage</span>
+                <span class="method-start">3573 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">TC01_registerWithValidData(Nguyễn Văn An, vanan2024, vanan2024@gmail.com, 0912345678, Shopvn@2024, Shopvn@2024, 2000-05-15, mal...)</span>
+                <span class="method-start">3578 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=TC01_registerWithValidData status=FAILURE method=RegisterTest.TC01_registerWithVali...)</span>
+                <span class="method-start">15210 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">16850 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">initPage</span>
+                <span class="method-start">17747 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TC02_fullNameEmpty</span>
+                <span class="method-start">17748 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=TC02_fullNameEmpty status=SUCCESS method=RegisterTest.TC02_fullNameEmpty()[pri:2, i...)</span>
+                <span class="method-start">18819 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">18933 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TC03_fullNameTooShort</span>
+                <span class="method-start">19797 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">initPage</span>
+                <span class="method-start">19797 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=TC03_fullNameTooShort status=SUCCESS method=RegisterTest.TC03_fullNameTooShort()[pr...)</span>
+                <span class="method-start">20900 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">21009 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">TC04_usernameInvalidFormat</span>
+                <span class="method-start">21720 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">initPage</span>
+                <span class="method-start">21720 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=TC04_usernameInvalidFormat status=FAILURE method=RegisterTest.TC04_usernameInvalidF...)</span>
+                <span class="method-start">22920 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">23390 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TC05_usernameDuplicate</span>
+                <span class="method-start">24228 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">initPage</span>
+                <span class="method-start">24228 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=TC05_usernameDuplicate status=SUCCESS method=RegisterTest.TC05_usernameDuplicate()[...)</span>
+                <span class="method-start">25191 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">25291 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TC06_emailInvalidFormat</span>
+                <span class="method-start">26099 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">initPage</span>
+                <span class="method-start">26099 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=TC06_emailInvalidFormat status=SUCCESS method=RegisterTest.TC06_emailInvalidFormat(...)</span>
+                <span class="method-start">27207 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">27328 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">initPage</span>
+                <span class="method-start">28122 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TC07_emailDuplicate</span>
+                <span class="method-start">28124 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=TC07_emailDuplicate status=SUCCESS method=RegisterTest.TC07_emailDuplicate()[pri:7,...)</span>
+                <span class="method-start">29021 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">29133 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TC08_phoneTooShort</span>
+                <span class="method-start">29933 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">initPage</span>
+                <span class="method-start">29933 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=TC08_phoneTooShort status=SUCCESS method=RegisterTest.TC08_phoneTooShort()[pri:8, i...)</span>
+                <span class="method-start">31113 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">31224 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TC09_passwordNoUppercase</span>
+                <span class="method-start">31967 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">initPage</span>
+                <span class="method-start">31967 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=TC09_passwordNoUppercase status=SUCCESS method=RegisterTest.TC09_passwordNoUppercas...)</span>
+                <span class="method-start">32912 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">33022 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">initPage</span>
+                <span class="method-start">33774 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TC10_passwordTooShort</span>
+                <span class="method-start">33775 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=TC10_passwordTooShort status=SUCCESS method=RegisterTest.TC10_passwordTooShort()[pr...)</span>
+                <span class="method-start">34772 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">34892 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TC11_confirmPasswordMismatch</span>
+                <span class="method-start">35667 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">initPage</span>
+                <span class="method-start">35667 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=TC11_confirmPasswordMismatch status=SUCCESS method=RegisterTest.TC11_confirmPasswor...)</span>
+                <span class="method-start">36730 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">36841 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TC12_dobUnder16</span>
+                <span class="method-start">37541 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">initPage</span>
+                <span class="method-start">37541 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=TC12_dobUnder16 status=SUCCESS method=RegisterTest.TC12_dobUnder16()[pri:12, instan...)</span>
+                <span class="method-start">38524 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">38652 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TC13_dobOver100</span>
+                <span class="method-start">39400 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">initPage</span>
+                <span class="method-start">39400 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=TC13_dobOver100 status=SUCCESS method=RegisterTest.TC13_dobOver100()[pri:13, instan...)</span>
+                <span class="method-start">40301 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">40419 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TC14_referralCodeInvalidFormat</span>
+                <span class="method-start">41195 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">initPage</span>
+                <span class="method-start">41195 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=TC14_referralCodeInvalidFormat status=SUCCESS method=RegisterTest.TC14_referralCode...)</span>
+                <span class="method-start">42219 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">42373 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TC15_referralCodeNotExist</span>
+                <span class="method-start">43214 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">initPage</span>
+                <span class="method-start">43214 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=TC15_referralCodeNotExist status=SUCCESS method=RegisterTest.TC15_referralCodeNotEx...)</span>
+                <span class="method-start">44392 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">44522 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">initPage</span>
+                <span class="method-start">45353 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TC16_agreeTermsNotChecked</span>
+                <span class="method-start">45354 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=TC16_agreeTermsNotChecked status=SUCCESS method=RegisterTest.TC16_agreeTermsNotChec...)</span>
+                <span class="method-start">56722 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">56826 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">initPage</span>
+                <span class="method-start">57617 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TC17_viewTermsModalOpens</span>
+                <span class="method-start">57618 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=TC17_viewTermsModalOpens status=SUCCESS method=RegisterTest.TC17_viewTermsModalOpen...)</span>
+                <span class="method-start">57802 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">57915 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">initPage</span>
+                <span class="method-start">58780 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TC18_invalidCases(TC02 – Họ và tên để trống, , binhtest1, binhtest1@gmail.com, 0987654321, Test@1234, Test@1234, 1998-...)</span>
+                <span class="method-start">58781 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=TC18_invalidCases status=SUCCESS method=RegisterTest.TC18_invalidCases(java.lang.St...)</span>
+                <span class="method-start">59737 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">59854 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TC18_invalidCases(TC03 – Họ và tên dưới min length (1 ký tự), A, binhtest1, binhtest1@gmail.com, 0987654321, Test@1234...)</span>
+                <span class="method-start">60594 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">initPage</span>
+                <span class="method-start">60594 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=TC18_invalidCases status=SUCCESS method=RegisterTest.TC18_invalidCases(java.lang.St...)</span>
+                <span class="method-start">61912 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">62020 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">initPage</span>
+                <span class="method-start">62860 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TC18_invalidCases(TC04 – Họ và tên chứa ký tự đặc biệt, Nguyen@123, binhtest1, binhtest1@gmail.com, 0987654321, Test@1...)</span>
+                <span class="method-start">62860 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=TC18_invalidCases status=SUCCESS method=RegisterTest.TC18_invalidCases(java.lang.St...)</span>
+                <span class="method-start">63722 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">63819 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">TC18_invalidCases(TC05 – Username không đúng format (chứa chữ hoa), Trần Thị Bình, UserABC, binhtest1@gmail.com, 09876...)</span>
+                <span class="method-start">64599 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">initPage</span>
+                <span class="method-start">64599 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=TC18_invalidCases status=FAILURE method=RegisterTest.TC18_invalidCases(java.lang.St...)</span>
+                <span class="method-start">65529 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">65957 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">initPage</span>
+                <span class="method-start">66738 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TC18_invalidCases(TC06 – Username đã tồn tại, Trần Thị Bình, admin, binhtest1@gmail.com, 0987654321, Test@1234, Test@1...)</span>
+                <span class="method-start">66738 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=TC18_invalidCases status=SUCCESS method=RegisterTest.TC18_invalidCases(java.lang.St...)</span>
+                <span class="method-start">67608 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">67720 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">initPage</span>
+                <span class="method-start">68475 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TC18_invalidCases(TC07 – Username dưới min length (4 ký tự), Trần Thị Bình, abc1, binhtest1@gmail.com, 0987654321, Tes...)</span>
+                <span class="method-start">68476 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=TC18_invalidCases status=SUCCESS method=RegisterTest.TC18_invalidCases(java.lang.St...)</span>
+                <span class="method-start">69271 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">69372 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TC18_invalidCases(TC08 – Email sai format, Trần Thị Bình, binhtest1, emailkhonghople, 0987654321, Test@1234, Test@1234...)</span>
+                <span class="method-start">70090 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">initPage</span>
+                <span class="method-start">70090 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=TC18_invalidCases status=SUCCESS method=RegisterTest.TC18_invalidCases(java.lang.St...)</span>
+                <span class="method-start">70967 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">71076 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">initPage</span>
+                <span class="method-start">71764 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TC18_invalidCases(TC09 – Email đã tồn tại, Trần Thị Bình, binhtest1, admin@shopvn.vn, 0987654321, Test@1234, Test@1234...)</span>
+                <span class="method-start">71764 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=TC18_invalidCases status=SUCCESS method=RegisterTest.TC18_invalidCases(java.lang.St...)</span>
+                <span class="method-start">72681 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">72770 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">initPage</span>
+                <span class="method-start">73497 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TC18_invalidCases(TC10 – Số điện thoại không đủ 10 số, Trần Thị Bình, binhtest1, binhtest1@gmail.com, 091234, Test@123...)</span>
+                <span class="method-start">73498 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=TC18_invalidCases status=SUCCESS method=RegisterTest.TC18_invalidCases(java.lang.St...)</span>
+                <span class="method-start">74271 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">74367 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">initPage</span>
+                <span class="method-start">75102 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TC18_invalidCases(TC11 – Số điện thoại không bắt đầu bằng 0, Trần Thị Bình, binhtest1, binhtest1@gmail.com, 1912345678...)</span>
+                <span class="method-start">75102 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=TC18_invalidCases status=SUCCESS method=RegisterTest.TC18_invalidCases(java.lang.St...)</span>
+                <span class="method-start">76038 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">76147 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TC18_invalidCases(TC12 – Mật khẩu không đủ mạnh (thiếu chữ hoa), Trần Thị Bình, binhtest1, binhtest1@gmail.com, 098765...)</span>
+                <span class="method-start">76890 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">initPage</span>
+                <span class="method-start">76890 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=TC18_invalidCases status=SUCCESS method=RegisterTest.TC18_invalidCases(java.lang.St...)</span>
+                <span class="method-start">77661 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">77779 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">initPage</span>
+                <span class="method-start">78538 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TC18_invalidCases(TC13 – Mật khẩu quá ngắn (< 8 ký tự), Trần Thị Bình, binhtest1, binhtest1@gmail.com, 0987654321, Ab@...)</span>
+                <span class="method-start">78539 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=TC18_invalidCases status=SUCCESS method=RegisterTest.TC18_invalidCases(java.lang.St...)</span>
+                <span class="method-start">79385 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">79482 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TC18_invalidCases(TC14 – Confirm password không khớp, Trần Thị Bình, binhtest1, binhtest1@gmail.com, 0987654321, Test@...)</span>
+                <span class="method-start">80172 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">initPage</span>
+                <span class="method-start">80172 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=TC18_invalidCases status=SUCCESS method=RegisterTest.TC18_invalidCases(java.lang.St...)</span>
+                <span class="method-start">81041 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">81138 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TC18_invalidCases(TC15 – Ngày sinh dưới 16 tuổi, Trần Thị Bình, binhtest1, binhtest1@gmail.com, 0987654321, Test@1234,...)</span>
+                <span class="method-start">81866 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">initPage</span>
+                <span class="method-start">81866 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=TC18_invalidCases status=SUCCESS method=RegisterTest.TC18_invalidCases(java.lang.St...)</span>
+                <span class="method-start">82783 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">82892 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TC18_invalidCases(TC16 – Ngày sinh từ 100 tuổi trở lên, Trần Thị Bình, binhtest1, binhtest1@gmail.com, 0987654321, Tes...)</span>
+                <span class="method-start">83708 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">initPage</span>
+                <span class="method-start">83708 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=TC18_invalidCases status=SUCCESS method=RegisterTest.TC18_invalidCases(java.lang.St...)</span>
+                <span class="method-start">84595 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">84719 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TC18_invalidCases(TC17 – Mã giới thiệu sai format (ít hơn 8 ký tự), Trần Thị Bình, binhtest1, binhtest1@gmail.com, 098...)</span>
+                <span class="method-start">85512 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">initPage</span>
+                <span class="method-start">85512 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=TC18_invalidCases status=SUCCESS method=RegisterTest.TC18_invalidCases(java.lang.St...)</span>
+                <span class="method-start">86740 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">86839 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TC18_invalidCases(TC18 – Mã giới thiệu đúng format nhưng không tồn tại, Trần Thị Bình, binhtest1, binhtest1@gmail.com,...)</span>
+                <span class="method-start">87621 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">initPage</span>
+                <span class="method-start">87621 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=TC18_invalidCases status=SUCCESS method=RegisterTest.TC18_invalidCases(java.lang.St...)</span>
+                <span class="method-start">88924 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">89012 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">initPage</span>
+                <span class="method-start">89746 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TC18_invalidCases(TC19 – Chưa tick đồng ý điều khoản, Trần Thị Bình, binhtest1, binhtest1@gmail.com, 0987654321, Test@...)</span>
+                <span class="method-start">89747 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown([TestResult name=TC18_invalidCases status=SUCCESS method=RegisterTest.TC18_invalidCases(java.lang.St...)</span>
+                <span class="method-start">90794 ms</span>
+              </div> <!-- configuration-method after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

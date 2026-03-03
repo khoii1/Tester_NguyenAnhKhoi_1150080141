@@ -1,0 +1,428 @@
+/* =====================================================
+   ShopVN – Registration Form Styles
+   ===================================================== */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #f0f0f0;
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 30px 16px;
+}
+
+/* ---- Container ---- */
+.container {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.12);
+  width: 100%;
+  max-width: 560px;
+  overflow: hidden;
+}
+
+/* ---- Header ---- */
+.form-header {
+  background: #ee4d2d;
+  color: #fff;
+  text-align: center;
+  padding: 28px 24px 22px;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+}
+
+.form-header h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.form-header p {
+  font-size: 0.9rem;
+  opacity: 0.85;
+}
+
+/* ---- Form ---- */
+form {
+  padding: 28px 32px 32px;
+}
+
+/* ---- Form group ---- */
+.form-group {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.form-group label {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #374151;
+  margin-bottom: 6px;
+}
+
+.required {
+  color: #ef4444;
+}
+
+/* ---- Inputs & Select ---- */
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="password"],
+.form-group input[type="tel"],
+.form-group input[type="date"],
+.form-group select {
+  width: 100%;
+  padding: 11px 14px;
+  border: 2px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  color: #1f2937;
+  background: #fafafa;
+  transition:
+    border-color 0.2s,
+    box-shadow 0.2s,
+    background 0.2s;
+  outline: none;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  border-color: #ee4d2d;
+  background: #fff;
+  box-shadow: 0 0 0 3px rgba(238, 77, 45, 0.12);
+}
+
+/* Valid / Invalid states */
+.form-group input.valid,
+.form-group select.valid {
+  border-color: #10b981;
+  background: #f0fdf4;
+}
+
+.form-group input.invalid,
+.form-group select.invalid {
+  border-color: #ef4444;
+  background: #fff5f5;
+}
+
+/* ---- Input row (for password toggle) ---- */
+.input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.input-wrapper input {
+  flex: 1;
+  padding-right: 44px !important;
+}
+
+.toggle-pw {
+  position: absolute;
+  right: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  color: #9ca3af;
+  padding: 4px;
+  transition: color 0.2s;
+}
+
+.toggle-pw:hover {
+  color: #ee4d2d;
+}
+
+/* ---- Password strength bar ---- */
+.password-strength {
+  margin-top: 6px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  min-height: 18px;
+}
+
+.strength-weak {
+  color: #ef4444;
+}
+.strength-fair {
+  color: #f59e0b;
+}
+.strength-good {
+  color: #3b82f6;
+}
+.strength-strong {
+  color: #10b981;
+}
+
+/* ---- Error message ---- */
+.error-msg {
+  display: block;
+  font-size: 0.78rem;
+  color: #ef4444;
+  margin-top: 4px;
+  min-height: 18px;
+  font-weight: 500;
+}
+
+/* ---- 2-column row ---- */
+.form-row {
+  display: flex;
+  gap: 16px;
+}
+
+.form-group.half {
+  flex: 1;
+  min-width: 0;
+}
+
+/* ---- Checkbox ---- */
+.checkbox-group {
+  margin-bottom: 20px;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.875rem;
+  color: #374151;
+  cursor: pointer;
+  user-select: none;
+  flex-wrap: wrap;
+}
+
+.checkbox-label input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  accent-color: #ee4d2d;
+  flex-shrink: 0;
+}
+
+.terms-link {
+  color: #ee4d2d;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.terms-link:hover {
+  text-decoration: underline;
+}
+
+/* ---- Submit button ---- */
+.btn-submit {
+  width: 100%;
+  padding: 13px;
+  background: #ee4d2d;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+  transition:
+    background 0.2s,
+    transform 0.1s;
+  margin-top: 4px;
+}
+
+.btn-submit:hover {
+  background: #d73b1c;
+}
+
+.btn-submit:active {
+  transform: translateY(0);
+}
+
+/* ---- Login link ---- */
+.login-link {
+  text-align: center;
+  margin-top: 18px;
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+.login-link a {
+  color: #ee4d2d;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.login-link a:hover {
+  text-decoration: underline;
+}
+
+/* ---- Success banner ---- */
+.success-banner {
+  text-align: center;
+  padding: 48px 32px;
+}
+
+.success-icon {
+  font-size: 4rem;
+  margin-bottom: 16px;
+}
+
+.success-banner h2 {
+  font-size: 1.6rem;
+  color: #ee4d2d;
+  margin-bottom: 10px;
+}
+
+.success-banner p {
+  color: #6b7280;
+  margin-bottom: 28px;
+  font-size: 0.95rem;
+}
+
+/* ---- Modal ---- */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 16px;
+}
+
+.modal-box {
+  background: #fff;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 520px;
+  max-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  animation: modalIn 0.2s ease;
+}
+
+@keyframes modalIn {
+  from {
+    opacity: 0;
+    transform: scale(0.92) translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 24px 16px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.modal-header h2 {
+  font-size: 1.1rem;
+  color: #1f2937;
+}
+
+.modal-close {
+  background: none;
+  border: none;
+  font-size: 1.6rem;
+  cursor: pointer;
+  color: #6b7280;
+  line-height: 1;
+  transition: color 0.2s;
+}
+
+.modal-close:hover {
+  color: #ef4444;
+}
+
+.modal-body {
+  padding: 20px 24px;
+  overflow-y: auto;
+  flex: 1;
+  color: #374151;
+  line-height: 1.6;
+}
+
+.modal-body h3 {
+  font-size: 0.95rem;
+  color: #1f2937;
+  margin: 16px 0 6px;
+}
+
+.modal-body h3:first-child {
+  margin-top: 0;
+}
+
+.modal-body p {
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+.modal-footer {
+  padding: 16px 24px;
+  border-top: 1px solid #e5e7eb;
+  display: flex;
+  gap: 12px;
+  justify-content: flex-end;
+}
+
+.btn-accept {
+  padding: 9px 20px;
+  background: #ee4d2d;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btn-accept:hover {
+  background: #d73b1c;
+}
+
+.btn-cancel {
+  padding: 9px 20px;
+  background: #f3f4f6;
+  color: #374151;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btn-cancel:hover {
+  background: #e5e7eb;
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 480px) {
+  form {
+    padding: 20px 18px 24px;
+  }
+  .form-row {
+    flex-direction: column;
+    gap: 0;
+  }
+}

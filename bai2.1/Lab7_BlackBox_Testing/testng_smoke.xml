@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<!--
+  testng_smoke.xml – Suite chỉ chạy nhóm SMOKE
+  Lệnh: mvn test -Dsurefire.suiteXmlFiles=testng_smoke.xml
+-->
+<suite name="Lab7_BlackBox_SmokeSuite" verbose="1">
+
+  <test name="SmokeTests">
+    <groups>
+      <run>
+        <include name="smoke" />
+      </run>
+    </groups>
+    <classes>
+      <class name="dtm.tests.TC_DangNhapTest" />
+      <class name="dtm.tests.TC_GioHangTest"  />
+      <class name="dtm.tests.TC_TimKiemTest"  />
+      <class name="dtm.tests.TC_CheckoutTest" />
+    </classes>
+  </test>
+
+</suite>

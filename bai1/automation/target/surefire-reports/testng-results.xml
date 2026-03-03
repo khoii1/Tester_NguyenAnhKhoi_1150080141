@@ -1,0 +1,2205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="35" passed="32" failed="3" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-03-03T13:39:03 ICT" name="ShopVN_RegisterSuite" finished-at="2026-03-03T13:40:34 ICT" duration-ms="90965">
+    <groups>
+    </groups>
+    <test started-at="2026-03-03T13:39:03 ICT" name="RegisterFormTests" finished-at="2026-03-03T13:40:34 ICT" duration-ms="90965">
+      <class name="tests.RegisterTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.RegisterTest@7ed7259e]" started-at="2026-03-03T13:39:03 ICT" name="setUp" finished-at="2026-03-03T13:39:07 ICT" duration-ms="3571" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="initPage()[pri:0, instance:tests.RegisterTest@7ed7259e]" started-at="2026-03-03T13:39:07 ICT" name="initPage" finished-at="2026-03-03T13:39:07 ICT" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPage -->
+        <test-method signature="TC01_registerWithValidData(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,boolean)[pri:1, instance:tests.RegisterTest@7ed7259e]" started-at="2026-03-03T13:39:07 ICT" name="TC01_registerWithValidData" description="TC01 – Đăng ký thành công với dữ liệu hợp lệ" data-provider="validRegistration" finished-at="2026-03-03T13:39:19 ICT" duration-ms="11624" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Nguyễn Văn An]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[vanan2024]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[vanan2024@gmail.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[0912345678]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Shopvn@2024]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Shopvn@2024]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[2000-05-15]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[male]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[SHOP2024]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[TC01 FAIL: Banner đăng ký thành công không hiện ra. expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: TC01 FAIL: Banner đăng ký thành công không hiện ra. expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at tests.RegisterTest.TC01_registerWithValidData(RegisterTest.java:49)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+at org.testng.TestNG.runSuites(TestNG.java:1134)
+at org.testng.TestNG.run(TestNG.java:1101)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC01_registerWithValidData -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.RegisterTest@7ed7259e]" started-at="2026-03-03T13:39:19 ICT" name="tearDown" finished-at="2026-03-03T13:39:20 ICT" duration-ms="1637" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC01_registerWithValidData status=FAILURE method=RegisterTest.TC01_registerWithValidData(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,boolean)[pri:1, instance:tests.RegisterTest@7ed7259e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.RegisterTest@7ed7259e]" started-at="2026-03-03T13:39:20 ICT" name="setUp" finished-at="2026-03-03T13:39:21 ICT" duration-ms="897" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="initPage()[pri:0, instance:tests.RegisterTest@7ed7259e]" started-at="2026-03-03T13:39:21 ICT" name="initPage" finished-at="2026-03-03T13:39:21 ICT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPage -->
+        <test-method signature="TC02_fullNameEmpty()[pri:2, instance:tests.RegisterTest@7ed7259e]" started-at="2026-03-03T13:39:21 ICT" name="TC02_fullNameEmpty" description="TC02 – Họ và tên để trống → lỗi bắt buộc" finished-at="2026-03-03T13:39:22 ICT" duration-ms="1070" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC02_fullNameEmpty -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.RegisterTest@7ed7259e]" started-at="2026-03-03T13:39:22 ICT" name="tearDown" finished-at="2026-03-03T13:39:22 ICT" duration-ms="114" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC02_fullNameEmpty status=SUCCESS method=RegisterTest.TC02_fullNameEmpty()[pri:2, instance:tests.RegisterTest@7ed7259e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.RegisterTest@7ed7259e]" started-at="2026-03-03T13:39:22 ICT" name="setUp" finished-at="2026-03-03T13:39:23 ICT" duration-ms="864" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="TC03_fullNameTooShort()[pri:3, instance:tests.RegisterTest@7ed7259e]" started-at="2026-03-03T13:39:23 ICT" name="TC03_fullNameTooShort" description="TC03 – Họ và tên chỉ 1 ký tự → lỗi min length" finished-at="2026-03-03T13:39:24 ICT" duration-ms="1102" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC03_fullNameTooShort -->
+        <test-method is-config="true" signature="initPage()[pri:0, instance:tests.RegisterTest@7ed7259e]" started-at="2026-03-03T13:39:23 ICT" name="initPage" finished-at="2026-03-03T13:39:23 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPage -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.RegisterTest@7ed7259e]" started-at="2026-03-03T13:39:24 ICT" name="tearDown" finished-at="2026-03-03T13:39:24 ICT" duration-ms="108" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC03_fullNameTooShort status=SUCCESS method=RegisterTest.TC03_fullNameTooShort()[pri:3, instance:tests.RegisterTest@7ed7259e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.RegisterTest@7ed7259e]" started-at="2026-03-03T13:39:24 ICT" name="setUp" finished-at="2026-03-03T13:39:25 ICT" duration-ms="710" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="TC04_usernameInvalidFormat()[pri:4, instance:tests.RegisterTest@7ed7259e]" started-at="2026-03-03T13:39:25 ICT" name="TC04_usernameInvalidFormat" description="TC04 – Username chứa chữ hoa → lỗi format" finished-at="2026-03-03T13:39:26 ICT" duration-ms="1198" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[TC04 FAIL: Thông báo lỗi không đúng: Tên đăng nhập phải bắt đầu bằng chữ cái thường. expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: TC04 FAIL: Thông báo lỗi không đúng: Tên đăng nhập phải bắt đầu bằng chữ cái thường. expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at tests.RegisterTest.TC04_usernameInvalidFormat(RegisterTest.java:111)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+at org.testng.TestNG.runSuites(TestNG.java:1134)
+at org.testng.TestNG.run(TestNG.java:1101)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC04_usernameInvalidFormat -->
+        <test-method is-config="true" signature="initPage()[pri:0, instance:tests.RegisterTest@7ed7259e]" started-at="2026-03-03T13:39:25 ICT" name="initPage" finished-at="2026-03-03T13:39:25 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPage -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.RegisterTest@7ed7259e]" started-at="2026-03-03T13:39:26 ICT" name="tearDown" finished-at="2026-03-03T13:39:27 ICT" duration-ms="468" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC04_usernameInvalidFormat status=FAILURE method=RegisterTest.TC04_usernameInvalidFormat()[pri:4, instance:tests.RegisterTest@7ed7259e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.RegisterTest@7ed7259e]" started-at="2026-03-03T13:39:27 ICT" name="setUp" finished-at="2026-03-03T13:39:28 ICT" duration-ms="838" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="TC05_usernameDuplicate()[pri:5, instance:tests.RegisterTest@7ed7259e]" started-at="2026-03-03T13:39:28 ICT" name="TC05_usernameDuplicate" description="TC05 – Username đã tồn tại → lỗi trùng" finished-at="2026-03-03T13:39:29 ICT" duration-ms="963" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC05_usernameDuplicate -->
+        <test-method is-config="true" signature="initPage()[pri:0, instance:tests.RegisterTest@7ed7259e]" started-at="2026-03-03T13:39:28 ICT" name="initPage" finished-at="2026-03-03T13:39:28 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPage -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.RegisterTest@7ed7259e]" started-at="2026-03-03T13:39:29 ICT" name="tearDown" finished-at="2026-03-03T13:39:29 ICT" duration-ms="99" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC05_usernameDuplicate status=SUCCESS method=RegisterTest.TC05_usernameDuplicate()[pri:5, instance:tests.RegisterTest@7ed7259e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.RegisterTest@7ed7259e]" started-at="2026-03-03T13:39:29 ICT" name="setUp" finished-at="2026-03-03T13:39:29 ICT" duration-ms="808" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="TC06_emailInvalidFormat()[pri:6, instance:tests.RegisterTest@7ed7259e]" started-at="2026-03-03T13:39:29 ICT" name="TC06_emailInvalidFormat" description="TC06 – Email thiếu @ → lỗi định dạng" finished-at="2026-03-03T13:39:31 ICT" duration-ms="1108" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC06_emailInvalidFormat -->
+        <test-method is-config="true" signature="initPage()[pri:0, instance:tests.RegisterTest@7ed7259e]" started-at="2026-03-03T13:39:29 ICT" name="initPage" finished-at="2026-03-03T13:39:29 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPage -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.RegisterTest@7ed7259e]" started-at="2026-03-03T13:39:31 ICT" name="tearDown" finished-at="2026-03-03T13:39:31 ICT" duration-ms="120" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC06_emailInvalidFormat status=SUCCESS method=RegisterTest.TC06_emailInvalidFormat()[pri:6, instance:tests.RegisterTest@7ed7259e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.RegisterTest@7ed7259e]" started-at="2026-03-03T13:39:31 ICT" name="setUp" finished-at="2026-03-03T13:39:31 ICT" duration-ms="794" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="initPage()[pri:0, instance:tests.RegisterTest@7ed7259e]" started-at="2026-03-03T13:39:31 ICT" name="initPage" finished-at="2026-03-03T13:39:31 ICT" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPage -->
+        <test-method signature="TC07_emailDuplicate()[pri:7, instance:tests.RegisterTest@7ed7259e]" started-at="2026-03-03T13:39:31 ICT" name="TC07_emailDuplicate" description="TC07 – Email đã được đăng ký → lỗi trùng email" finished-at="2026-03-03T13:39:32 ICT" duration-ms="897" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC07_emailDuplicate -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.RegisterTest@7ed7259e]" started-at="2026-03-03T13:39:32 ICT" name="tearDown" finished-at="2026-03-03T13:39:32 ICT" duration-ms="111" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC07_emailDuplicate status=SUCCESS method=RegisterTest.TC07_emailDuplicate()[pri:7, instance:tests.RegisterTest@7ed7259e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.RegisterTest@7ed7259e]" started-at="2026-03-03T13:39:32 ICT" name="setUp" finished-at="2026-03-03T13:39:33 ICT" duration-ms="800" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="TC08_phoneTooShort()[pri:8, instance:tests.RegisterTest@7ed7259e]" started-at="2026-03-03T13:39:33 ICT" name="TC08_phoneTooShort" description="TC08 – Số điện thoại chỉ 6 chữ số → lỗi định dạng" finished-at="2026-03-03T13:39:34 ICT" duration-ms="1180" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC08_phoneTooShort -->
+        <test-method is-config="true" signature="initPage()[pri:0, instance:tests.RegisterTest@7ed7259e]" started-at="2026-03-03T13:39:33 ICT" name="initPage" finished-at="2026-03-03T13:39:33 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPage -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.RegisterTest@7ed7259e]" started-at="2026-03-03T13:39:34 ICT" name="tearDown" finished-at="2026-03-03T13:39:35 ICT" duration-ms="110" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC08_phoneTooShort status=SUCCESS method=RegisterTest.TC08_phoneTooShort()[pri:8, instance:tests.RegisterTest@7ed7259e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.RegisterTest@7ed7259e]" started-at="2026-03-03T13:39:35 ICT" name="setUp" finished-at="2026-03-03T13:39:35 ICT" duration-ms="743" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="TC09_passwordNoUppercase()[pri:9, instance:tests.RegisterTest@7ed7259e]" started-at="2026-03-03T13:39:35 ICT" name="TC09_passwordNoUppercase" description="TC09 – Mật khẩu không có chữ hoa → lỗi độ mạnh" finished-at="2026-03-03T13:39:36 ICT" duration-ms="943" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC09_passwordNoUppercase -->
+        <test-method is-config="true" signature="initPage()[pri:0, instance:tests.RegisterTest@7ed7259e]" started-at="2026-03-03T13:39:35 ICT" name="initPage" finished-at="2026-03-03T13:39:35 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPage -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.RegisterTest@7ed7259e]" started-at="2026-03-03T13:39:36 ICT" name="tearDown" finished-at="2026-03-03T13:39:36 ICT" duration-ms="109" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC09_passwordNoUppercase status=SUCCESS method=RegisterTest.TC09_passwordNoUppercase()[pri:9, instance:tests.RegisterTest@7ed7259e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.RegisterTest@7ed7259e]" started-at="2026-03-03T13:39:36 ICT" name="setUp" finished-at="2026-03-03T13:39:37 ICT" duration-ms="752" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="initPage()[pri:0, instance:tests.RegisterTest@7ed7259e]" started-at="2026-03-03T13:39:37 ICT" name="initPage" finished-at="2026-03-03T13:39:37 ICT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPage -->
+        <test-method signature="TC10_passwordTooShort()[pri:10, instance:tests.RegisterTest@7ed7259e]" started-at="2026-03-03T13:39:37 ICT" name="TC10_passwordTooShort" description="TC10 – Mật khẩu &lt; 8 ký tự → lỗi min length" finished-at="2026-03-03T13:39:38 ICT" duration-ms="997" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC10_passwordTooShort -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.RegisterTest@7ed7259e]" started-at="2026-03-03T13:39:38 ICT" name="tearDown" finished-at="2026-03-03T13:39:38 ICT" duration-ms="120" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC10_passwordTooShort status=SUCCESS method=RegisterTest.TC10_passwordTooShort()[pri:10, instance:tests.RegisterTest@7ed7259e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.RegisterTest@7ed7259e]" started-at="2026-03-03T13:39:38 ICT" name="setUp" finished-at="2026-03-03T13:39:39 ICT" duration-ms="775" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="TC11_confirmPasswordMismatch()[pri:11, instance:tests.RegisterTest@7ed7259e]" started-at="2026-03-03T13:39:39 ICT" name="TC11_confirmPasswordMismatch" description="TC11 – Confirm password khác password → lỗi không khớp" finished-at="2026-03-03T13:39:40 ICT" duration-ms="1062" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC11_confirmPasswordMismatch -->
+        <test-method is-config="true" signature="initPage()[pri:0, instance:tests.RegisterTest@7ed7259e]" started-at="2026-03-03T13:39:39 ICT" name="initPage" finished-at="2026-03-03T13:39:39 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPage -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.RegisterTest@7ed7259e]" started-at="2026-03-03T13:39:40 ICT" name="tearDown" finished-at="2026-03-03T13:39:40 ICT" duration-ms="109" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC11_confirmPasswordMismatch status=SUCCESS method=RegisterTest.TC11_confirmPasswordMismatch()[pri:11, instance:tests.RegisterTest@7ed7259e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.RegisterTest@7ed7259e]" started-at="2026-03-03T13:39:40 ICT" name="setUp" finished-at="2026-03-03T13:39:41 ICT" duration-ms="700" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="TC12_dobUnder16()[pri:12, instance:tests.RegisterTest@7ed7259e]" started-at="2026-03-03T13:39:41 ICT" name="TC12_dobUnder16" description="TC12 – Ngày sinh dưới 16 tuổi → lỗi tuổi" finished-at="2026-03-03T13:39:42 ICT" duration-ms="983" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC12_dobUnder16 -->
+        <test-method is-config="true" signature="initPage()[pri:0, instance:tests.RegisterTest@7ed7259e]" started-at="2026-03-03T13:39:41 ICT" name="initPage" finished-at="2026-03-03T13:39:41 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPage -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.RegisterTest@7ed7259e]" started-at="2026-03-03T13:39:42 ICT" name="tearDown" finished-at="2026-03-03T13:39:42 ICT" duration-ms="127" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC12_dobUnder16 status=SUCCESS method=RegisterTest.TC12_dobUnder16()[pri:12, instance:tests.RegisterTest@7ed7259e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.RegisterTest@7ed7259e]" started-at="2026-03-03T13:39:42 ICT" name="setUp" finished-at="2026-03-03T13:39:43 ICT" duration-ms="748" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="TC13_dobOver100()[pri:13, instance:tests.RegisterTest@7ed7259e]" started-at="2026-03-03T13:39:43 ICT" name="TC13_dobOver100" description="TC13 – Ngày sinh &gt;= 100 tuổi → lỗi tuổi không hợp lệ" finished-at="2026-03-03T13:39:44 ICT" duration-ms="901" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC13_dobOver100 -->
+        <test-method is-config="true" signature="initPage()[pri:0, instance:tests.RegisterTest@7ed7259e]" started-at="2026-03-03T13:39:43 ICT" name="initPage" finished-at="2026-03-03T13:39:43 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPage -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.RegisterTest@7ed7259e]" started-at="2026-03-03T13:39:44 ICT" name="tearDown" finished-at="2026-03-03T13:39:44 ICT" duration-ms="118" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC13_dobOver100 status=SUCCESS method=RegisterTest.TC13_dobOver100()[pri:13, instance:tests.RegisterTest@7ed7259e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.RegisterTest@7ed7259e]" started-at="2026-03-03T13:39:44 ICT" name="setUp" finished-at="2026-03-03T13:39:45 ICT" duration-ms="775" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="TC14_referralCodeInvalidFormat()[pri:14, instance:tests.RegisterTest@7ed7259e]" started-at="2026-03-03T13:39:45 ICT" name="TC14_referralCodeInvalidFormat" description="TC14 – Mã giới thiệu chỉ 3 ký tự → lỗi format" finished-at="2026-03-03T13:39:46 ICT" duration-ms="1024" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC14_referralCodeInvalidFormat -->
+        <test-method is-config="true" signature="initPage()[pri:0, instance:tests.RegisterTest@7ed7259e]" started-at="2026-03-03T13:39:45 ICT" name="initPage" finished-at="2026-03-03T13:39:45 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPage -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.RegisterTest@7ed7259e]" started-at="2026-03-03T13:39:46 ICT" name="tearDown" finished-at="2026-03-03T13:39:46 ICT" duration-ms="154" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC14_referralCodeInvalidFormat status=SUCCESS method=RegisterTest.TC14_referralCodeInvalidFormat()[pri:14, instance:tests.RegisterTest@7ed7259e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.RegisterTest@7ed7259e]" started-at="2026-03-03T13:39:46 ICT" name="setUp" finished-at="2026-03-03T13:39:47 ICT" duration-ms="841" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="TC15_referralCodeNotExist()[pri:15, instance:tests.RegisterTest@7ed7259e]" started-at="2026-03-03T13:39:47 ICT" name="TC15_referralCodeNotExist" description="TC15 – Mã giới thiệu 8 ký tự nhưng không có trong hệ thống" finished-at="2026-03-03T13:39:48 ICT" duration-ms="1178" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC15_referralCodeNotExist -->
+        <test-method is-config="true" signature="initPage()[pri:0, instance:tests.RegisterTest@7ed7259e]" started-at="2026-03-03T13:39:47 ICT" name="initPage" finished-at="2026-03-03T13:39:47 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPage -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.RegisterTest@7ed7259e]" started-at="2026-03-03T13:39:48 ICT" name="tearDown" finished-at="2026-03-03T13:39:48 ICT" duration-ms="129" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC15_referralCodeNotExist status=SUCCESS method=RegisterTest.TC15_referralCodeNotExist()[pri:15, instance:tests.RegisterTest@7ed7259e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.RegisterTest@7ed7259e]" started-at="2026-03-03T13:39:48 ICT" name="setUp" finished-at="2026-03-03T13:39:49 ICT" duration-ms="831" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="initPage()[pri:0, instance:tests.RegisterTest@7ed7259e]" started-at="2026-03-03T13:39:49 ICT" name="initPage" finished-at="2026-03-03T13:39:49 ICT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPage -->
+        <test-method signature="TC16_agreeTermsNotChecked()[pri:16, instance:tests.RegisterTest@7ed7259e]" started-at="2026-03-03T13:39:49 ICT" name="TC16_agreeTermsNotChecked" description="TC16 – Không tick điều khoản → lỗi bắt buộc" finished-at="2026-03-03T13:40:00 ICT" duration-ms="11368" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC16_agreeTermsNotChecked -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.RegisterTest@7ed7259e]" started-at="2026-03-03T13:40:00 ICT" name="tearDown" finished-at="2026-03-03T13:40:00 ICT" duration-ms="104" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC16_agreeTermsNotChecked status=SUCCESS method=RegisterTest.TC16_agreeTermsNotChecked()[pri:16, instance:tests.RegisterTest@7ed7259e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.RegisterTest@7ed7259e]" started-at="2026-03-03T13:40:00 ICT" name="setUp" finished-at="2026-03-03T13:40:01 ICT" duration-ms="791" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="initPage()[pri:0, instance:tests.RegisterTest@7ed7259e]" started-at="2026-03-03T13:40:01 ICT" name="initPage" finished-at="2026-03-03T13:40:01 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPage -->
+        <test-method signature="TC17_viewTermsModalOpens()[pri:17, instance:tests.RegisterTest@7ed7259e]" started-at="2026-03-03T13:40:01 ICT" name="TC17_viewTermsModalOpens" description="TC17 – Click &#039;Xem Điều khoản&#039; → modal mở thành công" finished-at="2026-03-03T13:40:01 ICT" duration-ms="184" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC17_viewTermsModalOpens -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.RegisterTest@7ed7259e]" started-at="2026-03-03T13:40:01 ICT" name="tearDown" finished-at="2026-03-03T13:40:01 ICT" duration-ms="112" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC17_viewTermsModalOpens status=SUCCESS method=RegisterTest.TC17_viewTermsModalOpens()[pri:17, instance:tests.RegisterTest@7ed7259e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.RegisterTest@7ed7259e]" started-at="2026-03-03T13:40:01 ICT" name="setUp" finished-at="2026-03-03T13:40:02 ICT" duration-ms="865" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="initPage()[pri:0, instance:tests.RegisterTest@7ed7259e]" started-at="2026-03-03T13:40:02 ICT" name="initPage" finished-at="2026-03-03T13:40:02 ICT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPage -->
+        <test-method signature="TC18_invalidCases(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,boolean,java.lang.String,java.lang.String)[pri:18, instance:tests.RegisterTest@7ed7259e]" started-at="2026-03-03T13:40:02 ICT" name="TC18_invalidCases" description="TC18 – Kiểm tra nhiều trường hợp không hợp lệ qua DataProvider" data-provider="invalidRegistration" finished-at="2026-03-03T13:40:03 ICT" duration-ms="956" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC02 – Họ và tên để trống]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[binhtest1]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[binhtest1@gmail.com]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[0987654321]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Test@1234]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Test@1234]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[1998-06-20]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[female]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[fullName]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[không được để trống]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC18_invalidCases -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.RegisterTest@7ed7259e]" started-at="2026-03-03T13:40:03 ICT" name="tearDown" finished-at="2026-03-03T13:40:03 ICT" duration-ms="116" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC18_invalidCases status=SUCCESS method=RegisterTest.TC18_invalidCases(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,boolean,java.lang.String,java.lang.String)[pri:18, instance:tests.RegisterTest@7ed7259e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.RegisterTest@7ed7259e]" started-at="2026-03-03T13:40:03 ICT" name="setUp" finished-at="2026-03-03T13:40:04 ICT" duration-ms="740" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="TC18_invalidCases(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,boolean,java.lang.String,java.lang.String)[pri:18, instance:tests.RegisterTest@7ed7259e]" started-at="2026-03-03T13:40:04 ICT" name="TC18_invalidCases" description="TC18 – Kiểm tra nhiều trường hợp không hợp lệ qua DataProvider" data-provider="invalidRegistration" finished-at="2026-03-03T13:40:05 ICT" duration-ms="1317" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC03 – Họ và tên dưới min length (1 ký tự)]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[A]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[binhtest1]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[binhtest1@gmail.com]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[0987654321]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Test@1234]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Test@1234]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[1998-06-20]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[female]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[fullName]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[ít nhất 2 ký tự]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC18_invalidCases -->
+        <test-method is-config="true" signature="initPage()[pri:0, instance:tests.RegisterTest@7ed7259e]" started-at="2026-03-03T13:40:04 ICT" name="initPage" finished-at="2026-03-03T13:40:04 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPage -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.RegisterTest@7ed7259e]" started-at="2026-03-03T13:40:05 ICT" name="tearDown" finished-at="2026-03-03T13:40:05 ICT" duration-ms="107" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC18_invalidCases status=SUCCESS method=RegisterTest.TC18_invalidCases(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,boolean,java.lang.String,java.lang.String)[pri:18, instance:tests.RegisterTest@7ed7259e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.RegisterTest@7ed7259e]" started-at="2026-03-03T13:40:05 ICT" name="setUp" finished-at="2026-03-03T13:40:06 ICT" duration-ms="840" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="TC18_invalidCases(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,boolean,java.lang.String,java.lang.String)[pri:18, instance:tests.RegisterTest@7ed7259e]" started-at="2026-03-03T13:40:06 ICT" name="TC18_invalidCases" description="TC18 – Kiểm tra nhiều trường hợp không hợp lệ qua DataProvider" data-provider="invalidRegistration" finished-at="2026-03-03T13:40:07 ICT" duration-ms="860" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC04 – Họ và tên chứa ký tự đặc biệt]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Nguyen@123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[binhtest1]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[binhtest1@gmail.com]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[0987654321]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Test@1234]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Test@1234]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[1998-06-20]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[female]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[fullName]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[chỉ được chứa chữ cái]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC18_invalidCases -->
+        <test-method is-config="true" signature="initPage()[pri:0, instance:tests.RegisterTest@7ed7259e]" started-at="2026-03-03T13:40:06 ICT" name="initPage" finished-at="2026-03-03T13:40:06 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPage -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.RegisterTest@7ed7259e]" started-at="2026-03-03T13:40:07 ICT" name="tearDown" finished-at="2026-03-03T13:40:07 ICT" duration-ms="95" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC18_invalidCases status=SUCCESS method=RegisterTest.TC18_invalidCases(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,boolean,java.lang.String,java.lang.String)[pri:18, instance:tests.RegisterTest@7ed7259e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.RegisterTest@7ed7259e]" started-at="2026-03-03T13:40:07 ICT" name="setUp" finished-at="2026-03-03T13:40:08 ICT" duration-ms="780" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="TC18_invalidCases(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,boolean,java.lang.String,java.lang.String)[pri:18, instance:tests.RegisterTest@7ed7259e]" started-at="2026-03-03T13:40:08 ICT" name="TC18_invalidCases" description="TC18 – Kiểm tra nhiều trường hợp không hợp lệ qua DataProvider" data-provider="invalidRegistration" finished-at="2026-03-03T13:40:09 ICT" duration-ms="930" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC05 – Username không đúng format (chứa chữ hoa)]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Trần Thị Bình]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[UserABC]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[binhtest1@gmail.com]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[0987654321]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Test@1234]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Test@1234]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[1998-06-20]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[female]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[username]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[chữ thường, số và dấu gạch dưới]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[TC05 – Username không đúng format (chứa chữ hoa) – FAIL: Lỗi expected chứa 'chữ thường, số và dấu gạch dưới' nhưng actual là: 'Tên đăng nhập phải bắt đầu bằng chữ cái thường.' expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: TC05 – Username không đúng format (chứa chữ hoa) – FAIL: Lỗi expected chứa 'chữ thường, số và dấu gạch dưới' nhưng actual là: 'Tên đăng nhập phải bắt đầu bằng chữ cái thường.' expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at tests.RegisterTest.TC18_invalidCases(RegisterTest.java:409)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+at org.testng.TestNG.runSuites(TestNG.java:1134)
+at org.testng.TestNG.run(TestNG.java:1101)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC18_invalidCases -->
+        <test-method is-config="true" signature="initPage()[pri:0, instance:tests.RegisterTest@7ed7259e]" started-at="2026-03-03T13:40:08 ICT" name="initPage" finished-at="2026-03-03T13:40:08 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPage -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.RegisterTest@7ed7259e]" started-at="2026-03-03T13:40:09 ICT" name="tearDown" finished-at="2026-03-03T13:40:09 ICT" duration-ms="427" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC18_invalidCases status=FAILURE method=RegisterTest.TC18_invalidCases(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,boolean,java.lang.String,java.lang.String)[pri:18, instance:tests.RegisterTest@7ed7259e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.RegisterTest@7ed7259e]" started-at="2026-03-03T13:40:09 ICT" name="setUp" finished-at="2026-03-03T13:40:10 ICT" duration-ms="781" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="TC18_invalidCases(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,boolean,java.lang.String,java.lang.String)[pri:18, instance:tests.RegisterTest@7ed7259e]" started-at="2026-03-03T13:40:10 ICT" name="TC18_invalidCases" description="TC18 – Kiểm tra nhiều trường hợp không hợp lệ qua DataProvider" data-provider="invalidRegistration" finished-at="2026-03-03T13:40:11 ICT" duration-ms="870" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC06 – Username đã tồn tại]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Trần Thị Bình]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[binhtest1@gmail.com]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[0987654321]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Test@1234]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Test@1234]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[1998-06-20]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[female]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[username]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[đã tồn tại]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC18_invalidCases -->
+        <test-method is-config="true" signature="initPage()[pri:0, instance:tests.RegisterTest@7ed7259e]" started-at="2026-03-03T13:40:10 ICT" name="initPage" finished-at="2026-03-03T13:40:10 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPage -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.RegisterTest@7ed7259e]" started-at="2026-03-03T13:40:11 ICT" name="tearDown" finished-at="2026-03-03T13:40:11 ICT" duration-ms="112" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC18_invalidCases status=SUCCESS method=RegisterTest.TC18_invalidCases(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,boolean,java.lang.String,java.lang.String)[pri:18, instance:tests.RegisterTest@7ed7259e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.RegisterTest@7ed7259e]" started-at="2026-03-03T13:40:11 ICT" name="setUp" finished-at="2026-03-03T13:40:12 ICT" duration-ms="755" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="initPage()[pri:0, instance:tests.RegisterTest@7ed7259e]" started-at="2026-03-03T13:40:12 ICT" name="initPage" finished-at="2026-03-03T13:40:12 ICT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPage -->
+        <test-method signature="TC18_invalidCases(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,boolean,java.lang.String,java.lang.String)[pri:18, instance:tests.RegisterTest@7ed7259e]" started-at="2026-03-03T13:40:12 ICT" name="TC18_invalidCases" description="TC18 – Kiểm tra nhiều trường hợp không hợp lệ qua DataProvider" data-provider="invalidRegistration" finished-at="2026-03-03T13:40:13 ICT" duration-ms="794" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC07 – Username dưới min length (4 ký tự)]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Trần Thị Bình]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[abc1]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[binhtest1@gmail.com]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[0987654321]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Test@1234]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Test@1234]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[1998-06-20]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[female]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[username]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[ít nhất 5 ký tự]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC18_invalidCases -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.RegisterTest@7ed7259e]" started-at="2026-03-03T13:40:13 ICT" name="tearDown" finished-at="2026-03-03T13:40:13 ICT" duration-ms="101" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC18_invalidCases status=SUCCESS method=RegisterTest.TC18_invalidCases(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,boolean,java.lang.String,java.lang.String)[pri:18, instance:tests.RegisterTest@7ed7259e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.RegisterTest@7ed7259e]" started-at="2026-03-03T13:40:13 ICT" name="setUp" finished-at="2026-03-03T13:40:13 ICT" duration-ms="717" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="TC18_invalidCases(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,boolean,java.lang.String,java.lang.String)[pri:18, instance:tests.RegisterTest@7ed7259e]" started-at="2026-03-03T13:40:13 ICT" name="TC18_invalidCases" description="TC18 – Kiểm tra nhiều trường hợp không hợp lệ qua DataProvider" data-provider="invalidRegistration" finished-at="2026-03-03T13:40:14 ICT" duration-ms="876" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC08 – Email sai format]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Trần Thị Bình]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[binhtest1]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[emailkhonghople]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[0987654321]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Test@1234]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Test@1234]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[1998-06-20]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[female]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[email]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[không đúng định dạng]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC18_invalidCases -->
+        <test-method is-config="true" signature="initPage()[pri:0, instance:tests.RegisterTest@7ed7259e]" started-at="2026-03-03T13:40:13 ICT" name="initPage" finished-at="2026-03-03T13:40:13 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPage -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.RegisterTest@7ed7259e]" started-at="2026-03-03T13:40:14 ICT" name="tearDown" finished-at="2026-03-03T13:40:14 ICT" duration-ms="109" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC18_invalidCases status=SUCCESS method=RegisterTest.TC18_invalidCases(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,boolean,java.lang.String,java.lang.String)[pri:18, instance:tests.RegisterTest@7ed7259e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.RegisterTest@7ed7259e]" started-at="2026-03-03T13:40:14 ICT" name="setUp" finished-at="2026-03-03T13:40:15 ICT" duration-ms="688" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="TC18_invalidCases(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,boolean,java.lang.String,java.lang.String)[pri:18, instance:tests.RegisterTest@7ed7259e]" started-at="2026-03-03T13:40:15 ICT" name="TC18_invalidCases" description="TC18 – Kiểm tra nhiều trường hợp không hợp lệ qua DataProvider" data-provider="invalidRegistration" finished-at="2026-03-03T13:40:16 ICT" duration-ms="916" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC09 – Email đã tồn tại]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Trần Thị Bình]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[binhtest1]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[admin@shopvn.vn]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[0987654321]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Test@1234]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Test@1234]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[1998-06-20]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[female]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[email]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[đã được đăng ký]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC18_invalidCases -->
+        <test-method is-config="true" signature="initPage()[pri:0, instance:tests.RegisterTest@7ed7259e]" started-at="2026-03-03T13:40:15 ICT" name="initPage" finished-at="2026-03-03T13:40:15 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPage -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.RegisterTest@7ed7259e]" started-at="2026-03-03T13:40:16 ICT" name="tearDown" finished-at="2026-03-03T13:40:16 ICT" duration-ms="89" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC18_invalidCases status=SUCCESS method=RegisterTest.TC18_invalidCases(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,boolean,java.lang.String,java.lang.String)[pri:18, instance:tests.RegisterTest@7ed7259e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.RegisterTest@7ed7259e]" started-at="2026-03-03T13:40:16 ICT" name="setUp" finished-at="2026-03-03T13:40:17 ICT" duration-ms="727" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="initPage()[pri:0, instance:tests.RegisterTest@7ed7259e]" started-at="2026-03-03T13:40:17 ICT" name="initPage" finished-at="2026-03-03T13:40:17 ICT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPage -->
+        <test-method signature="TC18_invalidCases(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,boolean,java.lang.String,java.lang.String)[pri:18, instance:tests.RegisterTest@7ed7259e]" started-at="2026-03-03T13:40:17 ICT" name="TC18_invalidCases" description="TC18 – Kiểm tra nhiều trường hợp không hợp lệ qua DataProvider" data-provider="invalidRegistration" finished-at="2026-03-03T13:40:18 ICT" duration-ms="773" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC10 – Số điện thoại không đủ 10 số]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Trần Thị Bình]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[binhtest1]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[binhtest1@gmail.com]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[091234]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Test@1234]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Test@1234]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[1998-06-20]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[female]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[phone]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[đúng 10 chữ số]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC18_invalidCases -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.RegisterTest@7ed7259e]" started-at="2026-03-03T13:40:18 ICT" name="tearDown" finished-at="2026-03-03T13:40:18 ICT" duration-ms="96" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC18_invalidCases status=SUCCESS method=RegisterTest.TC18_invalidCases(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,boolean,java.lang.String,java.lang.String)[pri:18, instance:tests.RegisterTest@7ed7259e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.RegisterTest@7ed7259e]" started-at="2026-03-03T13:40:18 ICT" name="setUp" finished-at="2026-03-03T13:40:18 ICT" duration-ms="735" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="TC18_invalidCases(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,boolean,java.lang.String,java.lang.String)[pri:18, instance:tests.RegisterTest@7ed7259e]" started-at="2026-03-03T13:40:18 ICT" name="TC18_invalidCases" description="TC18 – Kiểm tra nhiều trường hợp không hợp lệ qua DataProvider" data-provider="invalidRegistration" finished-at="2026-03-03T13:40:19 ICT" duration-ms="936" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC11 – Số điện thoại không bắt đầu bằng 0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Trần Thị Bình]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[binhtest1]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[binhtest1@gmail.com]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[1912345678]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Test@1234]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Test@1234]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[1998-06-20]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[female]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[phone]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[bắt đầu bằng 0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC18_invalidCases -->
+        <test-method is-config="true" signature="initPage()[pri:0, instance:tests.RegisterTest@7ed7259e]" started-at="2026-03-03T13:40:18 ICT" name="initPage" finished-at="2026-03-03T13:40:18 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPage -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.RegisterTest@7ed7259e]" started-at="2026-03-03T13:40:19 ICT" name="tearDown" finished-at="2026-03-03T13:40:20 ICT" duration-ms="108" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC18_invalidCases status=SUCCESS method=RegisterTest.TC18_invalidCases(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,boolean,java.lang.String,java.lang.String)[pri:18, instance:tests.RegisterTest@7ed7259e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.RegisterTest@7ed7259e]" started-at="2026-03-03T13:40:20 ICT" name="setUp" finished-at="2026-03-03T13:40:20 ICT" duration-ms="742" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="TC18_invalidCases(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,boolean,java.lang.String,java.lang.String)[pri:18, instance:tests.RegisterTest@7ed7259e]" started-at="2026-03-03T13:40:20 ICT" name="TC18_invalidCases" description="TC18 – Kiểm tra nhiều trường hợp không hợp lệ qua DataProvider" data-provider="invalidRegistration" finished-at="2026-03-03T13:40:21 ICT" duration-ms="770" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC12 – Mật khẩu không đủ mạnh (thiếu chữ hoa)]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Trần Thị Bình]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[binhtest1]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[binhtest1@gmail.com]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[0987654321]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[test@1234]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[test@1234]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[1998-06-20]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[female]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[password]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[ít nhất 1 chữ hoa]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC18_invalidCases -->
+        <test-method is-config="true" signature="initPage()[pri:0, instance:tests.RegisterTest@7ed7259e]" started-at="2026-03-03T13:40:20 ICT" name="initPage" finished-at="2026-03-03T13:40:20 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPage -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.RegisterTest@7ed7259e]" started-at="2026-03-03T13:40:21 ICT" name="tearDown" finished-at="2026-03-03T13:40:21 ICT" duration-ms="116" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC18_invalidCases status=SUCCESS method=RegisterTest.TC18_invalidCases(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,boolean,java.lang.String,java.lang.String)[pri:18, instance:tests.RegisterTest@7ed7259e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.RegisterTest@7ed7259e]" started-at="2026-03-03T13:40:21 ICT" name="setUp" finished-at="2026-03-03T13:40:22 ICT" duration-ms="759" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="initPage()[pri:0, instance:tests.RegisterTest@7ed7259e]" started-at="2026-03-03T13:40:22 ICT" name="initPage" finished-at="2026-03-03T13:40:22 ICT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPage -->
+        <test-method signature="TC18_invalidCases(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,boolean,java.lang.String,java.lang.String)[pri:18, instance:tests.RegisterTest@7ed7259e]" started-at="2026-03-03T13:40:22 ICT" name="TC18_invalidCases" description="TC18 – Kiểm tra nhiều trường hợp không hợp lệ qua DataProvider" data-provider="invalidRegistration" finished-at="2026-03-03T13:40:23 ICT" duration-ms="845" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC13 – Mật khẩu quá ngắn (< 8 ký tự)]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Trần Thị Bình]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[binhtest1]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[binhtest1@gmail.com]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[0987654321]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Ab@1]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Ab@1]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[1998-06-20]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[female]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[password]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[ít nhất 8 ký tự]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC18_invalidCases -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.RegisterTest@7ed7259e]" started-at="2026-03-03T13:40:23 ICT" name="tearDown" finished-at="2026-03-03T13:40:23 ICT" duration-ms="97" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC18_invalidCases status=SUCCESS method=RegisterTest.TC18_invalidCases(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,boolean,java.lang.String,java.lang.String)[pri:18, instance:tests.RegisterTest@7ed7259e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.RegisterTest@7ed7259e]" started-at="2026-03-03T13:40:23 ICT" name="setUp" finished-at="2026-03-03T13:40:24 ICT" duration-ms="690" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="TC18_invalidCases(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,boolean,java.lang.String,java.lang.String)[pri:18, instance:tests.RegisterTest@7ed7259e]" started-at="2026-03-03T13:40:24 ICT" name="TC18_invalidCases" description="TC18 – Kiểm tra nhiều trường hợp không hợp lệ qua DataProvider" data-provider="invalidRegistration" finished-at="2026-03-03T13:40:24 ICT" duration-ms="869" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC14 – Confirm password không khớp]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Trần Thị Bình]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[binhtest1]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[binhtest1@gmail.com]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[0987654321]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Test@1234]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[DifferentPwd@99]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[1998-06-20]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[female]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[confirmPassword]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[không khớp]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC18_invalidCases -->
+        <test-method is-config="true" signature="initPage()[pri:0, instance:tests.RegisterTest@7ed7259e]" started-at="2026-03-03T13:40:24 ICT" name="initPage" finished-at="2026-03-03T13:40:24 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPage -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.RegisterTest@7ed7259e]" started-at="2026-03-03T13:40:24 ICT" name="tearDown" finished-at="2026-03-03T13:40:25 ICT" duration-ms="97" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC18_invalidCases status=SUCCESS method=RegisterTest.TC18_invalidCases(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,boolean,java.lang.String,java.lang.String)[pri:18, instance:tests.RegisterTest@7ed7259e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.RegisterTest@7ed7259e]" started-at="2026-03-03T13:40:25 ICT" name="setUp" finished-at="2026-03-03T13:40:25 ICT" duration-ms="728" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="TC18_invalidCases(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,boolean,java.lang.String,java.lang.String)[pri:18, instance:tests.RegisterTest@7ed7259e]" started-at="2026-03-03T13:40:25 ICT" name="TC18_invalidCases" description="TC18 – Kiểm tra nhiều trường hợp không hợp lệ qua DataProvider" data-provider="invalidRegistration" finished-at="2026-03-03T13:40:26 ICT" duration-ms="917" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC15 – Ngày sinh dưới 16 tuổi]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Trần Thị Bình]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[binhtest1]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[binhtest1@gmail.com]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[0987654321]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Test@1234]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Test@1234]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[2015-01-01]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[female]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[dob]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[đủ 16 tuổi]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC18_invalidCases -->
+        <test-method is-config="true" signature="initPage()[pri:0, instance:tests.RegisterTest@7ed7259e]" started-at="2026-03-03T13:40:25 ICT" name="initPage" finished-at="2026-03-03T13:40:25 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPage -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.RegisterTest@7ed7259e]" started-at="2026-03-03T13:40:26 ICT" name="tearDown" finished-at="2026-03-03T13:40:26 ICT" duration-ms="109" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC18_invalidCases status=SUCCESS method=RegisterTest.TC18_invalidCases(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,boolean,java.lang.String,java.lang.String)[pri:18, instance:tests.RegisterTest@7ed7259e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.RegisterTest@7ed7259e]" started-at="2026-03-03T13:40:26 ICT" name="setUp" finished-at="2026-03-03T13:40:27 ICT" duration-ms="816" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="TC18_invalidCases(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,boolean,java.lang.String,java.lang.String)[pri:18, instance:tests.RegisterTest@7ed7259e]" started-at="2026-03-03T13:40:27 ICT" name="TC18_invalidCases" description="TC18 – Kiểm tra nhiều trường hợp không hợp lệ qua DataProvider" data-provider="invalidRegistration" finished-at="2026-03-03T13:40:28 ICT" duration-ms="887" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC16 – Ngày sinh từ 100 tuổi trở lên]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Trần Thị Bình]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[binhtest1]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[binhtest1@gmail.com]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[0987654321]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Test@1234]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Test@1234]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[1920-12-31]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[female]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[dob]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[dưới 100]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC18_invalidCases -->
+        <test-method is-config="true" signature="initPage()[pri:0, instance:tests.RegisterTest@7ed7259e]" started-at="2026-03-03T13:40:27 ICT" name="initPage" finished-at="2026-03-03T13:40:27 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPage -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.RegisterTest@7ed7259e]" started-at="2026-03-03T13:40:28 ICT" name="tearDown" finished-at="2026-03-03T13:40:28 ICT" duration-ms="123" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC18_invalidCases status=SUCCESS method=RegisterTest.TC18_invalidCases(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,boolean,java.lang.String,java.lang.String)[pri:18, instance:tests.RegisterTest@7ed7259e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.RegisterTest@7ed7259e]" started-at="2026-03-03T13:40:28 ICT" name="setUp" finished-at="2026-03-03T13:40:29 ICT" duration-ms="793" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="TC18_invalidCases(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,boolean,java.lang.String,java.lang.String)[pri:18, instance:tests.RegisterTest@7ed7259e]" started-at="2026-03-03T13:40:29 ICT" name="TC18_invalidCases" description="TC18 – Kiểm tra nhiều trường hợp không hợp lệ qua DataProvider" data-provider="invalidRegistration" finished-at="2026-03-03T13:40:30 ICT" duration-ms="1228" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC17 – Mã giới thiệu sai format (ít hơn 8 ký tự)]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Trần Thị Bình]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[binhtest1]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[binhtest1@gmail.com]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[0987654321]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Test@1234]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Test@1234]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[1998-06-20]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[female]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[ABC]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[referralCode]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[đúng 8 ký tự]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC18_invalidCases -->
+        <test-method is-config="true" signature="initPage()[pri:0, instance:tests.RegisterTest@7ed7259e]" started-at="2026-03-03T13:40:29 ICT" name="initPage" finished-at="2026-03-03T13:40:29 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPage -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.RegisterTest@7ed7259e]" started-at="2026-03-03T13:40:30 ICT" name="tearDown" finished-at="2026-03-03T13:40:30 ICT" duration-ms="99" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC18_invalidCases status=SUCCESS method=RegisterTest.TC18_invalidCases(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,boolean,java.lang.String,java.lang.String)[pri:18, instance:tests.RegisterTest@7ed7259e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.RegisterTest@7ed7259e]" started-at="2026-03-03T13:40:30 ICT" name="setUp" finished-at="2026-03-03T13:40:31 ICT" duration-ms="782" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="TC18_invalidCases(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,boolean,java.lang.String,java.lang.String)[pri:18, instance:tests.RegisterTest@7ed7259e]" started-at="2026-03-03T13:40:31 ICT" name="TC18_invalidCases" description="TC18 – Kiểm tra nhiều trường hợp không hợp lệ qua DataProvider" data-provider="invalidRegistration" finished-at="2026-03-03T13:40:32 ICT" duration-ms="1301" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC18 – Mã giới thiệu đúng format nhưng không tồn tại]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Trần Thị Bình]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[binhtest1]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[binhtest1@gmail.com]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[0987654321]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Test@1234]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Test@1234]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[1998-06-20]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[female]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[XXXX9999]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[referralCode]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[không tồn tại]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC18_invalidCases -->
+        <test-method is-config="true" signature="initPage()[pri:0, instance:tests.RegisterTest@7ed7259e]" started-at="2026-03-03T13:40:31 ICT" name="initPage" finished-at="2026-03-03T13:40:31 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPage -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.RegisterTest@7ed7259e]" started-at="2026-03-03T13:40:32 ICT" name="tearDown" finished-at="2026-03-03T13:40:32 ICT" duration-ms="88" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC18_invalidCases status=SUCCESS method=RegisterTest.TC18_invalidCases(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,boolean,java.lang.String,java.lang.String)[pri:18, instance:tests.RegisterTest@7ed7259e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.RegisterTest@7ed7259e]" started-at="2026-03-03T13:40:32 ICT" name="setUp" finished-at="2026-03-03T13:40:33 ICT" duration-ms="734" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="initPage()[pri:0, instance:tests.RegisterTest@7ed7259e]" started-at="2026-03-03T13:40:33 ICT" name="initPage" finished-at="2026-03-03T13:40:33 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPage -->
+        <test-method signature="TC18_invalidCases(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,boolean,java.lang.String,java.lang.String)[pri:18, instance:tests.RegisterTest@7ed7259e]" started-at="2026-03-03T13:40:33 ICT" name="TC18_invalidCases" description="TC18 – Kiểm tra nhiều trường hợp không hợp lệ qua DataProvider" data-provider="invalidRegistration" finished-at="2026-03-03T13:40:34 ICT" duration-ms="1047" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TC19 – Chưa tick đồng ý điều khoản]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Trần Thị Bình]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[binhtest1]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[binhtest1@gmail.com]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[0987654321]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[Test@1234]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Test@1234]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[1998-06-20]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[female]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[agreeTerms]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[phải đồng ý]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC18_invalidCases -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:tests.RegisterTest@7ed7259e]" started-at="2026-03-03T13:40:34 ICT" name="tearDown" finished-at="2026-03-03T13:40:34 ICT" duration-ms="108" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC18_invalidCases status=SUCCESS method=RegisterTest.TC18_invalidCases(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,boolean,java.lang.String,java.lang.String)[pri:18, instance:tests.RegisterTest@7ed7259e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.RegisterTest -->
+    </test> <!-- RegisterFormTests -->
+  </suite> <!-- ShopVN_RegisterSuite -->
+</testng-results>

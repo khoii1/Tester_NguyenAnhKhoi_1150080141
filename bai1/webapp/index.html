@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Đăng Ký Tài Khoản – ShopVN</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Header -->
+      <div class="form-header">
+        <div class="logo">🛍️ ShopVN</div>
+        <h1>Tạo Tài Khoản Mới</h1>
+        <p>Tham gia cộng đồng mua sắm ShopVN ngay hôm nay!</p>
+      </div>
+
+      <!-- Registration Form -->
+      <form id="registerForm" novalidate>
+        <!-- Họ và tên -->
+        <div class="form-group">
+          <label for="fullName"
+            >Họ và tên <span class="required">*</span></label
+          >
+          <input
+            type="text"
+            id="fullName"
+            name="fullName"
+            placeholder="Nhập họ và tên đầy đủ"
+            autocomplete="name"
+          />
+          <span class="error-msg" id="fullNameError"></span>
+        </div>
+
+        <!-- Tên đăng nhập -->
+        <div class="form-group">
+          <label for="username"
+            >Tên đăng nhập <span class="required">*</span></label
+          >
+          <input
+            type="text"
+            id="username"
+            name="username"
+            placeholder="Nhập tên đăng nhập (5–20 ký tự)"
+            autocomplete="username"
+          />
+          <span class="error-msg" id="usernameError"></span>
+        </div>
+
+        <!-- Email -->
+        <div class="form-group">
+          <label for="email">Email <span class="required">*</span></label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="example@email.com"
+            autocomplete="email"
+          />
+          <span class="error-msg" id="emailError"></span>
+        </div>
+
+        <!-- Số điện thoại -->
+        <div class="form-group">
+          <label for="phone"
+            >Số điện thoại <span class="required">*</span></label
+          >
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            placeholder="0xxxxxxxxx"
+            autocomplete="tel"
+          />
+          <span class="error-msg" id="phoneError"></span>
+        </div>
+
+        <!-- Mật khẩu -->
+        <div class="form-group">
+          <label for="password">Mật khẩu <span class="required">*</span></label>
+          <div class="input-wrapper">
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Tối thiểu 8 ký tự"
+              autocomplete="new-password"
+            />
+            <button
+              type="button"
+              class="toggle-pw"
+              data-target="password"
+              title="Hiện/ẩn mật khẩu"
+            >
+              👁
+            </button>
+          </div>
+          <div class="password-strength" id="passwordStrength"></div>
+          <span class="error-msg" id="passwordError"></span>
+        </div>
+
+        <!-- Xác nhận mật khẩu -->
+        <div class="form-group">
+          <label for="confirmPassword"
+            >Xác nhận mật khẩu <span class="required">*</span></label
+          >
+          <div class="input-wrapper">
+            <input
+              type="password"
+              id="confirmPassword"
+              name="confirmPassword"
+              placeholder="Nhập lại mật khẩu"
+              autocomplete="new-password"
+            />
+            <button
+              type="button"
+              class="toggle-pw"
+              data-target="confirmPassword"
+              title="Hiện/ẩn mật khẩu"
+            >
+              👁
+            </button>
+          </div>
+          <span class="error-msg" id="confirmPasswordError"></span>
+        </div>
+
+        <!-- 2 cột: Ngày sinh + Giới tính -->
+        <div class="form-row">
+          <!-- Ngày sinh -->
+          <div class="form-group half">
+            <label for="dob">Ngày sinh</label>
+            <input type="date" id="dob" name="dob" />
+            <span class="error-msg" id="dobError"></span>
+          </div>
+
+          <!-- Giới tính -->
+          <div class="form-group half">
+            <label for="gender">Giới tính</label>
+            <select id="gender" name="gender">
+              <option value="">-- Chọn giới tính --</option>
+              <option value="male">Nam</option>
+              <option value="female">Nữ</option>
+              <option value="other">Không muốn tiết lộ</option>
+            </select>
+            <span class="error-msg" id="genderError"></span>
+          </div>
+        </div>
+
+        <!-- Mã giới thiệu -->
+        <div class="form-group">
+          <label for="referralCode">Mã giới thiệu</label>
+          <input
+            type="text"
+            id="referralCode"
+            name="referralCode"
+            placeholder="8 ký tự (chữ hoa + số) – không bắt buộc"
+            maxlength="8"
+            style="text-transform: uppercase"
+          />
+          <span class="error-msg" id="referralCodeError"></span>
+        </div>
+
+        <!-- Điều khoản -->
+        <div class="form-group checkbox-group">
+          <label class="checkbox-label">
+            <input type="checkbox" id="agreeTerms" name="agreeTerms" />
+            <span class="checkmark"></span>
+            Tôi đồng ý với
+            <a href="#" id="viewTermsLink" class="terms-link"
+              >Điều khoản sử dụng</a
+            >
+            của ShopVN <span class="required">*</span>
+          </label>
+          <span class="error-msg" id="agreeTermsError"></span>
+        </div>
+
+        <!-- Submit -->
+        <button type="submit" id="submitBtn" class="btn-submit">
+          Đăng Ký Ngay
+        </button>
+
+        <!-- Login link -->
+        <div class="login-link">
+          Đã có tài khoản? <a href="#">Đăng nhập tại đây</a>
+        </div>
+      </form>
+
+      <!-- Success Banner (ẩn mặc định) -->
+      <div class="success-banner" id="successBanner" style="display: none">
+        <div class="success-icon">✅</div>
+        <h2>Đăng ký thành công!</h2>
+        <p>
+          Chào mừng bạn đến với ShopVN. Hãy kiểm tra email để xác nhận tài
+          khoản.
+        </p>
+        <button class="btn-submit" onclick="resetForm()">
+          Đăng ký tài khoản khác
+        </button>
+      </div>
+    </div>
+
+    <!-- Modal Điều khoản -->
+    <div
+      class="modal-overlay"
+      id="termsModal"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="termsTitle"
+      style="display: none"
+    >
+      <div class="modal-box">
+        <div class="modal-header">
+          <h2 id="termsTitle">Điều khoản sử dụng ShopVN</h2>
+          <button class="modal-close" id="closeModal" title="Đóng">
+            &times;
+          </button>
+        </div>
+        <div class="modal-body" id="termsContent">
+          <h3>1. Điều khoản chung</h3>
+          <p>
+            Khi đăng ký tài khoản ShopVN, bạn đồng ý tuân thủ tất cả các điều
+            khoản và điều kiện được quy định tại đây. ShopVN có quyền thay đổi
+            điều khoản bất kỳ lúc nào.
+          </p>
+          <h3>2. Tài khoản người dùng</h3>
+          <p>
+            Bạn chịu trách nhiệm bảo mật thông tin tài khoản. Không chia sẻ mật
+            khẩu với bất kỳ ai. ShopVN không chịu trách nhiệm về mọi tổn thất do
+            sử dụng trái phép tài khoản của bạn.
+          </p>
+          <h3>3. Quyền riêng tư</h3>
+          <p>
+            Thông tin cá nhân của bạn được bảo mật theo Chính sách bảo mật của
+            ShopVN. Chúng tôi không bán thông tin cá nhân cho bên thứ ba.
+          </p>
+          <h3>4. Hành vi bị cấm</h3>
+          <p>
+            Nghiêm cấm mọi hành vi gian lận, spam, đăng nội dung vi phạm pháp
+            luật, quấy rối người dùng khác trên nền tảng ShopVN.
+          </p>
+          <h3>5. Chấm dứt tài khoản</h3>
+          <p>
+            ShopVN có quyền tạm ngưng hoặc chấm dứt tài khoản nếu phát hiện vi
+            phạm điều khoản mà không cần thông báo trước.
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button class="btn-accept" id="acceptTermsBtn">
+            Đã hiểu &amp; Đồng ý
+          </button>
+          <button class="btn-cancel" id="cancelTermsBtn">Đóng</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,883 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="20" passed="17" failed="3" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-03-03T15:33:45 ICT" name="Lab7_BlackBox_FullSuite" finished-at="2026-03-03T15:35:05 ICT" duration-ms="79944">
+    <groups>
+      <group name="regression">
+        <method signature="TC_CheckoutTest.TC_Checkout_02_theuFirstNameHienLoi()[pri:0, instance:dtm.tests.TC_CheckoutTest@72d1ad2e]" name="TC_Checkout_02_theuFirstNameHienLoi" class="dtm.tests.TC_CheckoutTest"/>
+        <method signature="TC_CheckoutTest.TC_Checkout_03_theuPostalCodeHienLoi()[pri:0, instance:dtm.tests.TC_CheckoutTest@72d1ad2e]" name="TC_Checkout_03_theuPostalCodeHienLoi" class="dtm.tests.TC_CheckoutTest"/>
+        <method signature="TC_DangNhapTest.TC_DangNhap_02_dangNhapHopLe(java.lang.String,java.lang.String)[pri:0, instance:dtm.tests.TC_DangNhapTest@6eda5c9]" name="TC_DangNhap_02_dangNhapHopLe" class="dtm.tests.TC_DangNhapTest"/>
+        <method signature="TC_DangNhapTest.TC_DangNhap_03_dangNhapKhongHopLe(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:dtm.tests.TC_DangNhapTest@6eda5c9]" name="TC_DangNhap_03_dangNhapKhongHopLe" class="dtm.tests.TC_DangNhapTest"/>
+        <method signature="TC_GioHangTest.TC_GioHang_02_themSanPhamTheoData(java.lang.String,int)[pri:0, instance:dtm.tests.TC_GioHangTest@1aa7ecca]" name="TC_GioHang_02_themSanPhamTheoData" class="dtm.tests.TC_GioHangTest"/>
+        <method signature="TC_GioHangTest.TC_GioHang_03_xacNhanSanPhamTrongGio()[pri:0, instance:dtm.tests.TC_GioHangTest@1aa7ecca]" name="TC_GioHang_03_xacNhanSanPhamTrongGio" class="dtm.tests.TC_GioHangTest"/>
+        <method signature="TC_GioHangTest.TC_GioHang_04_xoaSanPhamKhoiGio()[pri:0, instance:dtm.tests.TC_GioHangTest@1aa7ecca]" name="TC_GioHang_04_xoaSanPhamKhoiGio" class="dtm.tests.TC_GioHangTest"/>
+        <method signature="TC_TimKiemTest.TC_TimKiem_02_sapXepAZ()[pri:0, instance:dtm.tests.TC_TimKiemTest@595b007d]" name="TC_TimKiem_02_sapXepAZ" class="dtm.tests.TC_TimKiemTest"/>
+        <method signature="TC_TimKiemTest.TC_TimKiem_03_sapXepZA()[pri:0, instance:dtm.tests.TC_TimKiemTest@595b007d]" name="TC_TimKiem_03_sapXepZA" class="dtm.tests.TC_TimKiemTest"/>
+      </group> <!-- regression -->
+      <group name="smoke">
+        <method signature="TC_CheckoutTest.TC_Checkout_01_checkoutThanhCong()[pri:0, instance:dtm.tests.TC_CheckoutTest@72d1ad2e]" name="TC_Checkout_01_checkoutThanhCong" class="dtm.tests.TC_CheckoutTest"/>
+        <method signature="TC_DangNhapTest.TC_DangNhap_01_dangNhapThanhCong()[pri:0, instance:dtm.tests.TC_DangNhapTest@6eda5c9]" name="TC_DangNhap_01_dangNhapThanhCong" class="dtm.tests.TC_DangNhapTest"/>
+        <method signature="TC_GioHangTest.TC_GioHang_01_themSanPhamVaKiemTraBadge()[pri:0, instance:dtm.tests.TC_GioHangTest@1aa7ecca]" name="TC_GioHang_01_themSanPhamVaKiemTraBadge" class="dtm.tests.TC_GioHangTest"/>
+        <method signature="TC_TimKiemTest.TC_TimKiem_01_trangSanPhamCoSanPham()[pri:0, instance:dtm.tests.TC_TimKiemTest@595b007d]" name="TC_TimKiem_01_trangSanPhamCoSanPham" class="dtm.tests.TC_TimKiemTest"/>
+      </group> <!-- smoke -->
+    </groups>
+    <test started-at="2026-03-03T15:33:45 ICT" name="AllTests" finished-at="2026-03-03T15:35:05 ICT" duration-ms="79944">
+      <class name="dtm.tests.TC_CheckoutTest">
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:dtm.tests.TC_CheckoutTest@72d1ad2e]" started-at="2026-03-03T15:34:28 ICT" name="setup" finished-at="2026-03-03T15:34:29 ICT" duration-ms="612" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void dtm.tests.TC_CheckoutTest.TC_Checkout_01_checkoutThanhCong()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="dangNhapVaThemSanPham()[pri:0, instance:dtm.tests.TC_CheckoutTest@72d1ad2e]" started-at="2026-03-03T15:34:29 ICT" name="dangNhapVaThemSanPham" finished-at="2026-03-03T15:34:30 ICT" duration-ms="1103" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dangNhapVaThemSanPham -->
+        <test-method signature="TC_Checkout_01_checkoutThanhCong()[pri:0, instance:dtm.tests.TC_CheckoutTest@72d1ad2e]" started-at="2026-03-03T15:34:30 ICT" name="TC_Checkout_01_checkoutThanhCong" description="TC_Checkout_01 – Checkout thành công" finished-at="2026-03-03T15:34:40 ICT" duration-ms="10249" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for element to be clickable: By.cssSelector: [data-test='finish'] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 145.0.7632.117, chrome: {chromedriverVersion: 145.0.7632.117 (de4e5d6e13b..., userDataDir: C:\Users\PC\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61893}, goog:processID: 40580, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61893/devtoo..., se:cdpVersion: 145.0.7632.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b54f42a7cd7b63a6e185a1a708765187]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.cssSelector: [data-test='finish'] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 145.0.7632.117, chrome: {chromedriverVersion: 145.0.7632.117 (de4e5d6e13b..., userDataDir: C:\Users\PC\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61893}, goog:processID: 40580, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61893/devtoo..., se:cdpVersion: 145.0.7632.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b54f42a7cd7b63a6e185a1a708765187
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+at dtm.pages.CheckoutPage.clickFinish(CheckoutPage.java:88)
+at dtm.tests.TC_CheckoutTest.TC_Checkout_01_checkoutThanhCong(TC_CheckoutTest.java:45)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_Checkout_01_checkoutThanhCong -->
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:dtm.tests.TC_CheckoutTest@72d1ad2e]" started-at="2026-03-03T15:34:40 ICT" name="teardown" finished-at="2026-03-03T15:34:40 ICT" duration-ms="192" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_Checkout_01_checkoutThanhCong status=FAILURE method=TC_CheckoutTest.TC_Checkout_01_checkoutThanhCong()[pri:0, instance:dtm.tests.TC_CheckoutTest@72d1ad2e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:dtm.tests.TC_CheckoutTest@72d1ad2e]" started-at="2026-03-03T15:34:40 ICT" name="setup" finished-at="2026-03-03T15:34:41 ICT" duration-ms="619" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void dtm.tests.TC_CheckoutTest.TC_Checkout_02_theuFirstNameHienLoi()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="dangNhapVaThemSanPham()[pri:0, instance:dtm.tests.TC_CheckoutTest@72d1ad2e]" started-at="2026-03-03T15:34:41 ICT" name="dangNhapVaThemSanPham" finished-at="2026-03-03T15:34:42 ICT" duration-ms="957" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dangNhapVaThemSanPham -->
+        <test-method signature="TC_Checkout_02_theuFirstNameHienLoi()[pri:0, instance:dtm.tests.TC_CheckoutTest@72d1ad2e]" started-at="2026-03-03T15:34:42 ICT" name="TC_Checkout_02_theuFirstNameHienLoi" description="TC_Checkout_02 – Bỏ trống First Name → hiện lỗi" finished-at="2026-03-03T15:34:52 ICT" duration-ms="10275" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[TC_Checkout_02 FAIL: Không hiện lỗi khi bỏ trống First Name. expected [false] but found [true]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: TC_Checkout_02 FAIL: Không hiện lỗi khi bỏ trống First Name. expected [false] but found [true]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertFalse(Assert.java:79)
+at dtm.tests.TC_CheckoutTest.TC_Checkout_02_theuFirstNameHienLoi(TC_CheckoutTest.java:70)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_Checkout_02_theuFirstNameHienLoi -->
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:dtm.tests.TC_CheckoutTest@72d1ad2e]" started-at="2026-03-03T15:34:52 ICT" name="teardown" finished-at="2026-03-03T15:34:52 ICT" duration-ms="161" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_Checkout_02_theuFirstNameHienLoi status=FAILURE method=TC_CheckoutTest.TC_Checkout_02_theuFirstNameHienLoi()[pri:0, instance:dtm.tests.TC_CheckoutTest@72d1ad2e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:dtm.tests.TC_CheckoutTest@72d1ad2e]" started-at="2026-03-03T15:34:52 ICT" name="setup" finished-at="2026-03-03T15:34:53 ICT" duration-ms="663" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void dtm.tests.TC_CheckoutTest.TC_Checkout_03_theuPostalCodeHienLoi()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="dangNhapVaThemSanPham()[pri:0, instance:dtm.tests.TC_CheckoutTest@72d1ad2e]" started-at="2026-03-03T15:34:53 ICT" name="dangNhapVaThemSanPham" finished-at="2026-03-03T15:34:54 ICT" duration-ms="1075" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dangNhapVaThemSanPham -->
+        <test-method signature="TC_Checkout_03_theuPostalCodeHienLoi()[pri:0, instance:dtm.tests.TC_CheckoutTest@72d1ad2e]" started-at="2026-03-03T15:34:54 ICT" name="TC_Checkout_03_theuPostalCodeHienLoi" description="TC_Checkout_03 – Bỏ trống Postal Code → hiện lỗi" finished-at="2026-03-03T15:35:04 ICT" duration-ms="10416" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[TC_Checkout_03 FAIL: Không hiện lỗi khi bỏ trống Postal Code. expected [false] but found [true]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: TC_Checkout_03 FAIL: Không hiện lỗi khi bỏ trống Postal Code. expected [false] but found [true]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertFalse(Assert.java:79)
+at dtm.tests.TC_CheckoutTest.TC_Checkout_03_theuPostalCodeHienLoi(TC_CheckoutTest.java:90)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_Checkout_03_theuPostalCodeHienLoi -->
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:dtm.tests.TC_CheckoutTest@72d1ad2e]" started-at="2026-03-03T15:35:04 ICT" name="teardown" finished-at="2026-03-03T15:35:05 ICT" duration-ms="279" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_Checkout_03_theuPostalCodeHienLoi status=FAILURE method=TC_CheckoutTest.TC_Checkout_03_theuPostalCodeHienLoi()[pri:0, instance:dtm.tests.TC_CheckoutTest@72d1ad2e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- dtm.tests.TC_CheckoutTest -->
+      <class name="dtm.tests.TC_TimKiemTest">
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:dtm.tests.TC_TimKiemTest@595b007d]" started-at="2026-03-03T15:34:23 ICT" name="setup" finished-at="2026-03-03T15:34:23 ICT" duration-ms="620" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void dtm.tests.TC_TimKiemTest.TC_TimKiem_01_trangSanPhamCoSanPham()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="dangNhap()[pri:0, instance:dtm.tests.TC_TimKiemTest@595b007d]" started-at="2026-03-03T15:34:23 ICT" name="dangNhap" finished-at="2026-03-03T15:34:24 ICT" duration-ms="781" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dangNhap -->
+        <test-method signature="TC_TimKiem_01_trangSanPhamCoSanPham()[pri:0, instance:dtm.tests.TC_TimKiemTest@595b007d]" started-at="2026-03-03T15:34:24 ICT" name="TC_TimKiem_01_trangSanPhamCoSanPham" description="TC_TimKiem_01 – Trang sản phẩm có ít nhất 1 sản phẩm" finished-at="2026-03-03T15:34:24 ICT" duration-ms="51" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_TimKiem_01_trangSanPhamCoSanPham -->
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:dtm.tests.TC_TimKiemTest@595b007d]" started-at="2026-03-03T15:34:24 ICT" name="teardown" finished-at="2026-03-03T15:34:24 ICT" duration-ms="96" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_TimKiem_01_trangSanPhamCoSanPham status=SUCCESS method=TC_TimKiemTest.TC_TimKiem_01_trangSanPhamCoSanPham()[pri:0, instance:dtm.tests.TC_TimKiemTest@595b007d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:dtm.tests.TC_TimKiemTest@595b007d]" started-at="2026-03-03T15:34:24 ICT" name="setup" finished-at="2026-03-03T15:34:25 ICT" duration-ms="611" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void dtm.tests.TC_TimKiemTest.TC_TimKiem_02_sapXepAZ()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="dangNhap()[pri:0, instance:dtm.tests.TC_TimKiemTest@595b007d]" started-at="2026-03-03T15:34:25 ICT" name="dangNhap" finished-at="2026-03-03T15:34:26 ICT" duration-ms="938" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dangNhap -->
+        <test-method signature="TC_TimKiem_02_sapXepAZ()[pri:0, instance:dtm.tests.TC_TimKiemTest@595b007d]" started-at="2026-03-03T15:34:26 ICT" name="TC_TimKiem_02_sapXepAZ" description="TC_TimKiem_02 – Sắp xếp A→Z" finished-at="2026-03-03T15:34:26 ICT" duration-ms="101" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_TimKiem_02_sapXepAZ -->
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:dtm.tests.TC_TimKiemTest@595b007d]" started-at="2026-03-03T15:34:26 ICT" name="teardown" finished-at="2026-03-03T15:34:26 ICT" duration-ms="105" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_TimKiem_02_sapXepAZ status=SUCCESS method=TC_TimKiemTest.TC_TimKiem_02_sapXepAZ()[pri:0, instance:dtm.tests.TC_TimKiemTest@595b007d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:dtm.tests.TC_TimKiemTest@595b007d]" started-at="2026-03-03T15:34:26 ICT" name="setup" finished-at="2026-03-03T15:34:27 ICT" duration-ms="618" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void dtm.tests.TC_TimKiemTest.TC_TimKiem_03_sapXepZA()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="dangNhap()[pri:0, instance:dtm.tests.TC_TimKiemTest@595b007d]" started-at="2026-03-03T15:34:27 ICT" name="dangNhap" finished-at="2026-03-03T15:34:28 ICT" duration-ms="894" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dangNhap -->
+        <test-method signature="TC_TimKiem_03_sapXepZA()[pri:0, instance:dtm.tests.TC_TimKiemTest@595b007d]" started-at="2026-03-03T15:34:28 ICT" name="TC_TimKiem_03_sapXepZA" description="TC_TimKiem_03 – Sắp xếp Z→A" finished-at="2026-03-03T15:34:28 ICT" duration-ms="213" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_TimKiem_03_sapXepZA -->
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:dtm.tests.TC_TimKiemTest@595b007d]" started-at="2026-03-03T15:34:28 ICT" name="teardown" finished-at="2026-03-03T15:34:28 ICT" duration-ms="131" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_TimKiem_03_sapXepZA status=SUCCESS method=TC_TimKiemTest.TC_TimKiem_03_sapXepZA()[pri:0, instance:dtm.tests.TC_TimKiemTest@595b007d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- dtm.tests.TC_TimKiemTest -->
+      <class name="dtm.tests.TC_GioHangTest">
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:dtm.tests.TC_GioHangTest@1aa7ecca]" started-at="2026-03-03T15:34:03 ICT" name="setup" finished-at="2026-03-03T15:34:04 ICT" duration-ms="663" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void dtm.tests.TC_GioHangTest.TC_GioHang_01_themSanPhamVaKiemTraBadge()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="dangNhap()[pri:0, instance:dtm.tests.TC_GioHangTest@1aa7ecca]" started-at="2026-03-03T15:34:04 ICT" name="dangNhap" finished-at="2026-03-03T15:34:05 ICT" duration-ms="669" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dangNhap -->
+        <test-method signature="TC_GioHang_01_themSanPhamVaKiemTraBadge()[pri:0, instance:dtm.tests.TC_GioHangTest@1aa7ecca]" started-at="2026-03-03T15:34:05 ICT" name="TC_GioHang_01_themSanPhamVaKiemTraBadge" description="TC_GioHang_01 – Thêm 1 sản phẩm, badge = 1" finished-at="2026-03-03T15:34:05 ICT" duration-ms="113" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_GioHang_01_themSanPhamVaKiemTraBadge -->
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:dtm.tests.TC_GioHangTest@1aa7ecca]" started-at="2026-03-03T15:34:05 ICT" name="teardown" finished-at="2026-03-03T15:34:05 ICT" duration-ms="102" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_GioHang_01_themSanPhamVaKiemTraBadge status=SUCCESS method=TC_GioHangTest.TC_GioHang_01_themSanPhamVaKiemTraBadge()[pri:0, instance:dtm.tests.TC_GioHangTest@1aa7ecca] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:dtm.tests.TC_GioHangTest@1aa7ecca]" started-at="2026-03-03T15:34:05 ICT" name="setup" finished-at="2026-03-03T15:34:05 ICT" duration-ms="614" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void dtm.tests.TC_GioHangTest.TC_GioHang_02_themSanPhamTheoData(java.lang.String,int)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="dangNhap()[pri:0, instance:dtm.tests.TC_GioHangTest@1aa7ecca]" started-at="2026-03-03T15:34:05 ICT" name="dangNhap" finished-at="2026-03-03T15:34:06 ICT" duration-ms="681" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dangNhap -->
+        <test-method signature="TC_GioHang_02_themSanPhamTheoData(java.lang.String,int)[pri:0, instance:dtm.tests.TC_GioHangTest@1aa7ecca]" started-at="2026-03-03T15:34:06 ICT" name="TC_GioHang_02_themSanPhamTheoData" description="TC_GioHang_02 – Thêm sản phẩm theo DataProvider" data-provider="gioHangData" finished-at="2026-03-03T15:34:06 ICT" duration-ms="99" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Sauce Labs Backpack]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_GioHang_02_themSanPhamTheoData -->
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:dtm.tests.TC_GioHangTest@1aa7ecca]" started-at="2026-03-03T15:34:06 ICT" name="teardown" finished-at="2026-03-03T15:34:06 ICT" duration-ms="113" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_GioHang_02_themSanPhamTheoData status=SUCCESS method=TC_GioHangTest.TC_GioHang_02_themSanPhamTheoData(java.lang.String,int)[pri:0, instance:dtm.tests.TC_GioHangTest@1aa7ecca] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:dtm.tests.TC_GioHangTest@1aa7ecca]" started-at="2026-03-03T15:34:06 ICT" name="setup" finished-at="2026-03-03T15:34:07 ICT" duration-ms="612" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void dtm.tests.TC_GioHangTest.TC_GioHang_02_themSanPhamTheoData(java.lang.String,int)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="dangNhap()[pri:0, instance:dtm.tests.TC_GioHangTest@1aa7ecca]" started-at="2026-03-03T15:34:07 ICT" name="dangNhap" finished-at="2026-03-03T15:34:08 ICT" duration-ms="681" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dangNhap -->
+        <test-method signature="TC_GioHang_02_themSanPhamTheoData(java.lang.String,int)[pri:0, instance:dtm.tests.TC_GioHangTest@1aa7ecca]" started-at="2026-03-03T15:34:08 ICT" name="TC_GioHang_02_themSanPhamTheoData" description="TC_GioHang_02 – Thêm sản phẩm theo DataProvider" data-provider="gioHangData" finished-at="2026-03-03T15:34:08 ICT" duration-ms="80" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Sauce Labs Bike Light]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_GioHang_02_themSanPhamTheoData -->
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:dtm.tests.TC_GioHangTest@1aa7ecca]" started-at="2026-03-03T15:34:08 ICT" name="teardown" finished-at="2026-03-03T15:34:08 ICT" duration-ms="104" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_GioHang_02_themSanPhamTheoData status=SUCCESS method=TC_GioHangTest.TC_GioHang_02_themSanPhamTheoData(java.lang.String,int)[pri:0, instance:dtm.tests.TC_GioHangTest@1aa7ecca] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:dtm.tests.TC_GioHangTest@1aa7ecca]" started-at="2026-03-03T15:34:08 ICT" name="setup" finished-at="2026-03-03T15:34:08 ICT" duration-ms="615" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void dtm.tests.TC_GioHangTest.TC_GioHang_02_themSanPhamTheoData(java.lang.String,int)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="dangNhap()[pri:0, instance:dtm.tests.TC_GioHangTest@1aa7ecca]" started-at="2026-03-03T15:34:08 ICT" name="dangNhap" finished-at="2026-03-03T15:34:09 ICT" duration-ms="777" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dangNhap -->
+        <test-method signature="TC_GioHang_02_themSanPhamTheoData(java.lang.String,int)[pri:0, instance:dtm.tests.TC_GioHangTest@1aa7ecca]" started-at="2026-03-03T15:34:09 ICT" name="TC_GioHang_02_themSanPhamTheoData" description="TC_GioHang_02 – Thêm sản phẩm theo DataProvider" data-provider="gioHangData" finished-at="2026-03-03T15:34:09 ICT" duration-ms="74" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Sauce Labs Bolt T-Shirt]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_GioHang_02_themSanPhamTheoData -->
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:dtm.tests.TC_GioHangTest@1aa7ecca]" started-at="2026-03-03T15:34:09 ICT" name="teardown" finished-at="2026-03-03T15:34:09 ICT" duration-ms="101" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_GioHang_02_themSanPhamTheoData status=SUCCESS method=TC_GioHangTest.TC_GioHang_02_themSanPhamTheoData(java.lang.String,int)[pri:0, instance:dtm.tests.TC_GioHangTest@1aa7ecca] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:dtm.tests.TC_GioHangTest@1aa7ecca]" started-at="2026-03-03T15:34:09 ICT" name="setup" finished-at="2026-03-03T15:34:10 ICT" duration-ms="615" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void dtm.tests.TC_GioHangTest.TC_GioHang_03_xacNhanSanPhamTrongGio()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="dangNhap()[pri:0, instance:dtm.tests.TC_GioHangTest@1aa7ecca]" started-at="2026-03-03T15:34:10 ICT" name="dangNhap" finished-at="2026-03-03T15:34:11 ICT" duration-ms="737" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dangNhap -->
+        <test-method signature="TC_GioHang_03_xacNhanSanPhamTrongGio()[pri:0, instance:dtm.tests.TC_GioHangTest@1aa7ecca]" started-at="2026-03-03T15:34:11 ICT" name="TC_GioHang_03_xacNhanSanPhamTrongGio" description="TC_GioHang_03 – Mở trang cart, xác nhận sản phẩm có trong giỏ" finished-at="2026-03-03T15:34:11 ICT" duration-ms="163" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_GioHang_03_xacNhanSanPhamTrongGio -->
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:dtm.tests.TC_GioHangTest@1aa7ecca]" started-at="2026-03-03T15:34:11 ICT" name="teardown" finished-at="2026-03-03T15:34:11 ICT" duration-ms="112" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_GioHang_03_xacNhanSanPhamTrongGio status=SUCCESS method=TC_GioHangTest.TC_GioHang_03_xacNhanSanPhamTrongGio()[pri:0, instance:dtm.tests.TC_GioHangTest@1aa7ecca] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:dtm.tests.TC_GioHangTest@1aa7ecca]" started-at="2026-03-03T15:34:11 ICT" name="setup" finished-at="2026-03-03T15:34:12 ICT" duration-ms="631" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void dtm.tests.TC_GioHangTest.TC_GioHang_04_xoaSanPhamKhoiGio()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="dangNhap()[pri:0, instance:dtm.tests.TC_GioHangTest@1aa7ecca]" started-at="2026-03-03T15:34:12 ICT" name="dangNhap" finished-at="2026-03-03T15:34:12 ICT" duration-ms="769" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dangNhap -->
+        <test-method signature="TC_GioHang_04_xoaSanPhamKhoiGio()[pri:0, instance:dtm.tests.TC_GioHangTest@1aa7ecca]" started-at="2026-03-03T15:34:12 ICT" name="TC_GioHang_04_xoaSanPhamKhoiGio" description="TC_GioHang_04 – Xoá sản phẩm khỏi giỏ hàng" finished-at="2026-03-03T15:34:23 ICT" duration-ms="10250" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_GioHang_04_xoaSanPhamKhoiGio -->
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:dtm.tests.TC_GioHangTest@1aa7ecca]" started-at="2026-03-03T15:34:23 ICT" name="teardown" finished-at="2026-03-03T15:34:23 ICT" duration-ms="99" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_GioHang_04_xoaSanPhamKhoiGio status=SUCCESS method=TC_GioHangTest.TC_GioHang_04_xoaSanPhamKhoiGio()[pri:0, instance:dtm.tests.TC_GioHangTest@1aa7ecca] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- dtm.tests.TC_GioHangTest -->
+      <class name="dtm.tests.TC_DangNhapTest">
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:dtm.tests.TC_DangNhapTest@6eda5c9]" started-at="2026-03-03T15:33:45 ICT" name="setup" finished-at="2026-03-03T15:33:46 ICT" duration-ms="1346" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void dtm.tests.TC_DangNhapTest.TC_DangNhap_01_dangNhapThanhCong()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="TC_DangNhap_01_dangNhapThanhCong()[pri:0, instance:dtm.tests.TC_DangNhapTest@6eda5c9]" started-at="2026-03-03T15:33:46 ICT" name="TC_DangNhap_01_dangNhapThanhCong" description="TC_DangNhap_01 – Đăng nhập thành công" finished-at="2026-03-03T15:33:47 ICT" duration-ms="1008" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_DangNhap_01_dangNhapThanhCong -->
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:dtm.tests.TC_DangNhapTest@6eda5c9]" started-at="2026-03-03T15:33:47 ICT" name="teardown" finished-at="2026-03-03T15:33:47 ICT" duration-ms="131" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_DangNhap_01_dangNhapThanhCong status=SUCCESS method=TC_DangNhapTest.TC_DangNhap_01_dangNhapThanhCong()[pri:0, instance:dtm.tests.TC_DangNhapTest@6eda5c9] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:dtm.tests.TC_DangNhapTest@6eda5c9]" started-at="2026-03-03T15:33:47 ICT" name="setup" finished-at="2026-03-03T15:33:48 ICT" duration-ms="692" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void dtm.tests.TC_DangNhapTest.TC_DangNhap_02_dangNhapHopLe(java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="TC_DangNhap_02_dangNhapHopLe(java.lang.String,java.lang.String)[pri:0, instance:dtm.tests.TC_DangNhapTest@6eda5c9]" started-at="2026-03-03T15:33:48 ICT" name="TC_DangNhap_02_dangNhapHopLe" description="TC_DangNhap_02 – Đăng nhập hợp lệ với nhiều tài khoản" data-provider="dangNhapHopLeData" finished-at="2026-03-03T15:33:49 ICT" duration-ms="868" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[standard_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_DangNhap_02_dangNhapHopLe -->
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:dtm.tests.TC_DangNhapTest@6eda5c9]" started-at="2026-03-03T15:33:49 ICT" name="teardown" finished-at="2026-03-03T15:33:49 ICT" duration-ms="104" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_DangNhap_02_dangNhapHopLe status=SUCCESS method=TC_DangNhapTest.TC_DangNhap_02_dangNhapHopLe(java.lang.String,java.lang.String)[pri:0, instance:dtm.tests.TC_DangNhapTest@6eda5c9] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:dtm.tests.TC_DangNhapTest@6eda5c9]" started-at="2026-03-03T15:33:49 ICT" name="setup" finished-at="2026-03-03T15:33:49 ICT" duration-ms="620" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void dtm.tests.TC_DangNhapTest.TC_DangNhap_02_dangNhapHopLe(java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="TC_DangNhap_02_dangNhapHopLe(java.lang.String,java.lang.String)[pri:0, instance:dtm.tests.TC_DangNhapTest@6eda5c9]" started-at="2026-03-03T15:33:49 ICT" name="TC_DangNhap_02_dangNhapHopLe" description="TC_DangNhap_02 – Đăng nhập hợp lệ với nhiều tài khoản" data-provider="dangNhapHopLeData" finished-at="2026-03-03T15:33:50 ICT" duration-ms="783" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[problem_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_DangNhap_02_dangNhapHopLe -->
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:dtm.tests.TC_DangNhapTest@6eda5c9]" started-at="2026-03-03T15:33:50 ICT" name="teardown" finished-at="2026-03-03T15:33:50 ICT" duration-ms="113" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_DangNhap_02_dangNhapHopLe status=SUCCESS method=TC_DangNhapTest.TC_DangNhap_02_dangNhapHopLe(java.lang.String,java.lang.String)[pri:0, instance:dtm.tests.TC_DangNhapTest@6eda5c9] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:dtm.tests.TC_DangNhapTest@6eda5c9]" started-at="2026-03-03T15:33:50 ICT" name="setup" finished-at="2026-03-03T15:33:51 ICT" duration-ms="757" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void dtm.tests.TC_DangNhapTest.TC_DangNhap_02_dangNhapHopLe(java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="TC_DangNhap_02_dangNhapHopLe(java.lang.String,java.lang.String)[pri:0, instance:dtm.tests.TC_DangNhapTest@6eda5c9]" started-at="2026-03-03T15:33:51 ICT" name="TC_DangNhap_02_dangNhapHopLe" description="TC_DangNhap_02 – Đăng nhập hợp lệ với nhiều tài khoản" data-provider="dangNhapHopLeData" finished-at="2026-03-03T15:33:57 ICT" duration-ms="5905" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[performance_glitch_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_DangNhap_02_dangNhapHopLe -->
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:dtm.tests.TC_DangNhapTest@6eda5c9]" started-at="2026-03-03T15:33:57 ICT" name="teardown" finished-at="2026-03-03T15:33:57 ICT" duration-ms="107" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_DangNhap_02_dangNhapHopLe status=SUCCESS method=TC_DangNhapTest.TC_DangNhap_02_dangNhapHopLe(java.lang.String,java.lang.String)[pri:0, instance:dtm.tests.TC_DangNhapTest@6eda5c9] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:dtm.tests.TC_DangNhapTest@6eda5c9]" started-at="2026-03-03T15:33:57 ICT" name="setup" finished-at="2026-03-03T15:33:58 ICT" duration-ms="661" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void dtm.tests.TC_DangNhapTest.TC_DangNhap_03_dangNhapKhongHopLe(java.lang.String,java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="TC_DangNhap_03_dangNhapKhongHopLe(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:dtm.tests.TC_DangNhapTest@6eda5c9]" started-at="2026-03-03T15:33:58 ICT" name="TC_DangNhap_03_dangNhapKhongHopLe" description="TC_DangNhap_03 – Đăng nhập không hợp lệ hiển thị lỗi" data-provider="dangNhapKhongHopLeData" finished-at="2026-03-03T15:33:58 ICT" duration-ms="680" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Username is required]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_DangNhap_03_dangNhapKhongHopLe -->
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:dtm.tests.TC_DangNhapTest@6eda5c9]" started-at="2026-03-03T15:33:58 ICT" name="teardown" finished-at="2026-03-03T15:33:59 ICT" duration-ms="102" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_DangNhap_03_dangNhapKhongHopLe status=SUCCESS method=TC_DangNhapTest.TC_DangNhap_03_dangNhapKhongHopLe(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:dtm.tests.TC_DangNhapTest@6eda5c9] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:dtm.tests.TC_DangNhapTest@6eda5c9]" started-at="2026-03-03T15:33:59 ICT" name="setup" finished-at="2026-03-03T15:33:59 ICT" duration-ms="626" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void dtm.tests.TC_DangNhapTest.TC_DangNhap_03_dangNhapKhongHopLe(java.lang.String,java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="TC_DangNhap_03_dangNhapKhongHopLe(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:dtm.tests.TC_DangNhapTest@6eda5c9]" started-at="2026-03-03T15:33:59 ICT" name="TC_DangNhap_03_dangNhapKhongHopLe" description="TC_DangNhap_03 – Đăng nhập không hợp lệ hiển thị lỗi" data-provider="dangNhapKhongHopLeData" finished-at="2026-03-03T15:34:00 ICT" duration-ms="769" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[standard_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Password is required]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_DangNhap_03_dangNhapKhongHopLe -->
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:dtm.tests.TC_DangNhapTest@6eda5c9]" started-at="2026-03-03T15:34:00 ICT" name="teardown" finished-at="2026-03-03T15:34:00 ICT" duration-ms="122" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_DangNhap_03_dangNhapKhongHopLe status=SUCCESS method=TC_DangNhapTest.TC_DangNhap_03_dangNhapKhongHopLe(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:dtm.tests.TC_DangNhapTest@6eda5c9] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:dtm.tests.TC_DangNhapTest@6eda5c9]" started-at="2026-03-03T15:34:00 ICT" name="setup" finished-at="2026-03-03T15:34:01 ICT" duration-ms="651" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void dtm.tests.TC_DangNhapTest.TC_DangNhap_03_dangNhapKhongHopLe(java.lang.String,java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="TC_DangNhap_03_dangNhapKhongHopLe(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:dtm.tests.TC_DangNhapTest@6eda5c9]" started-at="2026-03-03T15:34:01 ICT" name="TC_DangNhap_03_dangNhapKhongHopLe" description="TC_DangNhap_03 – Đăng nhập không hợp lệ hiển thị lỗi" data-provider="dangNhapKhongHopLeData" finished-at="2026-03-03T15:34:02 ICT" duration-ms="821" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[locked_out_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Sorry, this user has been locked out]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_DangNhap_03_dangNhapKhongHopLe -->
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:dtm.tests.TC_DangNhapTest@6eda5c9]" started-at="2026-03-03T15:34:02 ICT" name="teardown" finished-at="2026-03-03T15:34:02 ICT" duration-ms="111" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_DangNhap_03_dangNhapKhongHopLe status=SUCCESS method=TC_DangNhapTest.TC_DangNhap_03_dangNhapKhongHopLe(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:dtm.tests.TC_DangNhapTest@6eda5c9] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup(java.lang.reflect.Method)[pri:0, instance:dtm.tests.TC_DangNhapTest@6eda5c9]" started-at="2026-03-03T15:34:02 ICT" name="setup" finished-at="2026-03-03T15:34:02 ICT" duration-ms="604" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void dtm.tests.TC_DangNhapTest.TC_DangNhap_03_dangNhapKhongHopLe(java.lang.String,java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="TC_DangNhap_03_dangNhapKhongHopLe(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:dtm.tests.TC_DangNhapTest@6eda5c9]" started-at="2026-03-03T15:34:02 ICT" name="TC_DangNhap_03_dangNhapKhongHopLe" description="TC_DangNhap_03 – Đăng nhập không hợp lệ hiển thị lỗi" data-provider="dangNhapKhongHopLeData" finished-at="2026-03-03T15:34:03 ICT" duration-ms="942" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[wrong_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[wrong_pass]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Username and password do not match]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_DangNhap_03_dangNhapKhongHopLe -->
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:dtm.tests.TC_DangNhapTest@6eda5c9]" started-at="2026-03-03T15:34:03 ICT" name="teardown" finished-at="2026-03-03T15:34:03 ICT" duration-ms="115" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TC_DangNhap_03_dangNhapKhongHopLe status=SUCCESS method=TC_DangNhapTest.TC_DangNhap_03_dangNhapKhongHopLe(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:dtm.tests.TC_DangNhapTest@6eda5c9] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- dtm.tests.TC_DangNhapTest -->
+    </test> <!-- AllTests -->
+  </suite> <!-- Lab7_BlackBox_FullSuite -->
+</testng-results>

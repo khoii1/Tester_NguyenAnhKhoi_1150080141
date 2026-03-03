@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="1" name="Failed suite [ShopVN_RegisterSuite]" guice-stage="DEVELOPMENT" verbose="0">
+  <parameter name="headless" value="false"/>
+  <parameter name="browser" value="chrome"/>
+  <test thread-count="1" name="RegisterFormTests(failed)" verbose="0">
+    <classes>
+      <class name="tests.RegisterTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="TC04_usernameInvalidFormat"/>
+          <include name="TC01_registerWithValidData" invocation-numbers="0"/>
+          <include name="initPage"/>
+          <include name="TC18_invalidCases" invocation-numbers="3"/>
+        </methods>
+      </class> <!-- tests.RegisterTest -->
+    </classes>
+  </test> <!-- RegisterFormTests(failed) -->
+</suite> <!-- Failed suite [ShopVN_RegisterSuite] -->

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<!--
+  testng.xml – ShopVN Registration Form Test Suite
+  Chạy: mvn test  (Surefire tự đọc file này qua pom.xml)
+  Hoặc trực tiếp: Right-click → Run As TestNG Suite (trong IDE)
+-->
+<suite name="ShopVN_RegisterSuite" verbose="1" thread-count="1">
+
+  <!-- Suite-level parameters (có thể override trong test tag) -->
+  <parameter name="browser"  value="chrome" />
+  <parameter name="headless" value="false"  />
+
+  <test name="RegisterFormTests" preserve-order="true">
+    <classes>
+      <class name="tests.RegisterTest" />
+    </classes>
+  </test>
+
+</suite>
