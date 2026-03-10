@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-03-10T14:41:24 ICT" name="Regression_Suite" finished-at="2026-03-10T14:41:24 ICT" duration-ms="56">
+    <groups>
+      <group name="regression">
+        <method signature="CartTest.testAddToCart()[pri:0, instance:dtm.CartTest@20d28811]" name="testAddToCart" class="dtm.CartTest"/>
+        <method signature="CartTest.testRemoveFromCart()[pri:0, instance:dtm.CartTest@20d28811]" name="testRemoveFromCart" class="dtm.CartTest"/>
+        <method signature="CheckoutTest.testCheckoutComplete()[pri:0, instance:dtm.CheckoutTest@3967e60c]" name="testCheckoutComplete" class="dtm.CheckoutTest"/>
+        <method signature="CheckoutTest.testCheckoutOverview()[pri:0, instance:dtm.CheckoutTest@3967e60c]" name="testCheckoutOverview" class="dtm.CheckoutTest"/>
+        <method signature="LoginTest.testLoginSuccess()[pri:0, instance:dtm.LoginTest@670002]" name="testLoginSuccess" class="dtm.LoginTest"/>
+        <method signature="LoginTest.testLoginWrongPassword()[pri:0, instance:dtm.LoginTest@670002]" name="testLoginWrongPassword" class="dtm.LoginTest"/>
+      </group> <!-- regression -->
+      <group name="smoke">
+        <method signature="CartTest.testAddToCart()[pri:0, instance:dtm.CartTest@20d28811]" name="testAddToCart" class="dtm.CartTest"/>
+        <method signature="CheckoutTest.testCheckoutOverview()[pri:0, instance:dtm.CheckoutTest@3967e60c]" name="testCheckoutOverview" class="dtm.CheckoutTest"/>
+        <method signature="LoginTest.testLoginSuccess()[pri:0, instance:dtm.LoginTest@670002]" name="testLoginSuccess" class="dtm.LoginTest"/>
+      </group> <!-- smoke -->
+    </groups>
+    <test started-at="2026-03-10T14:41:24 ICT" name="Regression Tests" finished-at="2026-03-10T14:41:24 ICT" duration-ms="56">
+      <class name="dtm.CheckoutTest">
+        <test-method signature="testCheckoutComplete()[pri:0, instance:dtm.CheckoutTest@3967e60c]" started-at="2026-03-10T14:41:24 ICT" name="testCheckoutComplete" description="Hoan tat qua trinh dat hang thanh cong" finished-at="2026-03-10T14:41:24 ICT" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCheckoutComplete -->
+        <test-method signature="testCheckoutOverview()[pri:0, instance:dtm.CheckoutTest@3967e60c]" started-at="2026-03-10T14:41:24 ICT" name="testCheckoutOverview" description="Xem trang tong quan don hang truoc khi thanh toan" finished-at="2026-03-10T14:41:24 ICT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCheckoutOverview -->
+      </class> <!-- dtm.CheckoutTest -->
+      <class name="dtm.CartTest">
+        <test-method signature="testAddToCart()[pri:0, instance:dtm.CartTest@20d28811]" started-at="2026-03-10T14:41:24 ICT" name="testAddToCart" description="Them san pham vao gio hang thanh cong" finished-at="2026-03-10T14:41:24 ICT" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddToCart -->
+        <test-method signature="testRemoveFromCart()[pri:0, instance:dtm.CartTest@20d28811]" started-at="2026-03-10T14:41:24 ICT" name="testRemoveFromCart" description="Xoa san pham khoi gio hang thanh cong" finished-at="2026-03-10T14:41:24 ICT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRemoveFromCart -->
+      </class> <!-- dtm.CartTest -->
+      <class name="dtm.LoginTest">
+        <test-method signature="testLoginSuccess()[pri:0, instance:dtm.LoginTest@670002]" started-at="2026-03-10T14:41:24 ICT" name="testLoginSuccess" description="Dang nhap thanh cong voi tai khoan hop le" finished-at="2026-03-10T14:41:24 ICT" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginSuccess -->
+        <test-method signature="testLoginWrongPassword()[pri:0, instance:dtm.LoginTest@670002]" started-at="2026-03-10T14:41:24 ICT" name="testLoginWrongPassword" description="Dang nhap sai mat khau phai tra ve thong bao loi" finished-at="2026-03-10T14:41:24 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginWrongPassword -->
+      </class> <!-- dtm.LoginTest -->
+    </test> <!-- Regression Tests -->
+  </suite> <!-- Regression_Suite -->
+</testng-results>

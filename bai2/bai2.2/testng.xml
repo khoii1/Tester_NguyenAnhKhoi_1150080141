@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<!--
+    parallel="classes"  : moi class test chay tren 1 luong rieng biet
+    thread-count="2"    : toi da 2 luong chay dong thoi
+    => LoginTest va CartTest se mo 2 cua so Chrome gan nhu cung luc
+-->
+<suite name="Parallel_Suite" verbose="1" parallel="classes" thread-count="2">
+
+    <parameter name="browser" value="chrome"/>
+
+    <test name="Parallel Tests">
+        <classes>
+            <class name="dtm.LoginTest"/>
+            <class name="dtm.CartTest"/>
+        </classes>
+    </test>
+
+</suite>

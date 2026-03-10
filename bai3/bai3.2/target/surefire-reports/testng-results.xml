@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-03-10T15:31:46 ICT" name="Surefire suite" finished-at="2026-03-10T15:31:46 ICT" duration-ms="36">
+    <groups>
+    </groups>
+    <test started-at="2026-03-10T15:31:46 ICT" name="Surefire test" finished-at="2026-03-10T15:31:46 ICT" duration-ms="36">
+      <class name="dtm.TinhTienNuocTest">
+        <test-method signature="testDanCuBac1()[pri:0, instance:dtm.TinhTienNuocTest@53ca01a2]" started-at="2026-03-10T15:31:46 ICT" name="testDanCuBac1" finished-at="2026-03-10T15:31:46 ICT" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDanCuBac1 -->
+        <test-method signature="testDanCuBac2()[pri:0, instance:dtm.TinhTienNuocTest@53ca01a2]" started-at="2026-03-10T15:31:46 ICT" name="testDanCuBac2" finished-at="2026-03-10T15:31:46 ICT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDanCuBac2 -->
+        <test-method signature="testDanCuBac3()[pri:0, instance:dtm.TinhTienNuocTest@53ca01a2]" started-at="2026-03-10T15:31:46 ICT" name="testDanCuBac3" finished-at="2026-03-10T15:31:46 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDanCuBac3 -->
+        <test-method signature="testHoNgheo()[pri:0, instance:dtm.TinhTienNuocTest@53ca01a2]" started-at="2026-03-10T15:31:46 ICT" name="testHoNgheo" finished-at="2026-03-10T15:31:46 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testHoNgheo -->
+        <test-method signature="testKinhDoanh()[pri:0, instance:dtm.TinhTienNuocTest@53ca01a2]" started-at="2026-03-10T15:31:46 ICT" name="testKinhDoanh" finished-at="2026-03-10T15:31:46 ICT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testKinhDoanh -->
+        <test-method signature="testSoM3KhongHopLe()[pri:0, instance:dtm.TinhTienNuocTest@53ca01a2]" started-at="2026-03-10T15:31:46 ICT" name="testSoM3KhongHopLe" finished-at="2026-03-10T15:31:46 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSoM3KhongHopLe -->
+      </class> <!-- dtm.TinhTienNuocTest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>

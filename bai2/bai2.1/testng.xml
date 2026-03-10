@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="SauceDemo_Suite" verbose="1" parallel="classes" thread-count="2">
+
+    <!-- ② GROUPS: chỉ chạy các test thuộc nhóm "smoke" -->
+    <groups>
+        <run>
+            <include name="smoke"/>
+        </run>
+    </groups>
+
+    <!-- ① TRUYỀN THAM SỐ: áp dụng cho toàn bộ suite -->
+    <parameter name="baseUrl" value="https://www.saucedemo.com"/>
+    <parameter name="browser"  value="chrome"/>
+
+    <!-- ③ CHẠY CLASS CỤ THỂ: test tên "Login Tests" -->
+    <test name="Login Tests">
+        <classes>
+            <class name="fpoly.LoginTest"/>
+        </classes>
+    </test>
+
+    <!-- ④ CHẠY THEO PACKAGE: test tên "Cart Tests" -->
+    <test name="Cart Tests">
+        <packages>
+            <package name="fpoly.cart"/>
+        </packages>
+    </test>
+
+</suite>

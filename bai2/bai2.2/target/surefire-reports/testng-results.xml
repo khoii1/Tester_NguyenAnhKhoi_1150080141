@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-03-10T15:00:15 ICT" name="Parallel_Suite" finished-at="2026-03-10T15:00:21 ICT" duration-ms="5793">
+    <groups>
+    </groups>
+    <test started-at="2026-03-10T15:00:15 ICT" name="Parallel Tests" finished-at="2026-03-10T15:00:21 ICT" duration-ms="5793">
+      <class name="dtm.CartTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:dtm.CartTest@2a798d51]" started-at="2026-03-10T15:00:15 ICT" name="setUp" finished-at="2026-03-10T15:00:18 ICT" duration-ms="2789" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testCartPageNavigation()[pri:0, instance:dtm.CartTest@2a798d51]" started-at="2026-03-10T15:00:18 ICT" name="testCartPageNavigation" description="Kiem tra dieu huong den trang inventory (gio hang)" finished-at="2026-03-10T15:00:18 ICT" duration-ms="830" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCartPageNavigation -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:dtm.CartTest@2a798d51]" started-at="2026-03-10T15:00:18 ICT" name="tearDown" finished-at="2026-03-10T15:00:19 ICT" duration-ms="213" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:dtm.CartTest@2a798d51]" started-at="2026-03-10T15:00:19 ICT" name="setUp" finished-at="2026-03-10T15:00:20 ICT" duration-ms="849" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testCartPageTitle()[pri:0, instance:dtm.CartTest@2a798d51]" started-at="2026-03-10T15:00:20 ICT" name="testCartPageTitle" description="Kiem tra title trang SauceDemo tu CartTest" finished-at="2026-03-10T15:00:20 ICT" duration-ms="751" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCartPageTitle -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:dtm.CartTest@2a798d51]" started-at="2026-03-10T15:00:20 ICT" name="tearDown" finished-at="2026-03-10T15:00:20 ICT" duration-ms="103" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- dtm.CartTest -->
+      <class name="dtm.LoginTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:dtm.LoginTest@1ab3a8c8]" started-at="2026-03-10T15:00:15 ICT" name="setUp" finished-at="2026-03-10T15:00:18 ICT" duration-ms="2809" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testLoginPageTitle()[pri:0, instance:dtm.LoginTest@1ab3a8c8]" started-at="2026-03-10T15:00:18 ICT" name="testLoginPageTitle" description="Kiem tra title trang dang nhap SauceDemo" finished-at="2026-03-10T15:00:19 ICT" duration-ms="886" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginPageTitle -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:dtm.LoginTest@1ab3a8c8]" started-at="2026-03-10T15:00:19 ICT" name="tearDown" finished-at="2026-03-10T15:00:19 ICT" duration-ms="205" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:dtm.LoginTest@1ab3a8c8]" started-at="2026-03-10T15:00:19 ICT" name="setUp" finished-at="2026-03-10T15:00:20 ICT" duration-ms="936" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testLoginPageUrl()[pri:0, instance:dtm.LoginTest@1ab3a8c8]" started-at="2026-03-10T15:00:20 ICT" name="testLoginPageUrl" description="Kiem tra URL trang dang nhap chua saucedemo" finished-at="2026-03-10T15:00:21 ICT" duration-ms="807" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginPageUrl -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:dtm.LoginTest@1ab3a8c8]" started-at="2026-03-10T15:00:21 ICT" name="tearDown" finished-at="2026-03-10T15:00:21 ICT" duration-ms="115" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- dtm.LoginTest -->
+    </test> <!-- Parallel Tests -->
+  </suite> <!-- Parallel_Suite -->
+</testng-results>
