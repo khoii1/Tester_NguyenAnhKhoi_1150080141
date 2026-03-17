@@ -1,0 +1,1326 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results retried="2" ignored="2" total="25" passed="21" failed="0" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[Generated checkout data: CheckoutData{firstName='Allan', lastName='Botsford', postalCode='85862'}]]>
+    </line>
+    <line>
+      <![CDATA[Generated checkout data: CheckoutData{firstName='Shannon', lastName='Schumm', postalCode='46438'}]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2026-03-17T15:36:19 ICT" name="Lab9Bai7" finished-at="2026-03-17T15:37:18 ICT" duration-ms="59195">
+    <groups>
+      <group name="regression">
+        <method signature="LoginDataDrivenTest.testBoundaryLogin(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.lab9.tests.LoginDataDrivenTest@4d5d943d]" name="testBoundaryLogin" class="com.lab9.tests.LoginDataDrivenTest"/>
+        <method signature="LoginDataDrivenTest.testNegativeLogin(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.lab9.tests.LoginDataDrivenTest@4d5d943d]" name="testNegativeLogin" class="com.lab9.tests.LoginDataDrivenTest"/>
+        <method signature="LoginDataDrivenTest.testSmokeLogin(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.lab9.tests.LoginDataDrivenTest@4d5d943d]" name="testSmokeLogin" class="com.lab9.tests.LoginDataDrivenTest"/>
+      </group> <!-- regression -->
+      <group name="smoke">
+        <method signature="LoginDataDrivenTest.testSmokeLogin(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.lab9.tests.LoginDataDrivenTest@4d5d943d]" name="testSmokeLogin" class="com.lab9.tests.LoginDataDrivenTest"/>
+      </group> <!-- smoke -->
+    </groups>
+    <test started-at="2026-03-17T15:36:19 ICT" name="Refactored Framework Suite" finished-at="2026-03-17T15:37:18 ICT" duration-ms="59195">
+      <class name="com.lab9.tests.FlakySimulationTest">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:com.lab9.tests.FlakySimulationTest@4c583ecf]" started-at="2026-03-17T15:37:13 ICT" name="setUp" finished-at="2026-03-17T15:37:15 ICT" duration-ms="2027" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[dev]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method retried="true" signature="flakyTestShouldPassOnThirdAttempt()[pri:0, instance:com.lab9.tests.FlakySimulationTest@4c583ecf]" started-at="2026-03-17T15:37:15 ICT" name="flakyTestShouldPassOnThirdAttempt" finished-at="2026-03-17T15:37:15 ICT" duration-ms="1" status="SKIP">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Simulated flaky failure at attempt #1]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Simulated flaky failure at attempt #1
+at org.testng.Assert.fail(Assert.java:111)
+at com.lab9.tests.FlakySimulationTest.flakyTestShouldPassOnThirdAttempt(FlakySimulationTest.java:27)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flakyTestShouldPassOnThirdAttempt -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.lab9.tests.FlakySimulationTest@4c583ecf]" started-at="2026-03-17T15:37:15 ICT" name="tearDown" finished-at="2026-03-17T15:37:16 ICT" duration-ms="88" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=flakyTestShouldPassOnThirdAttempt status=SKIP method=FlakySimulationTest.flakyTestShouldPassOnThirdAttempt()[pri:0, instance:com.lab9.tests.FlakySimulationTest@4c583ecf] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:com.lab9.tests.FlakySimulationTest@4c583ecf]" started-at="2026-03-17T15:37:16 ICT" name="setUp" finished-at="2026-03-17T15:37:17 ICT" duration-ms="1110" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[dev]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method retried="true" signature="flakyTestShouldPassOnThirdAttempt()[pri:0, instance:com.lab9.tests.FlakySimulationTest@4c583ecf]" started-at="2026-03-17T15:37:17 ICT" name="flakyTestShouldPassOnThirdAttempt" finished-at="2026-03-17T15:37:17 ICT" duration-ms="0" status="SKIP">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Simulated flaky failure at attempt #2]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Simulated flaky failure at attempt #2
+at org.testng.Assert.fail(Assert.java:111)
+at com.lab9.tests.FlakySimulationTest.flakyTestShouldPassOnThirdAttempt(FlakySimulationTest.java:27)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flakyTestShouldPassOnThirdAttempt -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.lab9.tests.FlakySimulationTest@4c583ecf]" started-at="2026-03-17T15:37:17 ICT" name="tearDown" finished-at="2026-03-17T15:37:17 ICT" duration-ms="98" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=flakyTestShouldPassOnThirdAttempt status=SKIP method=FlakySimulationTest.flakyTestShouldPassOnThirdAttempt()[pri:0, instance:com.lab9.tests.FlakySimulationTest@4c583ecf] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:com.lab9.tests.FlakySimulationTest@4c583ecf]" started-at="2026-03-17T15:37:17 ICT" name="setUp" finished-at="2026-03-17T15:37:18 ICT" duration-ms="1102" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[dev]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="flakyTestShouldPassOnThirdAttempt()[pri:0, instance:com.lab9.tests.FlakySimulationTest@4c583ecf]" started-at="2026-03-17T15:37:18 ICT" name="flakyTestShouldPassOnThirdAttempt" finished-at="2026-03-17T15:37:18 ICT" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flakyTestShouldPassOnThirdAttempt -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.lab9.tests.FlakySimulationTest@4c583ecf]" started-at="2026-03-17T15:37:18 ICT" name="tearDown" finished-at="2026-03-17T15:37:18 ICT" duration-ms="96" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=flakyTestShouldPassOnThirdAttempt status=SUCCESS method=FlakySimulationTest.flakyTestShouldPassOnThirdAttempt()[pri:0, instance:com.lab9.tests.FlakySimulationTest@4c583ecf] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.lab9.tests.FlakySimulationTest -->
+      <class name="com.lab9.tests.CheckoutFakerTest">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:com.lab9.tests.CheckoutFakerTest@368f2016]" started-at="2026-03-17T15:37:08 ICT" name="setUp" finished-at="2026-03-17T15:37:10 ICT" duration-ms="1852" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[dev]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testCheckoutWithRandomDataTwice()[pri:0, instance:com.lab9.tests.CheckoutFakerTest@368f2016]" started-at="2026-03-17T15:37:10 ICT" name="testCheckoutWithRandomDataTwice" finished-at="2026-03-17T15:37:11 ICT" duration-ms="739" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Generated checkout data: CheckoutData{firstName='Allan', lastName='Botsford', postalCode='85862'}]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testCheckoutWithRandomDataTwice -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.lab9.tests.CheckoutFakerTest@368f2016]" started-at="2026-03-17T15:37:11 ICT" name="tearDown" finished-at="2026-03-17T15:37:11 ICT" duration-ms="87" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testCheckoutWithRandomDataTwice status=SUCCESS method=CheckoutFakerTest.testCheckoutWithRandomDataTwice()[pri:0, instance:com.lab9.tests.CheckoutFakerTest@368f2016] output=Generated checkout data: CheckoutData{firstName='Allan', lastName='Botsford', postalCode='85862'}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:com.lab9.tests.CheckoutFakerTest@368f2016]" started-at="2026-03-17T15:37:11 ICT" name="setUp" finished-at="2026-03-17T15:37:13 ICT" duration-ms="1991" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[dev]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testCheckoutWithRandomDataTwice()[pri:0, instance:com.lab9.tests.CheckoutFakerTest@368f2016]" started-at="2026-03-17T15:37:13 ICT" name="testCheckoutWithRandomDataTwice" finished-at="2026-03-17T15:37:13 ICT" duration-ms="648" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Generated checkout data: CheckoutData{firstName='Shannon', lastName='Schumm', postalCode='46438'}]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testCheckoutWithRandomDataTwice -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.lab9.tests.CheckoutFakerTest@368f2016]" started-at="2026-03-17T15:37:13 ICT" name="tearDown" finished-at="2026-03-17T15:37:13 ICT" duration-ms="91" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testCheckoutWithRandomDataTwice status=SUCCESS method=CheckoutFakerTest.testCheckoutWithRandomDataTwice()[pri:0, instance:com.lab9.tests.CheckoutFakerTest@368f2016] output=Generated checkout data: CheckoutData{firstName='Shannon', lastName='Schumm', postalCode='46438'}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.lab9.tests.CheckoutFakerTest -->
+      <class name="com.lab9.tests.LoginDataDrivenTest">
+        <test-method is-config="true" signature="initTestData()[pri:0, instance:com.lab9.tests.LoginDataDrivenTest@4d5d943d]" started-at="2026-03-17T15:36:19 ICT" name="initTestData" test-instance-name="Login with problem user" finished-at="2026-03-17T15:36:19 ICT" duration-ms="9" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initTestData -->
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:com.lab9.tests.LoginDataDrivenTest@4d5d943d]" started-at="2026-03-17T15:36:34 ICT" name="setUp" test-instance-name="Login with problem user" finished-at="2026-03-17T15:36:36 ICT" duration-ms="2016" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[dev]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testBoundaryLogin(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.lab9.tests.LoginDataDrivenTest@4d5d943d]" started-at="2026-03-17T15:36:36 ICT" name="testBoundaryLogin" data-provider="boundaryCases" test-instance-name="Login with problem user" finished-at="2026-03-17T15:36:36 ICT" duration-ms="286" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ ]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Epic sadface: Username and password do not match any user in this service]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Whitespace-only username]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBoundaryLogin -->
+        <test-method is-config="true" signature="setTestNameFromDescription([Ljava.lang.Object;)[pri:0, instance:com.lab9.tests.LoginDataDrivenTest@4d5d943d]" started-at="2026-03-17T15:36:36 ICT" name="setTestNameFromDescription" test-instance-name="Login with problem user" finished-at="2026-03-17T15:36:36 ICT" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@38320819]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setTestNameFromDescription -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.lab9.tests.LoginDataDrivenTest@4d5d943d]" started-at="2026-03-17T15:36:36 ICT" name="tearDown" test-instance-name="Login with problem user" finished-at="2026-03-17T15:36:36 ICT" duration-ms="97" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Whitespace-only username status=SUCCESS method=LoginDataDrivenTest.testBoundaryLogin(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.lab9.tests.LoginDataDrivenTest@4d5d943d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:com.lab9.tests.LoginDataDrivenTest@4d5d943d]" started-at="2026-03-17T15:36:36 ICT" name="setUp" test-instance-name="Login with problem user" finished-at="2026-03-17T15:36:38 ICT" duration-ms="2225" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[dev]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testBoundaryLogin(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.lab9.tests.LoginDataDrivenTest@4d5d943d]" started-at="2026-03-17T15:36:38 ICT" name="testBoundaryLogin" data-provider="boundaryCases" test-instance-name="Login with problem user" finished-at="2026-03-17T15:36:39 ICT" duration-ms="252" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[standard_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ ]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Epic sadface: Username and password do not match any user in this service]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Whitespace-only password]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBoundaryLogin -->
+        <test-method is-config="true" signature="setTestNameFromDescription([Ljava.lang.Object;)[pri:0, instance:com.lab9.tests.LoginDataDrivenTest@4d5d943d]" started-at="2026-03-17T15:36:38 ICT" name="setTestNameFromDescription" test-instance-name="Login with problem user" finished-at="2026-03-17T15:36:38 ICT" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@16c3388e]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setTestNameFromDescription -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.lab9.tests.LoginDataDrivenTest@4d5d943d]" started-at="2026-03-17T15:36:39 ICT" name="tearDown" test-instance-name="Login with problem user" finished-at="2026-03-17T15:36:39 ICT" duration-ms="122" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Whitespace-only password status=SUCCESS method=LoginDataDrivenTest.testBoundaryLogin(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.lab9.tests.LoginDataDrivenTest@4d5d943d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:com.lab9.tests.LoginDataDrivenTest@4d5d943d]" started-at="2026-03-17T15:36:39 ICT" name="setUp" test-instance-name="Login with problem user" finished-at="2026-03-17T15:36:41 ICT" duration-ms="1869" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[dev]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setTestNameFromDescription([Ljava.lang.Object;)[pri:0, instance:com.lab9.tests.LoginDataDrivenTest@4d5d943d]" started-at="2026-03-17T15:36:41 ICT" name="setTestNameFromDescription" test-instance-name="Login with problem user" finished-at="2026-03-17T15:36:41 ICT" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@cec1ce2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setTestNameFromDescription -->
+        <test-method signature="testBoundaryLogin(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.lab9.tests.LoginDataDrivenTest@4d5d943d]" started-at="2026-03-17T15:36:41 ICT" name="testBoundaryLogin" data-provider="boundaryCases" test-instance-name="Login with problem user" finished-at="2026-03-17T15:36:41 ICT" duration-ms="285" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Epic sadface: Username and password do not match any user in this service]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Very long username (64 chars)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBoundaryLogin -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.lab9.tests.LoginDataDrivenTest@4d5d943d]" started-at="2026-03-17T15:36:41 ICT" name="tearDown" test-instance-name="Login with problem user" finished-at="2026-03-17T15:36:41 ICT" duration-ms="91" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Very long username (64 chars) status=SUCCESS method=LoginDataDrivenTest.testBoundaryLogin(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.lab9.tests.LoginDataDrivenTest@4d5d943d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:com.lab9.tests.LoginDataDrivenTest@4d5d943d]" started-at="2026-03-17T15:36:41 ICT" name="setUp" test-instance-name="Login with problem user" finished-at="2026-03-17T15:36:43 ICT" duration-ms="2139" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[dev]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testBoundaryLogin(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.lab9.tests.LoginDataDrivenTest@4d5d943d]" started-at="2026-03-17T15:36:43 ICT" name="testBoundaryLogin" data-provider="boundaryCases" test-instance-name="Login with problem user" finished-at="2026-03-17T15:36:43 ICT" duration-ms="306" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[standard_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Epic sadface: Username and password do not match any user in this service]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Very long password (64 chars)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBoundaryLogin -->
+        <test-method is-config="true" signature="setTestNameFromDescription([Ljava.lang.Object;)[pri:0, instance:com.lab9.tests.LoginDataDrivenTest@4d5d943d]" started-at="2026-03-17T15:36:43 ICT" name="setTestNameFromDescription" test-instance-name="Login with problem user" finished-at="2026-03-17T15:36:43 ICT" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@4d82ded2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setTestNameFromDescription -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.lab9.tests.LoginDataDrivenTest@4d5d943d]" started-at="2026-03-17T15:36:43 ICT" name="tearDown" test-instance-name="Login with problem user" finished-at="2026-03-17T15:36:44 ICT" duration-ms="95" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Very long password (64 chars) status=SUCCESS method=LoginDataDrivenTest.testBoundaryLogin(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.lab9.tests.LoginDataDrivenTest@4d5d943d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:com.lab9.tests.LoginDataDrivenTest@4d5d943d]" started-at="2026-03-17T15:36:44 ICT" name="setUp" test-instance-name="Login with problem user" finished-at="2026-03-17T15:36:46 ICT" duration-ms="2009" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[dev]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testNegativeLogin(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.lab9.tests.LoginDataDrivenTest@4d5d943d]" started-at="2026-03-17T15:36:46 ICT" name="testNegativeLogin" data-provider="negativeCases" test-instance-name="Login with problem user" finished-at="2026-03-17T15:36:46 ICT" duration-ms="239" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Epic sadface: Username is required]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Empty username and empty password]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testNegativeLogin -->
+        <test-method is-config="true" signature="setTestNameFromDescription([Ljava.lang.Object;)[pri:0, instance:com.lab9.tests.LoginDataDrivenTest@4d5d943d]" started-at="2026-03-17T15:36:46 ICT" name="setTestNameFromDescription" test-instance-name="Login with problem user" finished-at="2026-03-17T15:36:46 ICT" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@655875bb]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setTestNameFromDescription -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.lab9.tests.LoginDataDrivenTest@4d5d943d]" started-at="2026-03-17T15:36:46 ICT" name="tearDown" test-instance-name="Login with problem user" finished-at="2026-03-17T15:36:46 ICT" duration-ms="98" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Empty username and empty password status=SUCCESS method=LoginDataDrivenTest.testNegativeLogin(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.lab9.tests.LoginDataDrivenTest@4d5d943d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:com.lab9.tests.LoginDataDrivenTest@4d5d943d]" started-at="2026-03-17T15:36:46 ICT" name="setUp" test-instance-name="Login with problem user" finished-at="2026-03-17T15:36:48 ICT" duration-ms="2093" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[dev]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testNegativeLogin(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.lab9.tests.LoginDataDrivenTest@4d5d943d]" started-at="2026-03-17T15:36:48 ICT" name="testNegativeLogin" data-provider="negativeCases" test-instance-name="Login with problem user" finished-at="2026-03-17T15:36:48 ICT" duration-ms="277" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[standard_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Epic sadface: Password is required]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Valid username but empty password]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testNegativeLogin -->
+        <test-method is-config="true" signature="setTestNameFromDescription([Ljava.lang.Object;)[pri:0, instance:com.lab9.tests.LoginDataDrivenTest@4d5d943d]" started-at="2026-03-17T15:36:48 ICT" name="setTestNameFromDescription" test-instance-name="Login with problem user" finished-at="2026-03-17T15:36:48 ICT" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@6ad036d6]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setTestNameFromDescription -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.lab9.tests.LoginDataDrivenTest@4d5d943d]" started-at="2026-03-17T15:36:48 ICT" name="tearDown" test-instance-name="Login with problem user" finished-at="2026-03-17T15:36:48 ICT" duration-ms="91" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Valid username but empty password status=SUCCESS method=LoginDataDrivenTest.testNegativeLogin(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.lab9.tests.LoginDataDrivenTest@4d5d943d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:com.lab9.tests.LoginDataDrivenTest@4d5d943d]" started-at="2026-03-17T15:36:48 ICT" name="setUp" test-instance-name="Login with problem user" finished-at="2026-03-17T15:36:50 ICT" duration-ms="1224" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[dev]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setTestNameFromDescription([Ljava.lang.Object;)[pri:0, instance:com.lab9.tests.LoginDataDrivenTest@4d5d943d]" started-at="2026-03-17T15:36:50 ICT" name="setTestNameFromDescription" test-instance-name="Login with problem user" finished-at="2026-03-17T15:36:50 ICT" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@6b72c62]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setTestNameFromDescription -->
+        <test-method signature="testNegativeLogin(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.lab9.tests.LoginDataDrivenTest@4d5d943d]" started-at="2026-03-17T15:36:50 ICT" name="testNegativeLogin" data-provider="negativeCases" test-instance-name="Login with problem user" finished-at="2026-03-17T15:36:50 ICT" duration-ms="280" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Epic sadface: Username is required]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Empty username with valid password]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testNegativeLogin -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.lab9.tests.LoginDataDrivenTest@4d5d943d]" started-at="2026-03-17T15:36:50 ICT" name="tearDown" test-instance-name="Login with problem user" finished-at="2026-03-17T15:36:50 ICT" duration-ms="92" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Empty username with valid password status=SUCCESS method=LoginDataDrivenTest.testNegativeLogin(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.lab9.tests.LoginDataDrivenTest@4d5d943d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:com.lab9.tests.LoginDataDrivenTest@4d5d943d]" started-at="2026-03-17T15:36:50 ICT" name="setUp" test-instance-name="Login with problem user" finished-at="2026-03-17T15:36:52 ICT" duration-ms="1779" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[dev]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testNegativeLogin(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.lab9.tests.LoginDataDrivenTest@4d5d943d]" started-at="2026-03-17T15:36:52 ICT" name="testNegativeLogin" data-provider="negativeCases" test-instance-name="Login with problem user" finished-at="2026-03-17T15:36:52 ICT" duration-ms="260" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[invalid_user_xyz]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Epic sadface: Username and password do not match any user in this service]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Non-existent username with valid password]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testNegativeLogin -->
+        <test-method is-config="true" signature="setTestNameFromDescription([Ljava.lang.Object;)[pri:0, instance:com.lab9.tests.LoginDataDrivenTest@4d5d943d]" started-at="2026-03-17T15:36:52 ICT" name="setTestNameFromDescription" test-instance-name="Login with problem user" finished-at="2026-03-17T15:36:52 ICT" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@5d180628]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setTestNameFromDescription -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.lab9.tests.LoginDataDrivenTest@4d5d943d]" started-at="2026-03-17T15:36:52 ICT" name="tearDown" test-instance-name="Login with problem user" finished-at="2026-03-17T15:36:52 ICT" duration-ms="91" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Non-existent username with valid password status=SUCCESS method=LoginDataDrivenTest.testNegativeLogin(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.lab9.tests.LoginDataDrivenTest@4d5d943d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:com.lab9.tests.LoginDataDrivenTest@4d5d943d]" started-at="2026-03-17T15:36:52 ICT" name="setUp" test-instance-name="Login with problem user" finished-at="2026-03-17T15:36:53 ICT" duration-ms="1103" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[dev]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testNegativeLogin(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.lab9.tests.LoginDataDrivenTest@4d5d943d]" started-at="2026-03-17T15:36:53 ICT" name="testNegativeLogin" data-provider="negativeCases" test-instance-name="Login with problem user" finished-at="2026-03-17T15:36:53 ICT" duration-ms="276" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[locked_out_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Epic sadface: Sorry, this user has been locked out.]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Locked out user]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testNegativeLogin -->
+        <test-method is-config="true" signature="setTestNameFromDescription([Ljava.lang.Object;)[pri:0, instance:com.lab9.tests.LoginDataDrivenTest@4d5d943d]" started-at="2026-03-17T15:36:53 ICT" name="setTestNameFromDescription" test-instance-name="Login with problem user" finished-at="2026-03-17T15:36:53 ICT" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@7b4b559d]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setTestNameFromDescription -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.lab9.tests.LoginDataDrivenTest@4d5d943d]" started-at="2026-03-17T15:36:53 ICT" name="tearDown" test-instance-name="Login with problem user" finished-at="2026-03-17T15:36:54 ICT" duration-ms="91" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Locked out user status=SUCCESS method=LoginDataDrivenTest.testNegativeLogin(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.lab9.tests.LoginDataDrivenTest@4d5d943d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:com.lab9.tests.LoginDataDrivenTest@4d5d943d]" started-at="2026-03-17T15:36:54 ICT" name="setUp" test-instance-name="Login with problem user" finished-at="2026-03-17T15:36:57 ICT" duration-ms="2959" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[dev]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setTestNameFromDescription([Ljava.lang.Object;)[pri:0, instance:com.lab9.tests.LoginDataDrivenTest@4d5d943d]" started-at="2026-03-17T15:36:57 ICT" name="setTestNameFromDescription" test-instance-name="Login with problem user" finished-at="2026-03-17T15:36:57 ICT" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@1046aaa4]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setTestNameFromDescription -->
+        <test-method signature="testSmokeLogin(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.lab9.tests.LoginDataDrivenTest@4d5d943d]" started-at="2026-03-17T15:36:57 ICT" name="testSmokeLogin" data-provider="smokeCases" test-instance-name="Login with problem user" finished-at="2026-03-17T15:36:57 ICT" duration-ms="253" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[standard_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[https://www.saucedemo.com/inventory.html]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Login with valid standard user]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSmokeLogin -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.lab9.tests.LoginDataDrivenTest@4d5d943d]" started-at="2026-03-17T15:36:57 ICT" name="tearDown" test-instance-name="Login with problem user" finished-at="2026-03-17T15:36:57 ICT" duration-ms="91" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Login with valid standard user status=SUCCESS method=LoginDataDrivenTest.testSmokeLogin(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.lab9.tests.LoginDataDrivenTest@4d5d943d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:com.lab9.tests.LoginDataDrivenTest@4d5d943d]" started-at="2026-03-17T15:36:57 ICT" name="setUp" test-instance-name="Login with problem user" finished-at="2026-03-17T15:36:59 ICT" duration-ms="2417" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[dev]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setTestNameFromDescription([Ljava.lang.Object;)[pri:0, instance:com.lab9.tests.LoginDataDrivenTest@4d5d943d]" started-at="2026-03-17T15:36:59 ICT" name="setTestNameFromDescription" test-instance-name="Login with problem user" finished-at="2026-03-17T15:36:59 ICT" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@2fad50f2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setTestNameFromDescription -->
+        <test-method signature="testSmokeLogin(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.lab9.tests.LoginDataDrivenTest@4d5d943d]" started-at="2026-03-17T15:36:59 ICT" name="testSmokeLogin" data-provider="smokeCases" test-instance-name="Login with problem user" finished-at="2026-03-17T15:37:06 ICT" duration-ms="6511" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[performance_glitch_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[https://www.saucedemo.com/inventory.html]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Login with performance glitch user]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSmokeLogin -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.lab9.tests.LoginDataDrivenTest@4d5d943d]" started-at="2026-03-17T15:37:06 ICT" name="tearDown" test-instance-name="Login with problem user" finished-at="2026-03-17T15:37:06 ICT" duration-ms="93" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Login with performance glitch user status=SUCCESS method=LoginDataDrivenTest.testSmokeLogin(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.lab9.tests.LoginDataDrivenTest@4d5d943d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:com.lab9.tests.LoginDataDrivenTest@4d5d943d]" started-at="2026-03-17T15:37:06 ICT" name="setUp" test-instance-name="Login with problem user" finished-at="2026-03-17T15:37:08 ICT" duration-ms="1765" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[dev]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testSmokeLogin(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.lab9.tests.LoginDataDrivenTest@4d5d943d]" started-at="2026-03-17T15:37:08 ICT" name="testSmokeLogin" data-provider="smokeCases" test-instance-name="Login with problem user" finished-at="2026-03-17T15:37:08 ICT" duration-ms="228" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[problem_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[https://www.saucedemo.com/inventory.html]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Login with problem user]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSmokeLogin -->
+        <test-method is-config="true" signature="setTestNameFromDescription([Ljava.lang.Object;)[pri:0, instance:com.lab9.tests.LoginDataDrivenTest@4d5d943d]" started-at="2026-03-17T15:37:08 ICT" name="setTestNameFromDescription" test-instance-name="Login with problem user" finished-at="2026-03-17T15:37:08 ICT" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@32192a69]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setTestNameFromDescription -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.lab9.tests.LoginDataDrivenTest@4d5d943d]" started-at="2026-03-17T15:37:08 ICT" name="tearDown" test-instance-name="Login with problem user" finished-at="2026-03-17T15:37:08 ICT" duration-ms="95" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Login with problem user status=SUCCESS method=LoginDataDrivenTest.testSmokeLogin(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.lab9.tests.LoginDataDrivenTest@4d5d943d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.lab9.tests.LoginDataDrivenTest -->
+      <class name="com.lab9.tests.UserLoginTest">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:com.lab9.tests.UserLoginTest@7d8995e]" started-at="2026-03-17T15:36:22 ICT" name="setUp" test-instance-name="Empty password should show required password error" finished-at="2026-03-17T15:36:23 ICT" duration-ms="1727" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[dev]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testLoginFromJson(com.lab9.models.UserData)[pri:0, instance:com.lab9.tests.UserLoginTest@7d8995e]" started-at="2026-03-17T15:36:23 ICT" name="testLoginFromJson" data-provider="jsonUsers" test-instance-name="Empty password should show required password error" finished-at="2026-03-17T15:36:24 ICT" duration-ms="277" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[com.lab9.models.UserData@2ab2710]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginFromJson -->
+        <test-method is-config="true" signature="setTestName([Ljava.lang.Object;)[pri:0, instance:com.lab9.tests.UserLoginTest@7d8995e]" started-at="2026-03-17T15:36:23 ICT" name="setTestName" test-instance-name="Empty password should show required password error" finished-at="2026-03-17T15:36:23 ICT" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@44f6ac4f]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setTestName -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.lab9.tests.UserLoginTest@7d8995e]" started-at="2026-03-17T15:36:24 ICT" name="tearDown" test-instance-name="Empty password should show required password error" finished-at="2026-03-17T15:36:24 ICT" duration-ms="104" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Valid standard user should login successfully status=SUCCESS method=UserLoginTest.testLoginFromJson(com.lab9.models.UserData)[pri:0, instance:com.lab9.tests.UserLoginTest@7d8995e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:com.lab9.tests.UserLoginTest@7d8995e]" started-at="2026-03-17T15:36:24 ICT" name="setUp" test-instance-name="Empty password should show required password error" finished-at="2026-03-17T15:36:26 ICT" duration-ms="2417" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[dev]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testLoginFromJson(com.lab9.models.UserData)[pri:0, instance:com.lab9.tests.UserLoginTest@7d8995e]" started-at="2026-03-17T15:36:26 ICT" name="testLoginFromJson" data-provider="jsonUsers" test-instance-name="Empty password should show required password error" finished-at="2026-03-17T15:36:26 ICT" duration-ms="256" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[com.lab9.models.UserData@31edeac]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginFromJson -->
+        <test-method is-config="true" signature="setTestName([Ljava.lang.Object;)[pri:0, instance:com.lab9.tests.UserLoginTest@7d8995e]" started-at="2026-03-17T15:36:26 ICT" name="setTestName" test-instance-name="Empty password should show required password error" finished-at="2026-03-17T15:36:26 ICT" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@46ee9cfd]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setTestName -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.lab9.tests.UserLoginTest@7d8995e]" started-at="2026-03-17T15:36:26 ICT" name="tearDown" test-instance-name="Empty password should show required password error" finished-at="2026-03-17T15:36:27 ICT" duration-ms="117" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Locked out user should see login error status=SUCCESS method=UserLoginTest.testLoginFromJson(com.lab9.models.UserData)[pri:0, instance:com.lab9.tests.UserLoginTest@7d8995e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:com.lab9.tests.UserLoginTest@7d8995e]" started-at="2026-03-17T15:36:27 ICT" name="setUp" test-instance-name="Empty password should show required password error" finished-at="2026-03-17T15:36:29 ICT" duration-ms="2236" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[dev]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setTestName([Ljava.lang.Object;)[pri:0, instance:com.lab9.tests.UserLoginTest@7d8995e]" started-at="2026-03-17T15:36:29 ICT" name="setTestName" test-instance-name="Empty password should show required password error" finished-at="2026-03-17T15:36:29 ICT" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@6b58a0f9]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setTestName -->
+        <test-method signature="testLoginFromJson(com.lab9.models.UserData)[pri:0, instance:com.lab9.tests.UserLoginTest@7d8995e]" started-at="2026-03-17T15:36:29 ICT" name="testLoginFromJson" data-provider="jsonUsers" test-instance-name="Empty password should show required password error" finished-at="2026-03-17T15:36:29 ICT" duration-ms="236" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[com.lab9.models.UserData@29f85fe1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginFromJson -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.lab9.tests.UserLoginTest@7d8995e]" started-at="2026-03-17T15:36:29 ICT" name="tearDown" test-instance-name="Empty password should show required password error" finished-at="2026-03-17T15:36:29 ICT" duration-ms="96" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Standard user with wrong password should fail status=SUCCESS method=UserLoginTest.testLoginFromJson(com.lab9.models.UserData)[pri:0, instance:com.lab9.tests.UserLoginTest@7d8995e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:com.lab9.tests.UserLoginTest@7d8995e]" started-at="2026-03-17T15:36:29 ICT" name="setUp" test-instance-name="Empty password should show required password error" finished-at="2026-03-17T15:36:31 ICT" duration-ms="2300" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[dev]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setTestName([Ljava.lang.Object;)[pri:0, instance:com.lab9.tests.UserLoginTest@7d8995e]" started-at="2026-03-17T15:36:31 ICT" name="setTestName" test-instance-name="Empty password should show required password error" finished-at="2026-03-17T15:36:31 ICT" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@7b6c3b37]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setTestName -->
+        <test-method signature="testLoginFromJson(com.lab9.models.UserData)[pri:0, instance:com.lab9.tests.UserLoginTest@7d8995e]" started-at="2026-03-17T15:36:31 ICT" name="testLoginFromJson" data-provider="jsonUsers" test-instance-name="Empty password should show required password error" finished-at="2026-03-17T15:36:32 ICT" duration-ms="267" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[com.lab9.models.UserData@97d0c06]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginFromJson -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.lab9.tests.UserLoginTest@7d8995e]" started-at="2026-03-17T15:36:32 ICT" name="tearDown" test-instance-name="Empty password should show required password error" finished-at="2026-03-17T15:36:32 ICT" duration-ms="95" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Empty username should show required username error status=SUCCESS method=UserLoginTest.testLoginFromJson(com.lab9.models.UserData)[pri:0, instance:com.lab9.tests.UserLoginTest@7d8995e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:com.lab9.tests.UserLoginTest@7d8995e]" started-at="2026-03-17T15:36:32 ICT" name="setUp" test-instance-name="Empty password should show required password error" finished-at="2026-03-17T15:36:33 ICT" duration-ms="1114" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[dev]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setTestName([Ljava.lang.Object;)[pri:0, instance:com.lab9.tests.UserLoginTest@7d8995e]" started-at="2026-03-17T15:36:33 ICT" name="setTestName" test-instance-name="Empty password should show required password error" finished-at="2026-03-17T15:36:33 ICT" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@a8964c1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setTestName -->
+        <test-method signature="testLoginFromJson(com.lab9.models.UserData)[pri:0, instance:com.lab9.tests.UserLoginTest@7d8995e]" started-at="2026-03-17T15:36:33 ICT" name="testLoginFromJson" data-provider="jsonUsers" test-instance-name="Empty password should show required password error" finished-at="2026-03-17T15:36:33 ICT" duration-ms="287" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[com.lab9.models.UserData@6a87026]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginFromJson -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.lab9.tests.UserLoginTest@7d8995e]" started-at="2026-03-17T15:36:33 ICT" name="tearDown" test-instance-name="Empty password should show required password error" finished-at="2026-03-17T15:36:33 ICT" duration-ms="91" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Empty password should show required password error status=SUCCESS method=UserLoginTest.testLoginFromJson(com.lab9.models.UserData)[pri:0, instance:com.lab9.tests.UserLoginTest@7d8995e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.lab9.tests.UserLoginTest -->
+      <class name="com.lab9.tests.ConfigReaderDemoTest">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:com.lab9.tests.ConfigReaderDemoTest@72d1ad2e]" started-at="2026-03-17T15:36:19 ICT" name="setUp" finished-at="2026-03-17T15:36:21 ICT" duration-ms="2692" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[dev]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testConfigLoadedByEnv()[pri:0, instance:com.lab9.tests.ConfigReaderDemoTest@72d1ad2e]" started-at="2026-03-17T15:36:21 ICT" name="testConfigLoadedByEnv" finished-at="2026-03-17T15:36:21 ICT" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testConfigLoadedByEnv -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.lab9.tests.ConfigReaderDemoTest@72d1ad2e]" started-at="2026-03-17T15:36:21 ICT" name="tearDown" finished-at="2026-03-17T15:36:22 ICT" duration-ms="98" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testConfigLoadedByEnv status=SUCCESS method=ConfigReaderDemoTest.testConfigLoadedByEnv()[pri:0, instance:com.lab9.tests.ConfigReaderDemoTest@72d1ad2e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.lab9.tests.ConfigReaderDemoTest -->
+    </test> <!-- Refactored Framework Suite -->
+  </suite> <!-- Lab9Bai7 -->
+</testng-results>

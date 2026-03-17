@@ -8,6 +8,7 @@ import com.lab9.core.BaseTest;
 import com.lab9.pages.CheckoutOverviewPage;
 import com.lab9.pages.CheckoutPage;
 import com.lab9.pages.LoginPage;
+import com.lab9.utils.ConfigReader;
 import com.lab9.utils.TestDataFactory;
 import com.lab9.utils.TestDataFactory.CheckoutData;
 
@@ -19,10 +20,11 @@ public class CheckoutFakerTest extends BaseTest {
     @Test(invocationCount = 2)
     public void testCheckoutWithRandomDataTwice() {
         CheckoutData data = TestDataFactory.randomCheckoutData();
+        ConfigReader configReader = ConfigReader.getInstance();
         Reporter.log("Generated checkout data: " + data, true);
 
         CheckoutPage checkoutPage = new LoginPage(getDriver())
-            .login("standard_user", "secret_sauce")
+            .login(configReader.getStandardUsername(), configReader.getStandardPassword())
             .addFirstItemToCart()
             .goToCart()
             .goToCheckout();

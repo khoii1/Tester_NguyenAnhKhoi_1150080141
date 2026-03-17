@@ -46,6 +46,22 @@ public final class ConfigReader {
         return Integer.parseInt(getRequired("retry.count"));
     }
 
+    public String getStandardUsername() {
+        return getRequired("login.standard.username");
+    }
+
+    public String getStandardPassword() {
+        return getRequired("login.standard.password");
+    }
+
+    public String getLockedOutUsername() {
+        return getRequired("login.locked.username");
+    }
+
+    public String getInvalidPassword() {
+        return getRequired("login.invalid.password");
+    }
+
     private void loadConfig() {
         String fileName = switch (env) {
             case "dev" -> "config-dev.properties";

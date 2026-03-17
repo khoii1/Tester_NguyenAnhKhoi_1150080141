@@ -7,6 +7,7 @@ import com.lab9.core.BaseTest;
 import com.lab9.pages.CartPage;
 import com.lab9.pages.InventoryPage;
 import com.lab9.pages.LoginPage;
+import com.lab9.utils.ConfigReader;
 
 /**
  * Cart scenarios for SauceDemo.
@@ -15,8 +16,12 @@ public class CartTest extends BaseTest {
 
     @Test
     public void testAddFirstItemToCartUpdatesBadge() {
+        ConfigReader configReader = ConfigReader.getInstance();
         LoginPage loginPage = new LoginPage(getDriver());
-        InventoryPage inventoryPage = loginPage.login("standard_user", "secret_sauce");
+        InventoryPage inventoryPage = loginPage.login(
+            configReader.getStandardUsername(),
+            configReader.getStandardPassword()
+        );
 
         inventoryPage.addFirstItemToCart();
 
@@ -25,9 +30,10 @@ public class CartTest extends BaseTest {
 
     @Test
     public void testAddSpecificItemThenOpenCart() {
+        ConfigReader configReader = ConfigReader.getInstance();
         LoginPage loginPage = new LoginPage(getDriver());
         CartPage cartPage = loginPage
-            .login("standard_user", "secret_sauce")
+            .login(configReader.getStandardUsername(), configReader.getStandardPassword())
             .addItemByName("Sauce Labs Backpack")
             .goToCart();
 
@@ -37,9 +43,10 @@ public class CartTest extends BaseTest {
 
     @Test
     public void testEmptyCartReturnsZeroItems() {
+        ConfigReader configReader = ConfigReader.getInstance();
         LoginPage loginPage = new LoginPage(getDriver());
         CartPage cartPage = loginPage
-            .login("standard_user", "secret_sauce")
+            .login(configReader.getStandardUsername(), configReader.getStandardPassword())
             .goToCart();
 
         Assert.assertEquals(cartPage.getItemCount(), 0, "Empty cart should return zero items.");
@@ -47,9 +54,10 @@ public class CartTest extends BaseTest {
 
     @Test
     public void testRemoveFirstItemFromCart() {
+        ConfigReader configReader = ConfigReader.getInstance();
         LoginPage loginPage = new LoginPage(getDriver());
         CartPage cartPage = loginPage
-            .login("standard_user", "secret_sauce")
+            .login(configReader.getStandardUsername(), configReader.getStandardPassword())
             .addFirstItemToCart()
             .goToCart();
 

@@ -10,20 +10,21 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import com.lab9.utils.ConfigReader;
+
 /**
  * Base class for all Page Objects.
  * Provides reusable browser actions with explicit waits.
  */
 public class BasePage {
 
-    private static final Duration DEFAULT_TIMEOUT = Duration.ofSeconds(10);
-
     protected final WebDriver driver;
     protected final WebDriverWait wait;
 
     public BasePage(WebDriver driver) {
         this.driver = driver;
-        this.wait = new WebDriverWait(driver, DEFAULT_TIMEOUT);
+        Duration waitDuration = Duration.ofSeconds(ConfigReader.getInstance().getExplicitWait());
+        this.wait = new WebDriverWait(driver, waitDuration);
     }
 
     /**

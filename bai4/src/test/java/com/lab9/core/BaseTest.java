@@ -18,6 +18,8 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 
+import com.lab9.utils.ConfigReader;
+
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 /**
@@ -51,10 +53,16 @@ public class BaseTest {
     @BeforeMethod(alwaysRun = true)
     @Parameters({"browser", "env"})
     public void setUp(@Optional("chrome") String browser, @Optional("dev") String env) {
+        String activeEnv = System.getProperty("env", env);
+        System.setProperty("env", activeEnv);
+        ConfigReader configReader = ConfigReader.getInstance();
+
         WebDriver driver = createDriver(browser);
         DRIVER_HOLDER.set(driver);
         driver.manage().window().maximize();
-        driver.get(resolveBaseUrl(env));
+
+        System.out.println("Explicit wait hiện tại: " + configReader.getExplicitWait());
+        driver.get(configReader.getBaseUrl());
     }
 
     /**
@@ -85,16 +93,6 @@ public class BaseTest {
             return new ChromeDriver(options);
         }
         throw new IllegalArgumentException("Unsupported browser: " + browser);
-    }
-
-    private String resolveBaseUrl(String env) {
-        if ("dev".equalsIgnoreCase(env)) {
-            return "https://www.saucedemo.com/";
-        }
-        if ("staging".equalsIgnoreCase(env)) {
-            return "https://www.saucedemo.com/";
-        }
-        throw new IllegalArgumentException("Unsupported environment: " + env);
     }
 
     private void captureScreenshot(String testName) {

@@ -53,7 +53,8 @@ public class BaseTest {
     @BeforeMethod(alwaysRun = true)
     @Parameters({"browser", "env"})
     public void setUp(@Optional("chrome") String browser, @Optional("dev") String env) {
-        System.setProperty("env", env);
+        String activeEnv = System.getProperty("env", env);
+        System.setProperty("env", activeEnv);
         ConfigReader configReader = ConfigReader.getInstance();
 
         WebDriver driver = createDriver(browser);
