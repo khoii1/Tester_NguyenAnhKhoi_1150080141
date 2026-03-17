@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-03-17T13:34:27 ICT" name="Lab9Bai2Suite" finished-at="2026-03-17T13:34:44 ICT" duration-ms="17000">
+    <groups>
+    </groups>
+    <test started-at="2026-03-17T13:34:27 ICT" name="SauceDemo Tests" finished-at="2026-03-17T13:34:44 ICT" duration-ms="17000">
+      <class name="com.lab9.tests.LoginTest">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:com.lab9.tests.LoginTest@6dc17b83]" started-at="2026-03-17T13:34:27 ICT" name="setUp" finished-at="2026-03-17T13:34:29 ICT" duration-ms="2163" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[dev]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testLoginSuccess()[pri:0, instance:com.lab9.tests.LoginTest@6dc17b83]" started-at="2026-03-17T13:34:29 ICT" name="testLoginSuccess" finished-at="2026-03-17T13:34:29 ICT" duration-ms="310" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginSuccess -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.lab9.tests.LoginTest@6dc17b83]" started-at="2026-03-17T13:34:29 ICT" name="tearDown" finished-at="2026-03-17T13:34:29 ICT" duration-ms="113" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testLoginSuccess status=SUCCESS method=LoginTest.testLoginSuccess()[pri:0, instance:com.lab9.tests.LoginTest@6dc17b83] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:com.lab9.tests.LoginTest@6dc17b83]" started-at="2026-03-17T13:34:29 ICT" name="setUp" finished-at="2026-03-17T13:34:31 ICT" duration-ms="1980" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[dev]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testLoginWithInvalidPasswordShowsError()[pri:0, instance:com.lab9.tests.LoginTest@6dc17b83]" started-at="2026-03-17T13:34:31 ICT" name="testLoginWithInvalidPasswordShowsError" finished-at="2026-03-17T13:34:31 ICT" duration-ms="255" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginWithInvalidPasswordShowsError -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.lab9.tests.LoginTest@6dc17b83]" started-at="2026-03-17T13:34:31 ICT" name="tearDown" finished-at="2026-03-17T13:34:32 ICT" duration-ms="91" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testLoginWithInvalidPasswordShowsError status=SUCCESS method=LoginTest.testLoginWithInvalidPasswordShowsError()[pri:0, instance:com.lab9.tests.LoginTest@6dc17b83] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:com.lab9.tests.LoginTest@6dc17b83]" started-at="2026-03-17T13:34:32 ICT" name="setUp" finished-at="2026-03-17T13:34:34 ICT" duration-ms="2130" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[dev]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testLoginWithLockedOutUserShowsError()[pri:0, instance:com.lab9.tests.LoginTest@6dc17b83]" started-at="2026-03-17T13:34:34 ICT" name="testLoginWithLockedOutUserShowsError" finished-at="2026-03-17T13:34:34 ICT" duration-ms="250" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginWithLockedOutUserShowsError -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.lab9.tests.LoginTest@6dc17b83]" started-at="2026-03-17T13:34:34 ICT" name="tearDown" finished-at="2026-03-17T13:34:34 ICT" duration-ms="78" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testLoginWithLockedOutUserShowsError status=SUCCESS method=LoginTest.testLoginWithLockedOutUserShowsError()[pri:0, instance:com.lab9.tests.LoginTest@6dc17b83] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.lab9.tests.LoginTest -->
+      <class name="com.lab9.tests.CartTest">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:com.lab9.tests.CartTest@245b4bdc]" started-at="2026-03-17T13:34:34 ICT" name="setUp" finished-at="2026-03-17T13:34:36 ICT" duration-ms="2276" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[dev]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testAddFirstItemToCartUpdatesBadge()[pri:0, instance:com.lab9.tests.CartTest@245b4bdc]" started-at="2026-03-17T13:34:36 ICT" name="testAddFirstItemToCartUpdatesBadge" finished-at="2026-03-17T13:34:37 ICT" duration-ms="326" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddFirstItemToCartUpdatesBadge -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.lab9.tests.CartTest@245b4bdc]" started-at="2026-03-17T13:34:37 ICT" name="tearDown" finished-at="2026-03-17T13:34:37 ICT" duration-ms="80" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testAddFirstItemToCartUpdatesBadge status=SUCCESS method=CartTest.testAddFirstItemToCartUpdatesBadge()[pri:0, instance:com.lab9.tests.CartTest@245b4bdc] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:com.lab9.tests.CartTest@245b4bdc]" started-at="2026-03-17T13:34:37 ICT" name="setUp" finished-at="2026-03-17T13:34:38 ICT" duration-ms="1090" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[dev]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testAddSpecificItemThenOpenCart()[pri:0, instance:com.lab9.tests.CartTest@245b4bdc]" started-at="2026-03-17T13:34:38 ICT" name="testAddSpecificItemThenOpenCart" finished-at="2026-03-17T13:34:38 ICT" duration-ms="411" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddSpecificItemThenOpenCart -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.lab9.tests.CartTest@245b4bdc]" started-at="2026-03-17T13:34:38 ICT" name="tearDown" finished-at="2026-03-17T13:34:38 ICT" duration-ms="81" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testAddSpecificItemThenOpenCart status=SUCCESS method=CartTest.testAddSpecificItemThenOpenCart()[pri:0, instance:com.lab9.tests.CartTest@245b4bdc] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:com.lab9.tests.CartTest@245b4bdc]" started-at="2026-03-17T13:34:38 ICT" name="setUp" finished-at="2026-03-17T13:34:41 ICT" duration-ms="2656" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[dev]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testEmptyCartReturnsZeroItems()[pri:0, instance:com.lab9.tests.CartTest@245b4bdc]" started-at="2026-03-17T13:34:41 ICT" name="testEmptyCartReturnsZeroItems" finished-at="2026-03-17T13:34:41 ICT" duration-ms="308" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEmptyCartReturnsZeroItems -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.lab9.tests.CartTest@245b4bdc]" started-at="2026-03-17T13:34:41 ICT" name="tearDown" finished-at="2026-03-17T13:34:41 ICT" duration-ms="78" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testEmptyCartReturnsZeroItems status=SUCCESS method=CartTest.testEmptyCartReturnsZeroItems()[pri:0, instance:com.lab9.tests.CartTest@245b4bdc] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:com.lab9.tests.CartTest@245b4bdc]" started-at="2026-03-17T13:34:41 ICT" name="setUp" finished-at="2026-03-17T13:34:43 ICT" duration-ms="1763" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[dev]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testRemoveFirstItemFromCart()[pri:0, instance:com.lab9.tests.CartTest@245b4bdc]" started-at="2026-03-17T13:34:43 ICT" name="testRemoveFirstItemFromCart" finished-at="2026-03-17T13:34:44 ICT" duration-ms="440" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRemoveFirstItemFromCart -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.lab9.tests.CartTest@245b4bdc]" started-at="2026-03-17T13:34:44 ICT" name="tearDown" finished-at="2026-03-17T13:34:44 ICT" duration-ms="89" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testRemoveFirstItemFromCart status=SUCCESS method=CartTest.testRemoveFirstItemFromCart()[pri:0, instance:com.lab9.tests.CartTest@245b4bdc] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.lab9.tests.CartTest -->
+    </test> <!-- SauceDemo Tests -->
+  </suite> <!-- Lab9Bai2Suite -->
+</testng-results>

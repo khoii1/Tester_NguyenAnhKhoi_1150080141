@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Lab9Bai6" verbose="1">
+    <listeners>
+        <listener class-name="com.lab9.retry.RetryListener"/>
+    </listeners>
+
+    <parameter name="browser" value="chrome"/>
+    <parameter name="env" value="dev"/>
+
+    <test name="Retry Mechanism Demo Tests">
+        <classes>
+            <class name="com.lab9.tests.FlakySimulationTest"/>
+        </classes>
+    </test>
+</suite>

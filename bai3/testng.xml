@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<!--
+  Default suite: runs the "smoke" group only.
+  To run regression: mvn test -Dtestng.suite=testng-regression.xml
+-->
+<suite name="Lab9Bai3-Smoke" verbose="1">
+    <parameter name="browser" value="chrome"/>
+    <parameter name="env" value="dev"/>
+
+    <test name="Smoke Login Tests">
+        <groups>
+            <run>
+                <include name="smoke"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.lab9.tests.LoginDataDrivenTest"/>
+        </classes>
+    </test>
+</suite>

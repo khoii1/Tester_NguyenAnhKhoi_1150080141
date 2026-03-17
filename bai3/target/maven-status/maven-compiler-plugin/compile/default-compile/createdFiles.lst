@@ -1,0 +1,5 @@
+com\lab9\pages\CartPage.class
+com\lab9\pages\InventoryPage.class
+com\lab9\core\BasePage.class
+com\lab9\pages\LoginPage.class
+com\lab9\pages\CheckoutPage.class
