@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Lab10-API-Testing-Bai6" verbose="1">
+    <test name="API UI Integration Tests">
+        <classes>
+            <class name="lab10.api.tests.ApiUiIntegrationTest"/>
+        </classes>
+    </test>
+</suite>

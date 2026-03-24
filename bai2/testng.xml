@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Lab10-API-Testing-Bai2" verbose="1">
+    <test name="User CRUD API Tests">
+        <classes>
+            <class name="lab10.api.tests.UserCrudApiTest"/>
+        </classes>
+    </test>
+</suite>
