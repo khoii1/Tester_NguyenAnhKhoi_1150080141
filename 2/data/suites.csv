@@ -1,4 +1,0 @@
-"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
-"Kiểm thử tiêu đề trang đăng nhập Swag Labs","13","smokeLoginPageDisplayed","Smoke Test Suite","Tue Mar 31 09:03:54 UTC 2026","passed","Tue Mar 31 09:03:54 UTC 2026","com.lab9.tests.LoginTest","Login Smoke Tests","com.lab9.tests.LoginTest","smokeLoginPageDisplayed"
-"Kiểm thử hiện thông báo lỗi khi dùng tài khoản locked_out_user","292","smokeLoginFail","Smoke Test Suite","Tue Mar 31 09:03:50 UTC 2026","passed","Tue Mar 31 09:03:50 UTC 2026","com.lab9.tests.LoginTest","Login Smoke Tests","com.lab9.tests.LoginTest","smokeLoginFail"
-"Kiểm thử đăng nhập thành công với username và password chuẩn","306","smokeLoginSuccess","Smoke Test Suite","Tue Mar 31 09:03:57 UTC 2026","passed","Tue Mar 31 09:03:57 UTC 2026","com.lab9.tests.LoginTest","Login Smoke Tests","com.lab9.tests.LoginTest","smokeLoginSuccess"
