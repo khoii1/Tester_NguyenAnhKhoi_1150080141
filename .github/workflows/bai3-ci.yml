@@ -29,6 +29,7 @@ jobs:
           distribution: temurin
           java-version: '17'
           cache: maven
+          cache-dependency-path: 'bai3/pom.xml'
 
       - name: Kiem tra masking secret (GitHub tu dong che ***)
         env:
