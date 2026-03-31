@@ -1,0 +1,49 @@
+name: Selenium CI
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  run-tests:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        browser: [chrome, firefox]   # Tao 2 job chay song song
+      fail-fast: false               # Chrome fail khong dung Firefox
+
+    steps:
+      - name: Checkout source code
+        uses: actions/checkout@v4
+
+      - name: Set up Java 17 (Temurin)
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+          cache: maven
+
+      - name: Chay test (${{ matrix.browser }})
+        env:
+          CI: true
+        run: |
+          mvn clean test \
+            -Dbrowser=${{ matrix.browser }} \
+            -Denv=dev \
+            -DsuiteXmlFile=testng-smoke.xml
+
+      - name: Luu ket qua (${{ matrix.browser }})
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: test-results-${{ matrix.browser }}
+          path: |
+            target/surefire-reports/
+            target/screenshots/
+          retention-days: 7
