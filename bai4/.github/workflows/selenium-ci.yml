@@ -1,0 +1,56 @@
+name: Selenium CI
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  run-tests:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        browser: [chrome, firefox]
+      fail-fast: false
+
+    steps:
+      - name: Checkout source code
+        uses: actions/checkout@v4
+
+      - name: Set up Java 17 (Temurin)
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+          cache: maven
+
+      - name: Kiem tra masking secret (GitHub tu dong che ***)
+        env:
+          APP_PASSWORD: ${{ secrets.SAUCEDEMO_PASSWORD }}
+        run: echo "APP_PASSWORD=$APP_PASSWORD"
+
+      - name: Chay test (${{ matrix.browser }})
+        env:
+          CI: true
+          APP_USERNAME: ${{ secrets.SAUCEDEMO_USERNAME }}
+          APP_PASSWORD: ${{ secrets.SAUCEDEMO_PASSWORD }}
+        run: |
+          mvn clean test \
+            -Dbrowser=${{ matrix.browser }} \
+            -Denv=dev \
+            -DsuiteXmlFile=testng-smoke.xml
+
+      - name: Luu ket qua (${{ matrix.browser }})
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: test-results-${{ matrix.browser }}
+          path: |
+            target/surefire-reports/
+            target/screenshots/
+          retention-days: 7
